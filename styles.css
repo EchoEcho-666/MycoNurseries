@@ -1,49 +1,121 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Adjust based on color scheme */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2ebe2; /* Secondary color */
+  color: #333;
 }
 
-/* Header */
+h1,
+h2 {
+  color: #39683b; /* Primary color */
+}
+
+/* Header Styles */
 header {
-    background-color: #004d40; /* Dark green from color scheme */
-    color: #ffffff; /* White text for contrast */
-    padding: 1em;
-    text-align: center;
+  background-color: #39683b; /* Primary color */
+  color: #ffffff;
+  padding: 1em 2em;
+  text-align: center;
 }
 
-header h1 {
-    font-size: 2em;
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.title-section {
+  text-align: left;
+}
+
+.title-section h1 {
+  font-family: "Playfair Display", serif;
+  margin: 0;
 }
 
 .catchphrase {
-    font-size: 1.2em;
-    font-style: italic;
-    color: #80cbc4; /* Light green from color scheme */
+  font-size: 1em;
+  color: #d2b48c; /* Accent color */
 }
 
-/* Main Content */
-main {
-    padding: 2em;
+/* Navigation Styles */
+nav {
+  margin-top: 1em;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f2ebe2; /* Secondary color */
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #a52a2a; /* Accent color */
+}
+
+/* Section Styles */
+section {
+  padding: 2em;
+  margin: 1em 0;
+  background-color: #f2ebe2; /* Secondary color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #00796b; /* Green for section headings */
+  color: #39683b; /* Primary color */
+  border-bottom: 2px solid #a52a2a; /* Accent color for section header underline */
+  padding-bottom: 0.5em;
 }
 
-/* About and Contact Sections */
-section {
-    margin-bottom: 2em;
+/* Call to Action Links */
+#cta ul li a {
+  color: #a52a2a; /* Accent color */
+  text-decoration: none;
+}
+
+#cta ul li a:hover {
+  color: #d2b48c; /* Alternate accent color for hover */
+}
+
+/* Team Section */
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.team-picture {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #a52a2a; /* Accent color */
+}
+
+.team-info {
+  max-width: 500px;
 }
 
 /* Footer */
 footer {
-    background-color: #004d40; /* Matching header background color */
-    color: #ffffff;
-    text-align: center;
-    padding: 0.5em;
-    width: 100%;
+  background-color: #39683b; /* Primary color */
+  color: #ffffff;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
 }
-

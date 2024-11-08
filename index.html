@@ -5,33 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>MycoNurseries - Your Source for Fungi Products</title>
+    <title>MycoNurseries - Promoting Sustainability through Fungiculture</title>
 </head>
 <body>
+    <!-- Header with Logo, Title, Catchphrase, and Navigation Links -->
     <header>
-        <!-- Logo placed here, in the body, for proper rendering -->
-        <img src="assets/logo-cut-out.png" alt="MycoNurseries Logo" style="width: 100px; height: auto;">
-        <h1>Welcome to MycoNurseries</h1>
-        <p>YPromoting sustainability through fungiculture</p>
+        <div class="header-content">
+            <img src="assets/logo-cut-out.png" alt="MycoNurseries Logo" class="logo">
+            <div class="title-section">
+                <h1>MycoNurseries</h1>
+                <p class="catchphrase">Promoting sustainability through fungiculture</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About MycoNurseries</a></li>
+                <li><a href="#team">Meet the Team</a></li>
+                <li><a href="#cta">Get Involved</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Main Content -->
     <main>
+        <!-- About MycoNurseries Section -->
         <section id="about">
-            <h2>About Us</h2>
-            <p>MycoNurseries is a non-profit promoting sustainability in fungiculture. We grow oyster mushrooms from discarded organic matter and foster an inclusive and diverse community passionate about fungi.</p>
-            <p>Based on the McGill University Campus, MycoNurseries collects used coffee grounds from local coffee shops and uses them as food for the oyster mushrooms. After harvest, these mushrooms are donated to projects addressing food insecurity on campus.</p>
-            <img src="assets/MycoNurseriesintro_post.png" alt="MycoNurseries Instagram Post" style="width: 100%; max-width: 500px; height: auto;">
-        </section>
-        
-        <section id="about-julia">
-            <h2>About Julia</h2>
-            <p>Julia studies chemistry and mathematics at McGill University and enjoys promoting all forms of sustainability. When they’re not growing mushrooms, you can find them hiking, knitting, and hanging out with friends and family.</p>
+            <h2>About MycoNurseries</h2>
+            <p>MycoNurseries is a non-profit promoting sustainability fungiculture. We do this primarily through growing oyster mushrooms from discarded organic matter and fostering an inclusive and diverse community passionate about fungi.</p>
         </section>
 
+        <!-- Meet the Team Section with About Us and Julia's Info -->
+        <section id="team">
+            <h2>Meet the Team</h2>
+            <div class="team-member">
+                <img src="assets/member-picture.png" alt="Team Member Picture" class="team-picture">
+                <div class="team-info">
+                    <h3>About Us</h3>
+                    <p>Based on the McGill University Campus, MycoNurseries collects used coffee grounds from local coffee shops and uses them as food for the oyster mushrooms. After harvest, these mushrooms are donated to projects addressing food insecurity on campus.</p>
+                </div>
+                <div class="team-info">
+                    <h3>About Julia</h3>
+                    <p>Julia studies chemistry and mathematics at McGill University and enjoys promoting all forms of sustainability. When they’re not growing mushrooms you can find them hiking, knitting, and hanging out with friends and family</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section with Forms and Collaboration Info -->
+        <section id="cta">
+            <h2>Get Involved</h2>
+            <p>Join our mission of sustainability through various ways:</p>
+            <ul>
+                <li><a href="https://forms.gle/join-mailing-list" target="_blank">Join Mailing List</a></li>
+                <li><a href="https://forms.gle/volunteer-signup" target="_blank">Volunteer Sign Up</a></li>
+                <li>Contact us to collaborate on waste collection from coffee shops and restaurants.</li>
+            </ul>
+        </section>
+
+        <!-- News Section -->
+        <section id="news">
+            <h2>News</h2>
+            <p>Stay updated with our latest activities, events, and achievements.</p>
+        </section>
+
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Us</h2>
             <p>Get in touch for collaborations and inquiries.</p>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 MycoNurseries</p>
     </footer>
