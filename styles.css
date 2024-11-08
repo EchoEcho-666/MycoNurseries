@@ -40,6 +40,7 @@ header {
   font-family: "Playfair Display", serif;
   font-size: 2.5em;
   margin: 0;
+  padding-top: 0.5em; /* Adds space above the title */
   color: #f2ebe2; /* Secondary color to match color scheme */
 }
 
@@ -99,18 +100,69 @@ h2 {
 /* Team Section */
 .team-member {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 2em;
+  justify-content: center;
+  margin-top: 1em;
 }
 
+/* General Team Card Styling */
+.team-card {
+  background-color: #f2ebe2; /* Secondary color */
+  border: 1px solid #d2b48c; /* Accent color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  text-align: center;
+  flex-direction: column;
+}
+
+/* About Us Card - Larger */
+.about-us-card {
+  width: 60%; /* Takes up more space */
+  max-width: 600px;
+}
+
+/* Julia Card - Smaller */
+.julia-card {
+  width: 35%; /* Takes up less space */
+  max-width: 300px;
+}
+
+/* Team Picture Container */
+.team-picture-container {
+  width: 100%;
+  height: 250px; /* Consistent height for both images */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1em;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.team-picture-container:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Team Picture */
 .team-picture {
-  width: 150px;
-  border-radius: 50%;
-  border: 3px solid #a52a2a; /* Accent color */
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image covers the container */
 }
 
-.team-info {
-  max-width: 500px;
+/* Team Info Styling */
+.team-info h3 {
+  color: #39683b; /* Primary color */
+  margin: 0.5em 0;
+}
+
+.team-info p {
+  color: #333;
+  font-size: 0.9em;
 }
 
 /* Footer */
