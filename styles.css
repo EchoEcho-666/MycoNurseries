@@ -25,3 +25,18 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+main {
+    padding: 1em;
+    padding-bottom: 2em; /* Prevents overlap with the footer */
+}
+
+/* Heading font similar to Palatino */
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Section header font similar to Stencil STD */
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+}
