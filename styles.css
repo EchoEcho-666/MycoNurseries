@@ -3,8 +3,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f2ebe2; /* Secondary color */
-  color: #333;
+  background-color: #fafafa; /* Secondary color */
+  color: #333333;
 }
 
 h1,
@@ -14,8 +14,8 @@ h2 {
 
 /* Header Styles */
 header {
-  background-color: #39683b; /* Primary color */
-  color: #ffffff;
+  background-color: #ffffff; /* Primary color */
+  color: #008080;
   padding: 1em 2em;
   text-align: center;
 }
@@ -41,12 +41,12 @@ header {
   font-size: 2.5em;
   margin: 0;
   padding-top: 0.5em; /* Adds space above the title */
-  color: #f2ebe2; /* Secondary color to match color scheme */
+  color: #008080; /* Secondary color to match color scheme */
 }
 
 .catchphrase {
   font-size: 1em;
-  color: #d2b48c; /* Accent color */
+  color: #ff8c42; /* Accent color */
 }
 
 /* Navigation Styles */
@@ -64,7 +64,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #f2ebe2; /* Secondary color */
+  color: #008080; /* Secondary color */
   font-weight: bold;
 }
 
@@ -76,9 +76,8 @@ nav {
 section {
   padding: 2em;
   margin: 1em 0;
-  background-color: #f2ebe2; /* Secondary color */
+  background-color: #ffffff; /* Secondary color */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
