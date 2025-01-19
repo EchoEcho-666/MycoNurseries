@@ -1,5 +1,6 @@
 /* General Styles */
 body {
+  font-size: 16px; /* Sets the base font size */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -15,7 +16,7 @@ h2 {
 /* Header Styles */
 header {
   background-color: #39683B; /* Hunter Green for header background */
-  color: #FFF8ED; /* Floral White for text */
+  color: #FFE7C9; /* Floral White for text */
   padding: 0.5em 1em; /* Reduced padding for smaller height */
   text-align: center;
 }
@@ -68,7 +69,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #FFF8ED; /* Floral White for links */
+  color: #FFE7C9; /* Floral White for links */
   font-weight: bold;
 }
 
@@ -155,15 +156,23 @@ nav {
 /* Section Styles */
 section {
   padding: 3em 2em; /* Increase padding */
-  margin: 0; /* Remove extra spacing between sections */
-  border-radius: 12px; /* Smooth corners */
+  margin: 0 auto; /* Center the section */
+  border-radius: 0; /* Smooth corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+
 /* Example for specific sections */
+/* Specific styles for the About MycoNurseries section */
 #about {
   background-color: #FFF8ED; /* Floral White */
+  padding: 3em 2em; /* Add padding for spacing */
+  max-width: 1000px; /* Restrict width for better readability */
+  margin: 0 auto; /* Center the content horizontally */
+  border-radius: 12px; /* Smooth corners */
+  box-shadow:none; /* Subtle shadow */
 }
+
 
 #cta {
   background: linear-gradient(135deg, #A0C47B, #D8BB94); /* Pistachio to Tan */
@@ -207,14 +216,89 @@ h2::after {
   color: #FFF8ED; /* Alternate accent color for hover */
 }
 
-/* Team Section */
-.team-member {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
-  justify-content: center;
-  margin-top: 1em;
+#about p {
+  font-size: 1.1rem; /* Adjust the size as needed */
+  line-height: 1.6; /* Optional: improve readability */
 }
+
+/* Meet the Team Section */
+#team {
+  display: flex;
+  align-items: center; /* Center-align content vertically */
+  justify-content: flex-start; /* Align photo and text from the left */
+  background-color: #FFF8ED; /* Background color */
+  height: 100%; /* Match the content height to the photo */
+  padding: 0; /* Remove padding for alignment */
+  max-width: 100%; /* Full width for the section */
+}
+
+/* Team Intro Flexbox */
+.team-intro {
+  display: flex;
+  flex-direction: row; /* Photo and text side by side */
+  align-items: stretch; /* Ensure both photo and text stretch equally */
+  width: 100%;
+}
+
+/* Team Photo Styling */
+.team-photo-container {
+  flex: 0 0 50%; /* Take exactly 50% of the section width */
+  margin: 0; /* No margin */
+  position: relative; /* Ensure proper clipping and alignment */
+}
+
+.team-photo {
+  width: 100%; /* Cover the container width */
+  height: 100%; /* Cover the container height */
+  object-fit: cover; /* Ensure the image fills the area */
+}
+
+/* Team Text Styling */
+.team-text {
+  flex: 1; /* Take the remaining space */
+  display: flex;
+  flex-direction: column; /* Stack text and button vertically */
+  justify-content: center; /* Center-align content vertically */
+  text-align: left; /* Align text to the left */
+  padding: 2em; /* Add some space around the text */
+  box-sizing: border-box; /* Include padding in size calculation */
+}
+
+.team-text p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+/* Button */
+.container {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  background-color: #39683B;
+  color: #FFF8ED;
+  padding: 0.4em 1em;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  max-width: 400px; /* Constrain size */
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #A52A2A; /* Auburn for hover */
+  transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
 
 /* General Team Card Styling */
 .team-card {
@@ -232,19 +316,6 @@ h2::after {
 .team-card:hover {
   transform: translateY(-10px); /* Lift effect */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Emphasized shadow */
-}
-
-
-/* About Us Card - Larger */
-.about-us-card {
-  width: 60%; /* Takes up more space */
-  max-width: 600px;
-}
-
-/* Julia Card - Smaller */
-.julia-card {
-  width: 35%; /* Takes up less space */
-  max-width: 300px;
 }
 
 /* Team Picture Container */
@@ -291,3 +362,38 @@ footer {
   padding: 1em;
   width: 100%;
 }
+
+/* Volunteer Bios Section */
+#volunteer-bios {
+  padding: 3em 2em;
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: #FFF8ED;
+  border-radius: 12px;
+}
+
+/* General Team Card Styling */
+.team-card {
+  background-color: #FFF8ED;
+  border: none;
+  border-radius: 12px;
+  box-shadow: none; /* No shadow for clean design */
+  padding: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+/* Team Info Styling */
+.team-info h3 {
+  color: #39683B;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.team-info p {
+  color: #382F2F;
+  font-size: 1em;
+}
+
