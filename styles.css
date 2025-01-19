@@ -3,8 +3,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fafafa; /* Secondary color */
-  color: #333333;
+  background-color: #FFF8ED; /* Secondary color */
+  color: #382F2F;
 }
 
 h1,
@@ -14,8 +14,8 @@ h2 {
 
 /* Header Styles */
 header {
-  background-color: #ffffff; /* Primary color */
-  color: #008080;
+  background-color: #39683B; /* Hunter Green for header background */
+  color: #FFF8ED; /* Floral White for text */
   padding: 1em 2em;
   text-align: center;
 }
@@ -41,7 +41,7 @@ header {
   font-size: 2.5em;
   margin: 0;
   padding-top: 0.5em; /* Adds space above the title */
-  color: #008080; /* Secondary color to match color scheme */
+  color: #D8BB94; /* Secondary color to match color scheme */
 }
 
 .catchphrase {
@@ -64,27 +64,58 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: #008080; /* Secondary color */
+  color: #FFF8ED; /* Floral White for links */
   font-weight: bold;
 }
 
 .nav-links a:hover {
-  color: #a52a2a; /* Accent color */
+  color: #A52A2A; /* Auburn for hover effect */
 }
 
 /* Section Styles */
 section {
-  padding: 2em;
-  margin: 1em 0;
-  background-color: #ffffff; /* Secondary color */
-  border-radius: 8px;
+  padding: 3em 2em; /* Increase padding */
+  margin: 0; /* Remove extra spacing between sections */
+  border-radius: 12px; /* Smooth corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-h2 {
-  color: #39683b; /* Primary color */
-  border-bottom: 2px solid #a52a2a; /* Accent color for section header underline */
-  padding-bottom: 0.5em;
+/* Example for specific sections */
+#about {
+  background-color: #FFF8ED; /* Floral White */
 }
+
+#cta {
+  background: linear-gradient(135deg, #A0C47B, #D8BB94); /* Pistachio to Tan */
+  color: #382F2F;
+}
+
+#news {
+  background-color: #FFE7C9; /* Champagne */
+}
+
+#contact {
+  background-color: #F2EBE2; /* Neutral Tan */
+}
+
+
+h2 {
+  color: #39683B; /* Hunter Green */
+  font-size: 2rem; /* Larger text size */
+  text-align: center;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px; /* Short underline */
+  height: 3px;
+  background-color: #A52A2A; /* Auburn */
+  margin: 0.5em auto 0; /* Centered below the heading */
+}
+
 
 /* Call to Action Links */
 #cta ul li a {
@@ -93,7 +124,7 @@ h2 {
 }
 
 #cta ul li a:hover {
-  color: #fafafa; /* Alternate accent color for hover */
+  color: #FFF8ED; /* Alternate accent color for hover */
 }
 
 /* Team Section */
@@ -107,14 +138,22 @@ h2 {
 
 /* General Team Card Styling */
 .team-card {
-  background-color: #f2ebe2; /* Secondary color */
-  border: 1px solid #d2b48c; /* Accent color */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1em;
+  background-color: #FFF8ED; /* White for contrast */
+  border: none; /* Remove border */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Smooth shadow */
+  padding: 2em;
+  width: 100%;
+  max-width: 300px;
   text-align: center;
-  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
 }
+
+.team-card:hover {
+  transform: translateY(-10px); /* Lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Emphasized shadow */
+}
+
 
 /* About Us Card - Larger */
 .about-us-card {
@@ -160,22 +199,15 @@ h2 {
 }
 
 .team-info p {
-  color: #333;
+  color: #382F2F;
   font-size: 0.9em;
 }
 
 /* Footer */
 footer {
-  background-color: #39683b; /* Primary color */
-  color: #ffffff;
+  background-color: #382F2F; /* Primary color */
+  color: #FFF8ED;
   text-align: center;
   padding: 1em;
   width: 100%;
 }
-
-/* Additional color:
-
-Dark green: #004D3F
-White: #ffffff
-
-*/
