@@ -81,7 +81,7 @@ nav {
 .slideshow-container {
   position: relative;
   max-width: 100%;
-  height: 600px; /* Adjusted height for better visual proportions */
+  height: 700px; /* Adjusted height for better visual proportions */
   margin: auto;
   overflow: hidden;
   background-color: #FFE7C9; /* Champagne for the background */
@@ -173,18 +173,48 @@ section {
   box-shadow:none; /* Subtle shadow */
 }
 
-
+/* Get involved */
 #cta {
   background: linear-gradient(135deg, #A0C47B, #D8BB94); /* Pistachio to Tan */
   color: #382F2F;
+  font-size: 1.2em; /* Set font size for the entire section */
+  padding: 4em 12.5em ; /* Add vertical padding for spacing */
+}
+#cta ul li a {
+  color: #a52a2a; /* Accent color */
+  text-decoration: none;
+}
+#cta ul li a:hover {
+  color: #FFF8ED; /* Alternate accent color for hover */
 }
 
 #news {
   background-color: #FFE7C9; /* Champagne */
 }
 
-#contact {
-  background-color: #F2EBE2; /* Neutral Tan */
+/* Mushroom Growing Process Section */
+#mushroom-process {
+  padding: 3em 2em;
+  margin: 0 auto;
+  max-width: 1000px; /* Restrict width for better readability */
+  background-color: #FFF8ED;
+  text-align: left;
+  border-radius: 12px;
+  line-height: 1.6; /* Improve readability */
+  box-shadow: none;
+}
+
+#mushroom-process h2 {
+  text-align: center;
+  color: #39683B; /* Hunter Green */
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+#mushroom-process p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  color: #382F2F; /* Dark text color */
 }
 
 
@@ -203,17 +233,6 @@ h2::after {
   height: 3px;
   background-color: #A52A2A; /* Auburn */
   margin: 0.5em auto 0; /* Centered below the heading */
-}
-
-
-/* Call to Action Links */
-#cta ul li a {
-  color: #a52a2a; /* Accent color */
-  text-decoration: none;
-}
-
-#cta ul li a:hover {
-  color: #FFF8ED; /* Alternate accent color for hover */
 }
 
 #about p {
@@ -295,7 +314,7 @@ h2::after {
 }
 
 .button:hover {
-  background-color: #A52A2A; /* Auburn for hover */
+  background-color: #EE9F9F; /* Auburn for hover */
   transform: scale(1.05); /* Subtle zoom effect on hover */
 }
 
@@ -356,11 +375,50 @@ h2::after {
 
 /* Footer */
 footer {
-  background-color: #382F2F; /* Primary color */
-  color: #FFF8ED;
+  background-color: #3A693C; /* Dark Green for the background */
+  color: #FFE7C9; /* Champagne for text */
   text-align: center;
-  padding: 1em;
+  padding: 1.5em;
   width: 100%;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto 1em; /* Center list with some margin */
+  display: flex;
+  flex-direction: column;
+  gap: 1em; /* Increased spacing for better readability */
+  max-width: 400px; /* Constrain width */
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center; /* Align icon and text */
+  gap: 0.8em; /* Space between icon and text */
+  font-size: 1em;
+}
+
+.contact-list li img {
+  width: 24px; /* Icon size */
+  height: 24px;
+}
+
+.contact-list a {
+  color: #FFE7C9; /* Champagne for text */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+  color: #EE9F9F; /* Pink for hover effect */
+}
+
+footer p {
+  margin-top: 1.5em; /* Space above copyright */
+  font-size: 1em;
+  color: #382F2F; /* Dark Brown for copyright */
 }
 
 /* Volunteer Bios Section */
@@ -372,20 +430,53 @@ footer {
   border-radius: 12px;
 }
 
-/* General Team Card Styling */
+.team-row {
+  display: flex;
+  flex-wrap: wrap; /* Wrap if screen size is too small */
+  gap: 2em; /* Space between team cards */
+  justify-content: center; /* Center the cards */
+}
+
 .team-card {
   background-color: #FFF8ED;
   border: none;
   border-radius: 12px;
-  box-shadow: none; /* No shadow for clean design */
+  box-shadow: none;
   padding: 2em;
-  margin-bottom: 2em;
+  width: 300px; /* Set a fixed width for all cards */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
-  align-items: center;
-  gap: 2em;
+  flex-direction: column; /* Stack image and text */
+  align-items: center; /* Center content */
+  gap: 1em; /* Space between picture and text */
 }
 
-/* Team Info Styling */
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-picture-container {
+  width: 150px; /* Resize pictures */
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-info {
+  text-align: center;
+}
+
 .team-info h3 {
   color: #39683B;
   font-size: 1.5em;
@@ -395,5 +486,5 @@ footer {
 .team-info p {
   color: #382F2F;
   font-size: 1em;
+  line-height: 1.5;
 }
-
