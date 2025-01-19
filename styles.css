@@ -16,7 +16,7 @@ h2 {
 header {
   background-color: #39683B; /* Hunter Green for header background */
   color: #FFF8ED; /* Floral White for text */
-  padding: 1em 2em;
+  padding: 0.5em 1em; /* Reduced padding for smaller height */
   text-align: center;
 }
 
@@ -34,24 +34,28 @@ header {
 
 .title-section {
   text-align: left;
+  padding-top: 1em; /* Adds space to push the entire section down */
 }
 
 .title-section h1 {
   font-family: "Playfair Display", serif;
   font-size: 2.5em;
   margin: 0;
-  padding-top: 0.5em; /* Adds space above the title */
+  padding: 0; /* Remove unnecessary padding */
   color: #D8BB94; /* Secondary color to match color scheme */
 }
 
 .catchphrase {
   font-size: 1em;
+  margin-top: 0.1em; /* Add minimal space between the title and catchphrase */
   color: #ff8c42; /* Accent color */
+  text-align: left; /* Align text to the same side */
 }
 
 /* Navigation Styles */
 nav {
-  margin-top: 1em;
+  margin-top: 0; /* Remove unnecessary margin to move the bar upwards */
+  padding-top: 0.1em; /* Add slight padding for spacing inside the nav */
 }
 
 .nav-links {
@@ -71,6 +75,82 @@ nav {
 .nav-links a:hover {
   color: #A52A2A; /* Auburn for hover effect */
 }
+
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  height: 600px; /* Adjusted height for better visual proportions */
+  margin: auto;
+  overflow: hidden;
+  background-color: #FFE7C9; /* Champagne for the background */
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%; /* Ensure the image fills the container */
+  object-fit: cover; /* Ensures images are cropped proportionally */
+}
+
+/* Navigation Dots */
+.dots {
+  position: absolute; /* Ensure the dots stay on top of the slideshow */
+  bottom: 20px; /* Move dots upward */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #D8BB94; /* Tan for inactive dots */
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #3A693C; /* Dark Green for active dots */
+}
+
+/* Optional: Hover effect for dots */
+.dot:hover {
+  background-color: #99C072; /* Light Green for hover state */
+}
+
+/* Navigation Dots */
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #D8BB94; /* Tan for inactive dots */
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #3A693C; /* Dark Green for active dots */
+}
+
+/* Optional: Add hover effects for dots */
+.dot:hover {
+  background-color: #99C072; /* Light Green for hover state */
+}
+
 
 /* Section Styles */
 section {
