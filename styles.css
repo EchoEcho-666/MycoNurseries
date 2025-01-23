@@ -43,13 +43,13 @@ header {
   font-size: 2.5em;
   margin: 0;
   padding: 0; /* Remove unnecessary padding */
-  color: #D8BB94; /* Secondary color to match color scheme */
+  color: #FFF8ED; /* Secondary color to match color scheme */
 }
 
 .catchphrase {
   font-size: 1em;
   margin-top: 0.1em; /* Add minimal space between the title and catchphrase */
-  color: #ff8c42; /* Accent color */
+  color: #FFF8ED; /* Accent color */
   text-align: left; /* Align text to the same side */
 }
 
@@ -74,7 +74,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #A52A2A; /* Auburn for hover effect */
+  color: #9fb9ee; /* Auburn for hover effect */
 }
 
 /* Slideshow Container */
@@ -377,25 +377,46 @@ h2::after {
 footer {
   background-color: #3A693C; /* Dark Green for the background */
   color: #FFE7C9; /* Champagne for text */
-  text-align: center;
-  padding: 1.5em;
+  padding: 2em; /* Increase padding for better spacing */
   width: 100%;
+  position: relative; /* Ensure proper layout */
+}
+
+/* Footer Container Layout */
+.footer-container {
+  display: flex;
+  align-items: flex-start; /* Align sections to the top */
+  justify-content: space-between; /* Separate contact and founder sections */
+  flex-wrap: wrap; /* Wrap for smaller screens */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+  gap: 2em; /* Space between sections */
+}
+
+/* Contact Section Styling */
+.contact-section {
+  flex: 1; /* Take equal space */
+}
+
+.contact-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
 .contact-list {
   list-style-type: none;
   padding: 0;
-  margin: 0 auto 1em; /* Center list with some margin */
+  margin: 0 auto 1em;
   display: flex;
   flex-direction: column;
-  gap: 1em; /* Increased spacing for better readability */
+  gap: 1em;
   max-width: 400px; /* Constrain width */
 }
 
 .contact-list li {
   display: flex;
-  align-items: center; /* Align icon and text */
-  gap: 0.8em; /* Space between icon and text */
+  align-items: center;
+  gap: 0.8em;
   font-size: 1em;
 }
 
@@ -405,21 +426,69 @@ footer {
 }
 
 .contact-list a {
-  color: #FFE7C9; /* Champagne for text */
+  color: #FFE7C9;
   text-decoration: none;
   font-weight: bold;
 }
 
 .contact-list a:hover {
   text-decoration: underline;
-  color: #EE9F9F; /* Pink for hover effect */
+  color: #9fb9ee; /* Pink for hover effect */
+  font-style: italic;
 }
 
-footer p {
-  margin-top: 1.5em; /* Space above copyright */
-  font-size: 1em;
-  color: #382F2F; /* Dark Brown for copyright */
+/* Founder Section Styling */
+.founder-section {
+  flex: 1; /* Take equal space */
+  text-align: center;
 }
+
+.founder-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.founder-pictures {
+  display: flex;
+  justify-content: center; /* Center the founder pictures */
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.founder-img {
+  width: 100px; /* Adjust size */
+  height: 100px;
+  border-radius: 50%; /* Make images circular */
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Footer Text Styling */
+footer p {
+  margin-top: 2em; /* Space above the copyright text */
+  font-size: 1em;
+  color: #FFE7C9; /* Match the footer text color */
+  text-align: center; /* Center-align the text */
+  border: none; /* Remove any unwanted border or underline */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack sections vertically */
+    text-align: center;
+  }
+
+  .contact-section,
+  .founder-section {
+    text-align: center;
+  }
+
+  .founder-pictures {
+    justify-content: center; /* Center pictures on smaller screens */
+  }
+}
+
 
 /* Volunteer Bios Section */
 #volunteer-bios {

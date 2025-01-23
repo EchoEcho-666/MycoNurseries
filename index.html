@@ -124,27 +124,52 @@
     </main>
 
     <footer>
-        <ul class="contact-list">
-            <li>
-                <img src="assets/logo-email.png" alt="Email Icon" class="contact-icon">
-                Email: <a href="mailto:myconurseries@gmail.com">myconurseries@gmail.com</a>
-            </li>
-            <li>
-                <img src="assets/logo-instagram.png" alt="Instagram Icon" class="contact-icon">
-                Instagram: <a href="https://www.instagram.com/myconurseries" target="_blank">@myconurseries</a>
-            </li>
-            <li>
-                <img src="assets/logo-facebook.png" alt="Facebook Icon" class="contact-icon">
-                Facebook: <a href="https://www.facebook.com/profile.php?id=61555856812571" target="_blank">Facebook</a>
-            </li>
-            <li>
-                <img src="assets/logo-linkedin.png" alt="LinkedIn Icon" class="contact-icon">
-                LinkedIn: <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-            </li>
-        </ul>
-        <p>&copy; 2024 MycoNurseries</p>
+        <div class="footer-container">
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h2>Connect with Us</h2>
+                <ul class="contact-list">
+                    <li>
+                        <img src="assets/logo-email.png" alt="Email Icon" class="contact-icon">
+                        <a href="#" class="copy-email" onclick="copyToClipboard(event, 'myconurseries@gmail.com')">myconurseries@gmail.com</a>
+                    </li>
+                    <li>
+                        <img src="assets/logo-instagram.png" alt="Instagram Icon" class="contact-icon">
+                        <a href="https://www.instagram.com/myconurseries" target="_blank">@myconurseries</a>
+                    </li>
+                    <li>
+                        <img src="assets/logo-facebook.png" alt="Facebook Icon" class="contact-icon">
+                        <a href="https://www.facebook.com/profile.php?id=61555856812571" target="_blank">Facebook</a>
+                    </li>
+                    <li>
+                        <img src="assets/logo-linkedin.png" alt="LinkedIn Icon" class="contact-icon">
+                        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                    </li>
+                </ul>
+                <p>&copy; 2024 MycoNurseries</p>
+            </div>
+    
+            <!-- Founder Pictures Section -->
+            <div class="founder-section">
+                <h2>Our Founders</h2>
+                <div class="founder-gallery">
+                    <div class="founder-picture">
+                        <img src="assets/founder-1.jpg" alt="Founder 1" class="founder-img">
+                        <p>Founder 1</p>
+                    </div>
+                    <div class="founder-picture">
+                        <img src="assets/founder-2.jpg" alt="Founder 2" class="founder-img">
+                        <p>Founder 2</p>
+                    </div>
+                    <div class="founder-picture">
+                        <img src="assets/founder-3.jpg" alt="Founder 3" class="founder-img">
+                        <p>Founder 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="scripts.js"></script>    
 </body>
 </html>
 

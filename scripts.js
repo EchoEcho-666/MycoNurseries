@@ -55,3 +55,25 @@ document.addEventListener("DOMContentLoaded", () => {
         slideshowContainer.addEventListener("click", nextSlide);
     }
 });
+
+
+//------------------------------------------------------
+function copyToClipboard(event, email) {
+    // Prevent the default action (e.g., page refresh)
+    event.preventDefault();
+
+    // Create a temporary input element
+    const tempInput = document.createElement('input');
+    tempInput.value = email;
+    document.body.appendChild(tempInput);
+
+    // Select and copy the email
+    tempInput.select();
+    document.execCommand('copy');
+
+    // Remove the temporary input
+    document.body.removeChild(tempInput);
+
+    // Optional: Alert to confirm copy
+    alert('Email address copied to clipboard!');
+}
