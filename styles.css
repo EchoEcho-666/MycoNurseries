@@ -504,7 +504,162 @@ footer p::before {
   }
 }
 
+/* Footer Styles */
+footer {
+  background-color: #3A693C; /* Dark Green */
+  color: #FFE7C9; /* Light Text */
+  padding: 2em 0;
+  text-align: center;
+  width: 100%;
+}
 
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+  text-align: left;
+}
+
+.footer-column h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5em;
+}
+
+.contact-list a, .footer-column a {
+  color: #FFE7C9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-list a:hover, .footer-column a:hover {
+  text-decoration: underline;
+  color: #9fb9ee;
+}
+
+.footer-column form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-column input {
+  padding: 0.5em;
+  margin-bottom: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+}
+
+.footer-column button {
+  background-color: #A52A2A;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer-column button:hover {
+  background-color: #7F1D1D;
+}
+/* Footer Styles */
+footer {
+  background-color: #3A693C; /* Dark Green */
+  color: #FFE7C9; /* Light Text */
+  padding: 2em 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+  text-align: left;
+}
+
+.footer-column h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-align: center;
+  display: block; /* Ensure it is displayed */
+  color: #FFE7C9; /* Ensure text is visible */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5em;
+}
+
+.contact-list a, .footer-column a {
+  color: #FFE7C9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-list a:hover, .footer-column a:hover {
+  text-decoration: underline;
+  color: #9fb9ee;
+}
+
+.footer-column form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-column input {
+  padding: 0.5em;
+  margin-bottom: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+}
+
+.footer-column button {
+  background-color: #A52A2A;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer-column button:hover {
+  background-color: #7F1D1D;
+}
 /* Volunteer Bios Section */
 #volunteer-bios {
   padding: 3em 2em;
