@@ -1,0 +1,70 @@
+.
+├── Header.js
+├── assets
+│   ├── 2024-11-November All Hands Meeting-20241128T160938Z-001.zip
+│   ├── DSC_8751.JPG
+│   ├── DSC_8877.JPG
+│   ├── DSC_8908.JPG
+│   ├── DSC_8953.JPG
+│   ├── DSC_9057.JPG
+│   ├── DSC_9083.JPG
+│   ├── DSC_9089.JPG
+│   ├── MycoNurseriesintro_post.png
+│   ├── founder-1.jpg
+│   ├── founder-2.jpg
+│   ├── founder-3.jpg
+│   ├── founder-4.jpg
+│   ├── image.png
+│   ├── julia-picture.jpg
+│   ├── logo-cut-out.png
+│   ├── logo-email.png
+│   ├── logo-facebook.png
+│   ├── logo-instagram.png
+│   ├── logo-linkedin.png
+│   ├── member-picture.png
+│   ├── minh-picture.JPG
+│   ├── myconurseriesLogoWorking.ai
+│   ├── nico-picture.jpg
+│   ├── photo-1454425064867-5ba516caf601.avif
+│   ├── slideshow1.jpg
+│   ├── slideshow2.JPG
+│   ├── slideshow3.JPG
+│   ├── slideshow4.JPG
+│   ├── slideshow5.JPG
+│   └── team-photo.jpg
+├── index.html
+├── my-backend
+│   ├── index.js
+│   ├── package-lock.json
+│   └── package.json
+├── my-frontend
+│   ├── README.md
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   └── src
+│       ├── App.css
+│       ├── App.js
+│       ├── App.test.js
+│       ├── index.css
+│       ├── index.js
+│       ├── logo.svg
+│       ├── reportWebVitals.js
+│       └── setupTests.js
+├── our-partners.html
+├── scripts.js
+├── styles.css
+├── team.html
+├── tree.txt
+└── tree_nonode.txt
+
+6 directories, 59 files
+
+
+tree -I 'node_modules' | tee tree.txt

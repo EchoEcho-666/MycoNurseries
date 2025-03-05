@@ -1,43 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>MycoNurseries - Promoting Sustainability through fungi culture</title>
+</head>
+<body>
+    <!-- Header with Logo, Title, Catchphrase, and Navigation Links -->
+    <header>
+        <div class="header-content">
+            <img src="assets/logo-cut-out.png" alt="MycoNurseries Logo" class="logo">
+            <div class="title-section">
+                <h1>MycoNurseries</h1>
+                <p class="catchphrase">Promoting sustainability through fungiculture</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About MycoNurseries</a></li>
+                <li><a href="#team">Meet the Team</a></li>
+                <li><a href="#cta">Get Involved</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+        <!-- Slide 1 -->
+        <div class="slide fade">
+            <img src="assets/slideshow/slideshow1.jpg" alt="Slide 1">
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide fade">
+            <img src="assets/slideshow/slideshow2.JPG" alt="Slide 2">
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide fade">
+            <img src="assets/slideshow/slideshow3.JPG" alt="Slide 3">
+        </div>
+        <!-- Slide 4 -->
+        <div class="slide fade">
+            <img src="assets/slideshow/slideshow4.JPG" alt="Slide 4">
+        </div>
+        <!-- Slide 5 -->
+        <div class="slide fade">
+            <img src="assets/slideshow/slideshow5.JPG" alt="Slide 5">
+        </div>
+        <!-- Navigation Dots -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <main>
+       <!-- About MycoNurseries Section -->
+        <section id="about">
+            <h2>About MycoNurseries</h2>
+            <p>MycoNurseries is a non-profit promoting sustainability fungiculture. We do this primarily through growing oyster mushrooms from discarded organic matter and fostering an inclusive and diverse community passionate about fungi. </p>
+            <p>Based on the McGill University Campus, MycoNurseries collects used coffee grounds from local coffee shops and uses them as food for the oyster mushrooms. After harvest, these mushrooms are donated to projects addressing food insecurity on campus.</p>
+        </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        <!-- Meet the Team Section with About Us and Julia's Info -->
+        <section id="team">
+            <div class="team-intro">
+                <!-- Team Photo -->
+                <div class="team-photo-container">
+                    <img src="assets/team-photo.jpg" alt="Team Photo" class="team-photo">
+                </div>
+                <!-- Team Text -->
+                <div class="team-text">
+                    <h2>Meet the Team</h2>
+                    <p>Our team is a group of passionate individuals working together to promote sustainability through innovative fungiculture solutions. We’re dedicated to fostering community, learning, and sustainability at every step.</p>
+                    <div class="container">
+                        <a href="team.html" class="button">Learn more about team</a>
+                     </div>  
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Call to Action Section with Forms and Collaboration Info -->
+        <section id="cta">
+            <h2>Get Involved</h2>
+            <p>Join our mission of sustainability through various ways:</p>
+            <ul>
+                <li><a href="https://forms.gle/join-mailing-list" target="_blank">Join Mailing List</a></li>
+                <li><a href="https://forms.gle/volunteer-signup" target="_blank">Volunteer Sign Up</a></li>
+                <li>Contact us to collaborate on waste collection from coffee shops and restaurants.</li>
+            </ul>
+        </section>
+
+        <!-- Mushroom Growing Process Section -->
+        <section id="mushroom-process">
+            <h2>Our Mushroom Growing Process</h2>
+            <p>
+                At MycoNurseries, we sustainably grow oyster mushrooms by turning waste into nourishment. We collect 
+                <strong>30+ kg</strong> of spent coffee grounds (SCGs) from local cafes as a food source for our mushrooms.
+            </p>
+            <p>
+                These mushrooms are cultivated to yield <strong>5+ kg</strong> of fresh produce, with <strong>3+ kg</strong> donated to address food insecurity.
+            </p>
+            <p>
+                This mission is powered by our volunteers, who have contributed <strong>200+ hours</strong> of their time.
+            </p>
+        </section>
+
+        <!-- News Section -->
+        <section id="news">
+            <h2>News</h2>
+            <p>Stay updated with our latest activities, events, and achievements.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <!-- About Us Section -->
+            <div class="footer-column">
+                <h2>About Us</h2>
+                <ul>
+                    <li>
+                        <h3>Contact Us</h3>
+                        <ul class="contact-list">
+                            <li><a href="mailto:myconurseries@gmail.com">myconurseries@gmail.com</a></li>
+                            <li><a href="https://www.instagram.com/myconurseries" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=61555856812571" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3><a href="our-partners.html">Our Partners</a></h3>
+                        <p>Funding and support details go here.</p>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Get Involved Section -->
+            <div class="footer-column">
+                <h2>Get Involved</h2>
+                <ul>
+                    <li><a href="#">Partner with Us</a> (Julia to provide text)</li>
+                    <li><a href="#">Become a Volunteer</a> (Julia to provide text)</li>
+                </ul>
+            </div>
+    
+            <!-- Join the Newsletter -->
+            <div class="footer-column">
+                <h2>Join the Newsletter</h2>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <p>&copy; 2024 MycoNurseries</p>
+    </footer>
+    <script src="scripts.js"></script>    
+</body>
 </html>
+
+
+<!--React library-->
+<!--mui library-->
