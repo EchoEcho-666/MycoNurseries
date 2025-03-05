@@ -1,0 +1,6 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "MycoNurseries",
+    "ocaml.sandbox": {
+        "kind": "global"
+    }
+}
