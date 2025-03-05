@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+// eslint-disable-next-line no-unused-vars
 import { Link } from 'react-router-dom';
 
 const SlideshowContainer = styled.div`

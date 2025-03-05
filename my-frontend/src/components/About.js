@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+// eslint-disable-next-line no-unused-vars
 import { Link } from 'react-router-dom';
-
 
 const Section = styled.section`
   padding: 3em 2em;

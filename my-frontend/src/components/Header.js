@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+
 // Styled components for the header
 const HeaderWrapper = styled.header`
   background-color: #39683B;
@@ -49,9 +50,7 @@ const NavLinks = styled.ul`
   padding: 0;
 `;
 
-const NavLinkItem = styled.li``;
-
-const NavLink = styled.a`
+const StyledLink = styled(Link)`
   color: #FFE7C9;
   text-decoration: none;
   &:hover {

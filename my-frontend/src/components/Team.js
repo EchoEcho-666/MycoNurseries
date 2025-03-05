@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+// eslint-disable-next-line no-unused-vars
 import { Link } from 'react-router-dom';
 
 const TeamContainer = styled.section`
