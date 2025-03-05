@@ -1,6 +1,6 @@
-// src/components/Slideshow.js
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const SlideshowContainer = styled.div`
   position: relative;

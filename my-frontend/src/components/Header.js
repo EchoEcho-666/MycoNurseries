@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 // Styled components for the header
 const HeaderWrapper = styled.header`
@@ -62,7 +63,7 @@ function Header() {
   return (
     <HeaderWrapper>
       <HeaderContent>
-        <Logo src="assets/logo.png" alt="MycoNurseries Logo" />
+        <Logo src="assets/logo-cut-out.png" alt="MycoNurseries Logo" />
         <TitleSection>
           <Title>MycoNurseries</Title>
           <Catchphrase>Promoting sustainability through fungiculture</Catchphrase>
@@ -70,21 +71,21 @@ function Header() {
       </HeaderContent>
       <Nav>
         <NavLinks>
-          <NavLinkItem>
-            <NavLink href="#about">About MycoNurseries</NavLink>
-          </NavLinkItem>
-          <NavLinkItem>
-            <NavLink href="#team">Meet the Team</NavLink>
-          </NavLinkItem>
-          <NavLinkItem>
-            <NavLink href="#cta">Get Involved</NavLink>
-          </NavLinkItem>
-          <NavLinkItem>
-            <NavLink href="#news">News</NavLink>
-          </NavLinkItem>
-          <NavLinkItem>
-            <NavLink href="#contact">Contact</NavLink>
-          </NavLinkItem>
+          <li>
+            <StyledLink to="/#about">About MycoNurseries</StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/#team">Meet the Team</StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/#cta">Get Involved</StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/#news">News</StyledLink>
+          </li>
+          <li>
+            <StyledLink to="/#contact">Contact</StyledLink>
+          </li>
         </NavLinks>
       </Nav>
     </HeaderWrapper>
@@ -92,4 +93,3 @@ function Header() {
 }
 
 export default Header;
-

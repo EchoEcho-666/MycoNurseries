@@ -1,6 +1,6 @@
-// src/components/TeamSection.js
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const TeamContainer = styled.section`
   padding: 3em 2em;
