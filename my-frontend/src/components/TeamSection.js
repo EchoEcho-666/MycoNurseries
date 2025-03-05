@@ -46,21 +46,21 @@ function TeamSection() {
       <TeamHeading>Meet the Team</TeamHeading>
       <TeamRow>
         <TeamCard>
-          <TeamImage src="assets/team-member/julia-picture.jpg" alt="Julia" />
+        <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/julia-picture.jpg'} alt="Julia" />
           <TeamInfo>
             <h3>About Julia</h3>
             <p>Julia studies chemistry and mathematics at McGill University and enjoys promoting sustainability. When not growing mushrooms, she hikes, knits, and spends time with family.</p>
           </TeamInfo>
         </TeamCard>
         <TeamCard>
-          <TeamImage src="assets/team-member/minh-picture.JPG" alt="Minh" />
+          <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/minh-picture.jpg'} alt="Minh" />
           <TeamInfo>
             <h3>About Minh</h3>
             <p>Minh is a final-year Pharmacology student at McGill University. She researches sustainability strategies and loves her cats and music.</p>
           </TeamInfo>
         </TeamCard>
         <TeamCard>
-          <TeamImage src="assets/team-member/nico-picture.jpg" alt="Nico" />
+          <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/nico-picture.jpg'} alt="Nico" />
           <TeamInfo>
             <h3>About Nico</h3>
             <p>Nico, a final-year Cognitive Science student at McGill, explores fungal sustainable solutions. He enjoys puzzles, drawing, and geeking out over TV shows.</p>

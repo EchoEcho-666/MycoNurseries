@@ -62,7 +62,7 @@ function Header() {
   return (
     <HeaderWrapper>
       <HeaderContent>
-        <Logo src="assets/logo-cut-out.png" alt="MycoNurseries Logo" />
+        <Logo src={process.env.PUBLIC_URL + '/assets/logo-cut-out.png'} alt="MycoNurseries Logo" />
         <TitleSection>
           <Title>MycoNurseries</Title>
           <Catchphrase>Promoting sustainability through fungiculture</Catchphrase>

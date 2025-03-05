@@ -20,19 +20,19 @@ function OurPartners() {
         <h1>Our Partners</h1>
         <p>Meet the organizations and individuals supporting us</p>
         <div className="partner-row">
-          <img src="assets/founders/founder-1.jpg" alt="Partner Logo" className="partner-logo" />
+          <img src={process.env.PUBLIC_URL + "/assets/founders/founder-1.jpg"} alt="Partner Logo" className="partner-logo" />
           <p className="partner-text">Founder text about the partner.</p>
         </div>
         <div className="partner-row alternate">
           <p className="partner-text">Founder text about the partner.</p>
-          <img src="assets/founders/founder-2.jpg" alt="Partner Logo" className="partner-logo" />
+          <img src={process.env.PUBLIC_URL + "/assets/founders/founder-2.jpg"} alt="Partner Logo" className="partner-logo" />
         </div>
         <div className="partner-row">
-          <img src="assets/founders/founder-3.jpg" alt="Partner Logo" className="partner-logo" />
+          <img src={process.env.PUBLIC_URL + "/assets/founders/founder-3.jpg"} alt="Partner Logo" className="partner-logo" />
           <p className="partner-text">Founder text about the partner.</p>
         </div>
         <div className="partner-row">
-          <img src="assets/founders/founder-4.jpg" alt="Partner Logo" className="partner-logo" />
+          <img src={process.env.PUBLIC_URL + "/assets/founders/founder-4.jpg"} alt="Partner Logo" className="partner-logo" />
           <p className="partner-text">Founder text about the partner.</p>
         </div>
       </PartnersSection>

@@ -41,11 +41,11 @@ const Dot = styled.span`
 `;
 
 const slidesData = [
-  { src: "assets/slideshow/slideshow1.jpg", alt: "Slide 1" },
-  { src: "assets/slideshow/slideshow2.JPG", alt: "Slide 2" },
-  { src: "assets/slideshow/slideshow3.JPG", alt: "Slide 3" },
-  { src: "assets/slideshow/slideshow4.JPG", alt: "Slide 4" },
-  { src: "assets/slideshow/slideshow5.JPG", alt: "Slide 5" },
+  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow1.jpg', alt: "Slide 1" },
+  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow2.JPG', alt: "Slide 2" },
+  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow3.JPG', alt: "Slide 3" },
+  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow4.JPG', alt: "Slide 4" },
+  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow5.JPG', alt: "Slide 5" },
 ];
 
 function Slideshow() {
