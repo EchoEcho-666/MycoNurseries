@@ -13,7 +13,7 @@ const SlideshowContainer = styled.div`
 `;
 
 const Slide = styled.div`
-  display: ${props => (props.active ? 'block' : 'none')};
+  display: ${props => (props.$active ? 'block' : 'none')};
   & img {
     width: 100%;
     height: 100%;
@@ -60,16 +60,16 @@ function Slideshow() {
 
   return (
     <SlideshowContainer>
-      {slidesData.map((slide, index) => (
-        <Slide key={index} active={index === slideIndex}>
-          <img src={slide.src} alt={slide.alt} />
-        </Slide>
-      ))}
-      <DotsContainer>
-        {slidesData.map((_, index) => (
-          <Dot key={index} active={index === slideIndex} onClick={() => setSlideIndex(index)} />
+        {slidesData.map((slide, index) => (
+            <Slide key={index} $active={index === slideIndex}>
+                <img src={slide.src} alt={slide.alt} />
+            </Slide>
         ))}
-      </DotsContainer>
+        <DotsContainer>
+            {slidesData.map((_, index) => (
+                <Dot key={index} $active={index === slideIndex} onClick={() => setSlideIndex(index)} />
+            ))}
+        </DotsContainer>
     </SlideshowContainer>
   );
 }

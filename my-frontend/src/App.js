@@ -1,14 +1,14 @@
 import React from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import GlobalStyle from './GlobalStyle';
-import Home from './pages/Home';
+import Home from './pages/HomePage';
 import OurPartners from './pages/OurPartners';  
-import Team from './pages/Team';        
+import Team from './pages/TeamPage';        
 import Founders from './pages/Founders';
 
 function App() {
   return (
-    <Router>
+    <Router v7_startTransition v7_relativeSplatPath>
       <GlobalStyle />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
     </Router>
   );
 }
-console.log("App Loaded");
-console.log("React is running")
+
 export default App;
+
 
