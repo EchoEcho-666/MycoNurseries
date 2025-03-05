@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import GlobalStyle from './GlobalStyle';
 import Home from './pages/Home';
 import OurPartners from './pages/OurPartners';  
@@ -10,15 +10,16 @@ function App() {
   return (
     <Router>
       <GlobalStyle />
-      <Route>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/our-partners" element={<OurPartners />} />
         <Route path="/team" element={<Team />} />
         <Route path="/founders" element={<Founders />} />
-      </Route>
+      </Routes>
     </Router>
   );
 }
 console.log("App Loaded");
+console.log("React is running")
 export default App;
 
