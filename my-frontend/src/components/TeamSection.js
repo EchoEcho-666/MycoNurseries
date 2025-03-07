@@ -1,74 +1,76 @@
 import React from 'react';
 import styled from 'styled-components';
-// eslint-disable-next-line no-unused-vars
 import { Link } from 'react-router-dom';
 
 const TeamContainer = styled.section`
   padding: 3em 2em;
   background-color: #FFF8ED;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 `;
 
-const TeamHeading = styled.h2`
-  color: #39683B;
-  font-size: 2rem;
-  margin-bottom: 1em;
-`;
-
-const TeamRow = styled.div`
+const TeamIntro = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-`;
-
-const TeamCard = styled.div`
-  background: #f5f5f5;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  padding: 20px;
-  max-width: 300px;
-  text-align: left;
-`;
-
-const TeamImage = styled.img`
+  flex-direction: row;
+  align-items: stretch;
   width: 100%;
-  border-radius: 10px;
+  flex-wrap: wrap;
 `;
 
-const TeamInfo = styled.div`
+const TeamPhotoContainer = styled.div`
+  flex: 0 0 50%;
+  position: relative;
+  margin: 0;
+`;
+
+const TeamPhoto = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+const TeamText = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  box-sizing: border-box;
+`;
+
+const Heading = styled.h2`
+`;
+
+const Description = styled.p`
+`;
+
+const ButtonContainer = styled.div`
   margin-top: 1em;
 `;
 
 function TeamSection() {
   return (
     <TeamContainer id="team">
-      <TeamHeading>Meet the Team</TeamHeading>
-      <TeamRow>
-        <TeamCard>
-        <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/julia-picture.jpg'} alt="Julia" />
-          <TeamInfo>
-            <h3>About Julia</h3>
-            <p>Julia studies chemistry and mathematics at McGill University and enjoys promoting sustainability. When not growing mushrooms, she hikes, knits, and spends time with family.</p>
-          </TeamInfo>
-        </TeamCard>
-        <TeamCard>
-          <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/minh-picture.jpg'} alt="Minh" />
-          <TeamInfo>
-            <h3>About Minh</h3>
-            <p>Minh is a final-year Pharmacology student at McGill University. She researches sustainability strategies and loves her cats and music.</p>
-          </TeamInfo>
-        </TeamCard>
-        <TeamCard>
-          <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/nico-picture.jpg'} alt="Nico" />
-          <TeamInfo>
-            <h3>About Nico</h3>
-            <p>Nico, a final-year Cognitive Science student at McGill, explores fungal sustainable solutions. He enjoys puzzles, drawing, and geeking out over TV shows.</p>
-          </TeamInfo>
-        </TeamCard>
-      </TeamRow>
+      <TeamIntro>
+        <TeamPhotoContainer>
+          <TeamPhoto src={process.env.PUBLIC_URL + '/assets/team-photo.jpg'} alt="Team Photo" />
+        </TeamPhotoContainer>
+        <TeamText>
+          <Heading>Meet the Team</Heading>
+          <Description>
+            Our team is a group of passionate individuals working together to promote sustainability
+            through innovative fungiculture solutions. We’re dedicated to fostering community, learning,
+            and sustainability at every step.
+          </Description>
+          <ButtonContainer>
+            <Link to="/team" className="button">Learn more about the team</Link>
+          </ButtonContainer>
+        </TeamText>
+      </TeamIntro>
     </TeamContainer>
   );
 }
 
 export default TeamSection;
+

@@ -24,6 +24,13 @@ const FooterColumn = styled.div`
   text-align: left;
 `;
 
+const FooterText = styled.p`
+  font-size: 1.2em;
+  color: #FFE7C9;
+  text-align: center;
+  margin-bottom: 1em;
+`;
+
 function Footer() {
     return (
       <FooterWrapper>
@@ -62,7 +69,6 @@ function Footer() {
                 <h3>
                   <Link to="/our-partners">Our Partners</Link>
                 </h3>
-                <p>Funding and support details go here.</p>
               </li>
             </ul>
           </FooterColumn>
@@ -85,7 +91,7 @@ function Footer() {
             </form>
           </FooterColumn>
         </FooterContainer>
-        <p>&copy; 2024 MycoNurseries</p>
+        <FooterText>&copy; 2024 MycoNurseries</FooterText>
       </FooterWrapper>
     );
   }

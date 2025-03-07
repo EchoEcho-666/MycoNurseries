@@ -27,6 +27,11 @@ const TitleSection = styled.div`
   margin-left: 1rem;
 `;
 
+const TitleLink = styled(Link)`
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+`;
+
 const Title = styled.h1`
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
@@ -34,12 +39,13 @@ const Title = styled.h1`
 `;
 
 const Catchphrase = styled.p`
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0.5rem 0 0;
+  color: #FFE7C9
 `;
 
 const Nav = styled.nav`
-  margin-top: 1rem;
+  margin-top:1rem;
 `;
 
 const NavLinks = styled.ul`
@@ -53,9 +59,7 @@ const NavLinks = styled.ul`
 const StyledLink = styled(Link)`
   color: #FFE7C9;
   text-decoration: none;
-  &:hover {
-    color: #FFF8ED;
-  }
+  font-size: 1.3rem;
 `;
 
 function Header() {
@@ -64,26 +68,28 @@ function Header() {
       <HeaderContent>
         <Logo src={process.env.PUBLIC_URL + '/assets/logo-cut-out.png'} alt="MycoNurseries Logo" />
         <TitleSection>
-          <Title>MycoNurseries</Title>
+          <TitleLink to="/">
+            <Title>MycoNurseries</Title>
+          </TitleLink>
           <Catchphrase>Promoting sustainability through fungiculture</Catchphrase>
         </TitleSection>
       </HeaderContent>
       <Nav>
         <NavLinks>
           <li>
-            <StyledLink to="/#about">About MycoNurseries</StyledLink>
+            <StyledLink to="/about">About MycoNurseries</StyledLink>
           </li>
           <li>
-            <StyledLink to="/#team">Meet the Team</StyledLink>
+            <StyledLink to="/team">Meet the Team</StyledLink>
           </li>
           <li>
-            <StyledLink to="/#cta">Get Involved</StyledLink>
+            <StyledLink to="/cta">Get Involved</StyledLink>
           </li>
           <li>
-            <StyledLink to="/#news">News</StyledLink>
+            <StyledLink to="/news">News</StyledLink>
           </li>
           <li>
-            <StyledLink to="/#contact">Contact</StyledLink>
+            <StyledLink to="/contact">Contact</StyledLink>
           </li>
         </NavLinks>
       </Nav>

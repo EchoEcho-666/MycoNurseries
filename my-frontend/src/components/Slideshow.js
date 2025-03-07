@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const SlideshowContainer = styled.div`
   position: relative;
   max-width: 100%;
-  height: 700px;
+  height: 900px;
   margin: auto;
   overflow: hidden;
   background-color: #FFE7C9;

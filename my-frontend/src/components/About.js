@@ -6,23 +6,16 @@ import { Link } from 'react-router-dom';
 const Section = styled.section`
   padding: 3em 2em;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1200px;
   background-color: #FFF8ED;
   border-radius: 12px;
   text-align: center;
 `;
 
 const Heading = styled.h2`
-  color: #39683B;
-  font-size: 2rem;
-  margin-bottom: 1em;
 `;
 
 const Paragraph = styled.p`
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1em;
-  color: #382F2F;
 `;
 
 function AboutSection() {
