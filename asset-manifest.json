@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/MycoNurseries/static/css/main.e6c13ad2.css",
-    "main.js": "/MycoNurseries/static/js/main.049dda58.js",
+    "main.js": "/MycoNurseries/static/js/main.38a8a4be.js",
     "static/js/453.b34e65be.chunk.js": "/MycoNurseries/static/js/453.b34e65be.chunk.js",
     "index.html": "/MycoNurseries/index.html",
     "main.e6c13ad2.css.map": "/MycoNurseries/static/css/main.e6c13ad2.css.map",
-    "main.049dda58.js.map": "/MycoNurseries/static/js/main.049dda58.js.map",
+    "main.38a8a4be.js.map": "/MycoNurseries/static/js/main.38a8a4be.js.map",
     "453.b34e65be.chunk.js.map": "/MycoNurseries/static/js/453.b34e65be.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.049dda58.js"
+    "static/js/main.38a8a4be.js"
   ]
 }
