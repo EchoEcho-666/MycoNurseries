@@ -12,6 +12,7 @@ const PartnersSection = styled.section`
   text-align: center;
 `;
 
+/*
 const PartnerRow = styled.div`
   display: flex;
   align-items: center;
@@ -19,10 +20,19 @@ const PartnerRow = styled.div`
   margin: 2em 0;
   flex-wrap: wrap;
 
-  /* Reverse order for alternating rows */
   &.reverse {
     flex-direction: row-reverse;
   }
+`;
+*/
+
+const PartnerRow = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0;
+  flex-wrap: wrap;
+  flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
 `;
 
 const PartnerLogo = styled.img`
