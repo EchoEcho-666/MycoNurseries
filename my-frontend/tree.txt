@@ -1,6 +1,7 @@
 .
 ├── README.md
 ├── build
+│   ├── asset-manifest.json
 │   ├── assets
 │   │   ├── DSC_8751.JPG
 │   │   ├── DSC_8877.JPG
@@ -33,12 +34,23 @@
 │   │   │   └── logo-linkedin.png
 │   │   ├── team-member
 │   │   │   ├── julia-picture.jpg
-│   │   │   ├── minh-picture.JPG
+│   │   │   ├── minh-picture.jpg
 │   │   │   └── nico-picture.jpg
 │   │   └── team-photo.jpg
+│   ├── index.html
 │   ├── manifest.json
 │   ├── robots.txt
 │   ├── scripts.js
+│   ├── static
+│   │   ├── css
+│   │   │   ├── main.e6c13ad2.css
+│   │   │   └── main.e6c13ad2.css.map
+│   │   └── js
+│   │       ├── 453.b34e65be.chunk.js
+│   │       ├── 453.b34e65be.chunk.js.map
+│   │       ├── main.e49bd41d.js
+│   │       ├── main.e49bd41d.js.LICENSE.txt
+│   │       └── main.e49bd41d.js.map
 │   └── styles.css
 ├── package-lock.json
 ├── package.json
@@ -75,7 +87,7 @@
 │   │   │   └── logo-linkedin.png
 │   │   ├── team-member
 │   │   │   ├── julia-picture.jpg
-│   │   │   ├── minh-picture.JPG
+│   │   │   ├── minh-picture.jpg
 │   │   │   └── nico-picture.jpg
 │   │   └── team-photo.jpg
 │   ├── index.html
@@ -89,15 +101,16 @@
 │   ├── App.test.js
 │   ├── GlobalStyle.js
 │   ├── components
-│   │   ├── AboutSection.js
+│   │   ├── About.js
 │   │   ├── Footer.js
 │   │   ├── Header.js
+│   │   ├── News.js
 │   │   ├── Slideshow.js
-│   │   └── Team.js
+│   │   └── TeamSection.js
 │   ├── index.css
 │   ├── index.js
 │   ├── logo.svg
-│   ├── page
+│   ├── pages
 │   │   ├── Founders.js
 │   │   ├── HomePage.js
 │   │   ├── OurPartners.js
@@ -106,4 +119,4 @@
 │   └── setupTests.js
 └── tree.txt
 
-16 directories, 91 files
+19 directories, 101 files
