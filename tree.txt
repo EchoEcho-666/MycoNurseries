@@ -1,134 +1,133 @@
 .
-├── CNAME
-├── docs
-│   └── tree.txt
-├── my-backend
-│   ├── index.js
-│   ├── package-lock.json
-│   └── package.json
-├── my-frontend
-│   ├── README.md
-│   ├── build
-│   │   ├── asset-manifest.json
-│   │   ├── assets
-│   │   │   ├── DSC_8751.JPG
-│   │   │   ├── DSC_8877.JPG
-│   │   │   ├── DSC_8908.JPG
-│   │   │   ├── DSC_8953.JPG
-│   │   │   ├── DSC_9057.JPG
-│   │   │   ├── DSC_9083.JPG
-│   │   │   ├── DSC_9089.JPG
-│   │   │   ├── MycoNurseriesintro_post.png
-│   │   │   ├── founders
-│   │   │   │   ├── founder-1.jpg
-│   │   │   │   ├── founder-2.jpg
-│   │   │   │   ├── founder-3.jpg
-│   │   │   │   └── founder-4.jpg
-│   │   │   ├── image.png
-│   │   │   ├── logo-cut-out.png
-│   │   │   ├── member-picture.png
-│   │   │   ├── myconurseriesLogoWorking.ai
-│   │   │   ├── photo-1454425064867-5ba516caf601.avif
-│   │   │   ├── slideshow
-│   │   │   │   ├── slideshow1.jpg
-│   │   │   │   ├── slideshow2.JPG
-│   │   │   │   ├── slideshow3.JPG
-│   │   │   │   ├── slideshow4.JPG
-│   │   │   │   └── slideshow5.JPG
-│   │   │   ├── social
-│   │   │   │   ├── logo-email.png
-│   │   │   │   ├── logo-facebook.png
-│   │   │   │   ├── logo-instagram.png
-│   │   │   │   └── logo-linkedin.png
-│   │   │   ├── team-member
-│   │   │   │   ├── julia-picture.jpg
-│   │   │   │   ├── minh-picture.JPG
-│   │   │   │   └── nico-picture.jpg
-│   │   │   └── team-photo.jpg
-│   │   ├── index.html
-│   │   ├── manifest.json
-│   │   ├── robots.txt
-│   │   ├── scripts.js
-│   │   ├── static
-│   │   │   ├── css
-│   │   │   │   ├── main.e6c13ad2.css
-│   │   │   │   └── main.e6c13ad2.css.map
-│   │   │   └── js
-│   │   │       ├── 453.b34e65be.chunk.js
-│   │   │       ├── 453.b34e65be.chunk.js.map
-│   │   │       ├── main.c6ef7483.js
-│   │   │       ├── main.c6ef7483.js.LICENSE.txt
-│   │   │       └── main.c6ef7483.js.map
-│   │   └── styles.css
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── public
-│   │   ├── assets
-│   │   │   ├── DSC_8751.JPG
-│   │   │   ├── DSC_8877.JPG
-│   │   │   ├── DSC_8908.JPG
-│   │   │   ├── DSC_8953.JPG
-│   │   │   ├── DSC_9057.JPG
-│   │   │   ├── DSC_9083.JPG
-│   │   │   ├── DSC_9089.JPG
-│   │   │   ├── MycoNurseriesintro_post.png
-│   │   │   ├── founders
-│   │   │   │   ├── founder-1.jpg
-│   │   │   │   ├── founder-2.jpg
-│   │   │   │   ├── founder-3.jpg
-│   │   │   │   └── founder-4.jpg
-│   │   │   ├── image.png
-│   │   │   ├── logo-cut-out.png
-│   │   │   ├── member-picture.png
-│   │   │   ├── myconurseriesLogoWorking.ai
-│   │   │   ├── photo-1454425064867-5ba516caf601.avif
-│   │   │   ├── slideshow
-│   │   │   │   ├── slideshow1.jpg
-│   │   │   │   ├── slideshow2.JPG
-│   │   │   │   ├── slideshow3.JPG
-│   │   │   │   ├── slideshow4.JPG
-│   │   │   │   └── slideshow5.JPG
-│   │   │   ├── social
-│   │   │   │   ├── logo-email.png
-│   │   │   │   ├── logo-facebook.png
-│   │   │   │   ├── logo-instagram.png
-│   │   │   │   └── logo-linkedin.png
-│   │   │   ├── team-member
-│   │   │   │   ├── julia-picture.jpg
-│   │   │   │   ├── minh-picture.JPG
-│   │   │   │   └── nico-picture.jpg
-│   │   │   └── team-photo.jpg
-│   │   ├── index.html
-│   │   ├── manifest.json
-│   │   ├── robots.txt
-│   │   ├── scripts.js
-│   │   └── styles.css
-│   ├── src
-│   │   ├── App.css
-│   │   ├── App.js
-│   │   ├── App.test.js
-│   │   ├── GlobalStyle.js
-│   │   ├── components
-│   │   │   ├── About.js
-│   │   │   ├── Footer.js
-│   │   │   ├── Header.js
-│   │   │   ├── MushroomProcess.js
-│   │   │   ├── News.js
-│   │   │   ├── Slideshow.js
-│   │   │   └── Team.js
-│   │   ├── index.css
-│   │   ├── index.js
-│   │   ├── logo.svg
-│   │   ├── pages
-│   │   │   ├── Founders.js
-│   │   │   ├── Home.js
-│   │   │   ├── OurPartners.js
-│   │   │   └── Team.js
-│   │   ├── reportWebVitals.js
-│   │   └── setupTests.js
-│   └── tree.txt
+├── README.md
+├── build
+│   ├── 404.html
+│   ├── CNAME
+│   ├── asset-manifest.json
+│   ├── assets
+│   │   ├── DSC_8751.JPG
+│   │   ├── DSC_8877.JPG
+│   │   ├── DSC_8908.JPG
+│   │   ├── DSC_8953.JPG
+│   │   ├── DSC_9057.JPG
+│   │   ├── DSC_9083.JPG
+│   │   ├── DSC_9089.JPG
+│   │   ├── MycoNurseriesintro_post.png
+│   │   ├── founders
+│   │   │   ├── founder-1.jpg
+│   │   │   ├── founder-2.jpg
+│   │   │   ├── founder-3.jpg
+│   │   │   └── founder-4.jpg
+│   │   ├── growing-process
+│   │   ├── image.png
+│   │   ├── logo-cut-out.png
+│   │   ├── member-picture.png
+│   │   ├── myconurseriesLogoWorking.ai
+│   │   ├── photo-1454425064867-5ba516caf601.avif
+│   │   ├── slideshow
+│   │   │   ├── slideshow1.jpg
+│   │   │   ├── slideshow2.JPG
+│   │   │   ├── slideshow3.JPG
+│   │   │   ├── slideshow4.JPG
+│   │   │   └── slideshow5.JPG
+│   │   ├── social
+│   │   │   ├── logo-email.png
+│   │   │   ├── logo-facebook.png
+│   │   │   ├── logo-instagram.png
+│   │   │   └── logo-linkedin.png
+│   │   ├── team-member
+│   │   │   ├── julia-picture.jpg
+│   │   │   ├── minh-picture.jpg
+│   │   │   ├── minh-picture2.jpg
+│   │   │   └── nico-picture.jpg
+│   │   └── team-photo.jpg
+│   ├── index.html
+│   ├── manifest.json
+│   ├── robots.txt
+│   ├── scripts.js
+│   ├── static
+│   │   ├── css
+│   │   │   ├── main.e6c13ad2.css
+│   │   │   └── main.e6c13ad2.css.map
+│   │   └── js
+│   │       ├── 453.b34e65be.chunk.js
+│   │       ├── 453.b34e65be.chunk.js.map
+│   │       ├── main.f54c2cff.js
+│   │       ├── main.f54c2cff.js.LICENSE.txt
+│   │       └── main.f54c2cff.js.map
+│   └── styles.css
 ├── package-lock.json
 ├── package.json
+├── public
+│   ├── 404.html
+│   ├── CNAME
+│   ├── assets
+│   │   ├── DSC_8751.JPG
+│   │   ├── DSC_8877.JPG
+│   │   ├── DSC_8908.JPG
+│   │   ├── DSC_8953.JPG
+│   │   ├── DSC_9057.JPG
+│   │   ├── DSC_9083.JPG
+│   │   ├── DSC_9089.JPG
+│   │   ├── MycoNurseriesintro_post.png
+│   │   ├── founders
+│   │   │   ├── founder-1.jpg
+│   │   │   ├── founder-2.jpg
+│   │   │   ├── founder-3.jpg
+│   │   │   └── founder-4.jpg
+│   │   ├── growing-process
+│   │   ├── image.png
+│   │   ├── logo-cut-out.png
+│   │   ├── member-picture.png
+│   │   ├── myconurseriesLogoWorking.ai
+│   │   ├── photo-1454425064867-5ba516caf601.avif
+│   │   ├── slideshow
+│   │   │   ├── slideshow1.jpg
+│   │   │   ├── slideshow2.JPG
+│   │   │   ├── slideshow3.JPG
+│   │   │   ├── slideshow4.JPG
+│   │   │   └── slideshow5.JPG
+│   │   ├── social
+│   │   │   ├── logo-email.png
+│   │   │   ├── logo-facebook.png
+│   │   │   ├── logo-instagram.png
+│   │   │   └── logo-linkedin.png
+│   │   ├── team-member
+│   │   │   ├── julia-picture.jpg
+│   │   │   ├── minh-picture.jpg
+│   │   │   ├── minh-picture2.jpg
+│   │   │   └── nico-picture.jpg
+│   │   └── team-photo.jpg
+│   ├── index.html
+│   ├── manifest.json
+│   ├── robots.txt
+│   ├── scripts.js
+│   └── styles.css
+├── src
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── GlobalStyle.js
+│   ├── components
+│   │   ├── About.js
+│   │   ├── Footer.js
+│   │   ├── GrowingProcessSection.js
+│   │   ├── Header.js
+│   │   ├── News.js
+│   │   ├── Slideshow.js
+│   │   └── TeamSection.js
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg
+│   ├── pages
+│   │   ├── AboutPage.js
+│   │   ├── Founders.js
+│   │   ├── GrowingProcessPage.js
+│   │   ├── HomePage.js
+│   │   ├── OurPartners.js
+│   │   └── TeamPage.js
+│   ├── reportWebVitals.js
+│   └── setupTests.js
 └── tree.txt
 
-22 directories, 110 files
+21 directories, 110 files
