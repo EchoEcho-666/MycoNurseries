@@ -42,22 +42,22 @@ function AboutMycoNurseries() {
 
         <Paragraph>
           <strong>👥 Community:</strong><br />
-          We have over **30 volunteers** who help us grow the mushrooms. These volunteers are all students or young people, and through growing sessions, they learn about **sustainable urban agriculture**.
+          We have over <strong>30 volunteers</strong> who help us grow the mushrooms. These volunteers are all students or young people, and through growing sessions, they learn about <strong>sustainable urban agriculture</strong>.
         </Paragraph>
 
         <Paragraph>
           <strong>🍄 Promoting Food Security:</strong><br />
-          We donate the oyster mushrooms we grow to **SNAC**, which provides **free produce** to McGill students facing food insecurity.
+          We donate the oyster mushrooms we grow to <strong>SNAC</strong>, which provides **free produce** to McGill students facing food insecurity.
         </Paragraph>
 
         <Heading>Our Support & Future Plans</Heading>
         
         <Paragraph>
-          We’ve received funding from the **Sustainability Projects Fund**, McGill Engineering’s **Global Challenges Award**, and **Canada Service Corps’s Sprout Fellowship**. Currently, we’re completing the **McGill Dobson Bootcamp and Cup**.
+          We’ve received funding from the <strong>Sustainability Projects Fund</strong>, McGill Engineering’s <strong>Global Challenges Award</strong>, and **Canada Service Corps’s Sprout Fellowship**. Currently, we’re completing the <strong>McGill Dobson Bootcamp and Cup</strong>.
         </Paragraph>
 
         <Paragraph>
-          Looking forward, we aim to develop an **educational module** on **circular economies and waste management** to engage the McGill and Montreal communities. **Stay tuned!**
+          Looking forward, we aim to develop an <strong>educational module</strong> on <strong>circular economies and waste management</strong> to engage the McGill and Montreal communities. <strong>Stay tuned!</strong>
         </Paragraph>
       </Container>
       <Footer />
