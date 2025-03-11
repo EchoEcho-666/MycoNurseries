@@ -12,13 +12,9 @@ const Section = styled.section`
 `;
 
 const Heading = styled.h2`
-  color: #39683B;
-  font-size: 2.5rem;
 `;
 
 const Paragraph = styled.p`
-  font-size: 1.2rem;
-  margin-bottom: 1.5em;
 `;
 
 const ButtonContainer = styled.div`
