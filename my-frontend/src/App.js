@@ -5,7 +5,7 @@ import Home from './pages/HomePage';
 import OurPartners from './pages/OurPartners';  
 import Team from './pages/TeamPage';        
 import Founders from './pages/Founders';
-import GrowingProcess from './pages/GrowingProcess';
+import GrowingProcess from './pages/GrowingProcessPage';
 
 function App() {
   return (
