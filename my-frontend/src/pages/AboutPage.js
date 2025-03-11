@@ -47,7 +47,7 @@ function AboutMycoNurseries() {
 
         <Paragraph>
           <strong>🍄 Promoting Food Security:</strong><br />
-          We donate the oyster mushrooms we grow to <strong>SNAC</strong>, which provides **free produce** to McGill students facing food insecurity.
+          We donate the oyster mushrooms we grow to <strong>SNAC</strong>, which provides <strong>free produce</strong> to McGill students facing food insecurity.
         </Paragraph>
 
         <Heading>Our Support & Future Plans</Heading>
