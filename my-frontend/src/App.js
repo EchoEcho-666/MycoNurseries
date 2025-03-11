@@ -5,6 +5,7 @@ import Home from './pages/HomePage';
 import OurPartners from './pages/OurPartners';  
 import Team from './pages/TeamPage';        
 import Founders from './pages/Founders';
+import GrowingProcess from './pages/GrowingProcess';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/our-partners" element={<OurPartners />} />
         <Route path="/team" element={<Team />} />
         <Route path="/founders" element={<Founders />} />
+        <Route path="/growing-process" element={<GrowingProcess />} />
       </Routes>
     </Router>
   );
