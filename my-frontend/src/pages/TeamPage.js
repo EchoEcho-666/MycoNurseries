@@ -37,13 +37,15 @@ const TeamCard = styled.div`
   background: #f5f5f5;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
   max-width: 300px;
-  text-align: left;
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  
   &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
 `;
 
@@ -53,12 +55,20 @@ const TeamImage = styled.img`
 `;
 
 const TeamInfo = styled.div`
-  margin-top: 1em;
+  padding: 15px;
+  text-align: left;
   
   h3 {
     margin: 0.5em 0;
     color: #39683B;
     font-size: 1.2rem;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #A52A2A;
+    font-weight: bold;
   }
   
   p {
@@ -73,36 +83,75 @@ function TeamPage() {
     <>
       <Header />
       <TeamContainer id="team">
-        <TeamHeading>Meet the Team</TeamHeading>
+
+        {/* Founders Section */}
+        <TeamHeading>Our Founders</TeamHeading>
         <TeamRow>
           <TeamCard>
             <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/julia-picture.jpg'} alt="Julia" />
             <TeamInfo>
-              <h3>About Julia</h3>
+              <h3>Julia Wright</h3>
+              <h4>Co-Founder & CEO</h4>
               <p>
-                Julia studies chemistry and mathematics at McGill University and enjoys promoting sustainability. When not growing mushrooms, she hikes, knits, and spends time with family.
+                Julia studies chemistry and mathematics at McGill University and enjoys promoting sustainability.
+                When not growing mushrooms, she hikes, knits, and spends time with family.
               </p>
             </TeamInfo>
           </TeamCard>
+
           <TeamCard>
-            <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/minh-picture.JPG'} alt="Minh" />
+            <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/daniel-picture.jpg'} alt="Daniel" />
             <TeamInfo>
-              <h3>About Minh</h3>
+              <h3>Daniel Cha</h3>
+              <h4>Co-Founder & CTO</h4>
               <p>
-                Minh is a final-year Pharmacology student at McGill University. She researches sustainability strategies and loves her cats and music.
-              </p>
-            </TeamInfo>
-          </TeamCard>
-          <TeamCard>
-            <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/nico-picture.jpg'} alt="Nico" />
-            <TeamInfo>
-              <h3>About Nico</h3>
-              <p>
-                Nico, a final-year Cognitive Science student at McGill, explores fungal sustainable solutions. He enjoys puzzles, drawing, and geeking out over TV shows.
+                Daniel is passionate about using fungi to improve sustainability and waste management. 
+                He has experience in biological research and tech innovation.
               </p>
             </TeamInfo>
           </TeamCard>
         </TeamRow>
+
+        {/* General Team Section */}
+        <TeamHeading>Meet the Team</TeamHeading>
+        <TeamRow>
+          <TeamCard>
+            <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/minh-picture2.jpg'} alt="Minh" />
+            <TeamInfo>
+              <h3>Minh Nguyen</h3>
+              <h4>Research Lead</h4>
+              <p>
+                Minh is a final-year Pharmacology student at McGill University. She researches sustainability strategies
+                and loves her cats and music.
+              </p>
+            </TeamInfo>
+          </TeamCard>
+
+          <TeamCard>
+            <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/nico-picture.jpg'} alt="Nico" />
+            <TeamInfo>
+              <h3>Nico Alvarez</h3>
+              <h4>Sustainability Strategist</h4>
+              <p>
+                Nico, a final-year Cognitive Science student at McGill, explores fungal sustainable solutions.
+                He enjoys puzzles, drawing, and geeking out over TV shows.
+              </p>
+            </TeamInfo>
+          </TeamCard>
+
+          <TeamCard>
+            <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/michael-picture.jpg'} alt="Michael" />
+            <TeamInfo>
+              <h3>Michael Li</h3>
+              <h4>Technology & Data Lead</h4>
+              <p>
+                Michael developed a sensor system to monitor environmental conditions in our mushroom-growing area.
+                He is passionate about tech solutions for sustainability.
+              </p>
+            </TeamInfo>
+          </TeamCard>
+        </TeamRow>
+
       </TeamContainer>
       <Footer />
     </>
