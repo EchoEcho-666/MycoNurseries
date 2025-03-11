@@ -53,7 +53,7 @@ function AboutMycoNurseries() {
         <Heading>Our Support & Future Plans</Heading>
         
         <Paragraph>
-          We’ve received funding from the <strong>Sustainability Projects Fund</strong>, McGill Engineering’s <strong>Global Challenges Award</strong>, and **Canada Service Corps’s Sprout Fellowship**. Currently, we’re completing the <strong>McGill Dobson Bootcamp and Cup</strong>.
+          We’ve received funding from the <strong>Sustainability Projects Fund</strong>, McGill Engineering’s <strong>Global Challenges Award</strong>, and <strong>Canada Service Corps’s Sprout Fellowship</strong>. Currently, we’re completing the <strong>McGill Dobson Bootcamp and Cup</strong>.
         </Paragraph>
 
         <Paragraph>
