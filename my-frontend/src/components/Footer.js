@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -31,69 +31,122 @@ const FooterText = styled.p`
   margin-bottom: 1em;
 `;
 
-function Footer() {
-    return (
-      <FooterWrapper>
-        <FooterContainer>
-          <FooterColumn>
-            <h2>About Us</h2>
-            <ul>
-              <li>
-                <h3>Contact Us</h3>
-                <ul>
-                  <li>
-                    <a href="mailto:myconurseries@gmail.com">myconurseries@gmail.com</a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/myconurseries" target="_blank" rel="noreferrer">
-                      Instagram
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.facebook.com/profile.php?id=61555856812571"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Facebook
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
-                      LinkedIn
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <h3>
-                  <Link to="/our-partners">Our Partners</Link>
-                </h3>
-              </li>
-            </ul>
-          </FooterColumn>
-          <FooterColumn>
-            <h2>Get Involved</h2>
-            <ul>
-              <li>
-                <Link to="/partner-with-us">Partner with Us</Link>
-              </li>
-              <li>
-                <Link to="/become-a-volunteer">Become a Volunteer</Link>
-              </li>
-            </ul>
-          </FooterColumn>
-          <FooterColumn>
-            <h2>Join the Newsletter</h2>
-            <form action="#" method="post">
-              <input type="email" name="email" placeholder="Enter your email" required />
-              <button type="submit">Subscribe</button>
-            </form>
-          </FooterColumn>
-        </FooterContainer>
-        <FooterText>&copy; 2024 MycoNurseries</FooterText>
-      </FooterWrapper>
-    );
-  }
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Input = styled.input`
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border-radius: 4px;
+  border: none;
+  font-size: 1em;
+`;
+
+const Button = styled.button`
+  padding: 0.5em;
+  border-radius: 4px;
+  border: none;
+  background-color: #FFE7C9;
+  color: #3A693C;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
   
-  export default Footer;
+  &:hover {
+    background-color: #EE9F9F;
+  }
+`;
+
+const Message = styled.p`
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  color: #FFE7C9;
+`;
+
+function Footer() {
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can integrate your API call for newsletter subscription.
+    console.log('Subscribing email:', email);
+    setMessage('Thank you for subscribing!');
+    setEmail('');
+  };
+
+  return (
+    <FooterWrapper>
+      <FooterContainer>
+        <FooterColumn>
+          <h2>About Us</h2>
+          <ul>
+            <li>
+              <h3>Contact Us</h3>
+              <ul>
+                <li>
+                  <a href="mailto:myconurseries@gmail.com">myconurseries@gmail.com</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/myconurseries" target="_blank" rel="noreferrer">
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61555856812571"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+                    LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>
+                <Link to="/our-partners">Our Partners</Link>
+              </h3>
+            </li>
+          </ul>
+        </FooterColumn>
+        <FooterColumn>
+          <h2>Get Involved</h2>
+          <ul>
+            <li>
+              <Link to="/partner-with-us">Partner with Us</Link>
+            </li>
+            <li>
+              <Link to="/become-a-volunteer">Become a Volunteer</Link>
+            </li>
+          </ul>
+        </FooterColumn>
+        <FooterColumn>
+          <h2>Join the Newsletter</h2>
+          <Form onSubmit={handleSubmit}>
+            <Input 
+              type="email" 
+              name="email" 
+              placeholder="Enter your email" 
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required 
+            />
+            <Button type="submit">Subscribe</Button>
+          </Form>
+          {message && <Message>{message}</Message>}
+        </FooterColumn>
+      </FooterContainer>
+      <FooterText>&copy; 2024 MycoNurseries</FooterText>
+    </FooterWrapper>
+  );
+}
+
+export default Footer;
