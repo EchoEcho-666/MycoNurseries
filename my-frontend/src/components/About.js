@@ -34,7 +34,7 @@ function AboutSection() {
         Based on the McGill University Campus, MycoNurseries collects used coffee grounds from local coffee shops and uses them as food for the oyster mushrooms. After harvest, these mushrooms are donated to projects addressing food insecurity on campus.
       </Paragraph>
       <ButtonContainer>
-        <Link to="/about-myconurseries" className="button">Learn More</Link>
+        <Link to="/about-myconurseries" className="button">Learn more about us</Link>
       </ButtonContainer>
     </Section>
   );

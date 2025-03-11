@@ -77,7 +77,7 @@ function Header() {
       <Nav>
         <NavLinks>
           <li>
-            <StyledLink to="/about">About MycoNurseries</StyledLink>
+            <StyledLink to="/about-myconurseries">About MycoNurseries</StyledLink>
           </li>
           <li>
             <StyledLink to="/team">Meet the Team</StyledLink>

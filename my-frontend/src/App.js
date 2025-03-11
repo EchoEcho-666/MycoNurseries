@@ -6,6 +6,7 @@ import OurPartners from './pages/OurPartners';
 import Team from './pages/TeamPage';        
 import Founders from './pages/Founders';
 import GrowingProcess from './pages/GrowingProcessPage';
+import AboutMycoNurseries from './pages/AboutPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/founders" element={<Founders />} />
         <Route path="/growing-process" element={<GrowingProcess />} />
+        <Route path="/about-myconurseries" element={<AboutMycoNurseries />} /> 
       </Routes>
     </Router>
   );
