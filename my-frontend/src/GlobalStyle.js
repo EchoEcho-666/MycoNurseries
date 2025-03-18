@@ -62,7 +62,7 @@ const GlobalStyle = createGlobalStyle`
   }
   
   button:hover, .button:hover {
-    background-color: #EE9F9F;
+    background-color: #9fb9ee;
     transform: scale(1.05);
   }
 
@@ -73,7 +73,7 @@ const GlobalStyle = createGlobalStyle`
   }
   
   a:not(.button):hover {
-    color: #9fb9ee; /* Blue from your styles.css */
+    color: #9fb9ee;
   }
 
   nav a {
