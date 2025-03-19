@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 const PartnersSection = styled.section`
   padding: 3em 2em;
-  max-width: 1200px;
+  max-width: 100px;
   margin: 0 auto;
   background-color: #FFF8ED;
   border-radius: 12px;

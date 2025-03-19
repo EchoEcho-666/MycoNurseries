@@ -43,8 +43,8 @@ function AboutMycoNurseries() {
     <>
       <Header />
       <Container>
+        <Heading>About MycoNurseries</Heading>
         <AboutRow>
-          <Heading>About MycoNurseries</Heading>
           <Image>
 
           </Image>
@@ -53,9 +53,9 @@ function AboutMycoNurseries() {
           </Paragraph>
         </AboutRow>
 
+        <Heading>How We Create a More Sustainable Community</Heading>
         <AboutRow>
-          <Heading>How We Create a More Sustainable Community</Heading>
-          
+
           <Paragraph>
             <strong>🌱 Sustainable Substrate:</strong><br />
             We grow oyster mushrooms, and these mushrooms need ‘food’ or substrate to live off of. <strong>40% of the food we give our mushrooms is coffee grounds</strong> that otherwise would’ve been thrown into the landfill. So far, we’ve diverted over <strong>40kg</strong> of used coffee grounds from landfills.
@@ -72,9 +72,9 @@ function AboutMycoNurseries() {
           </Paragraph>
         </AboutRow>
         
-        <AboutRow>
-          <Heading>Our Support & Future Plans</Heading>
-          
+        <Heading>Our Support & Future Plans</Heading>
+
+        <AboutRow>          
           <Paragraph>
             We’ve received funding from the <strong>Sustainability Projects Fund</strong>, McGill Engineering’s <strong>Global Challenges Award</strong>, and <strong>Canada Service Corps’s Sprout Fellowship</strong>. Currently, we’re completing the <strong>McGill Dobson Bootcamp and Cup</strong>.
           </Paragraph>
