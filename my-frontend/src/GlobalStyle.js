@@ -2,12 +2,38 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-size: 16px;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FFF8ED;
     color: #382F2F;
+  }
+
+    h1 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 2.5rem;   
+    letter-spacing: 0.04em;         
+    margin: 0;
+  }
+  
+  h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .small-serif {
+    font-family:'Merriweather Sans', serif;
+    font-size: 0.875rem;
   }
 
   section h2,
@@ -15,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
   section h4,
   section h5,
   section h6 {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #39683B;
     margin-bottom: 0.5em;
     font-weight: bold;

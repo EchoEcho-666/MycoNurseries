@@ -33,26 +33,27 @@ const TitleLink = styled(Link)`
 `;
 
 const Title = styled.h1`
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin: 0;
 `;
 
 const Catchphrase = styled.p`
-  font-size: 1.1rem;
-  margin: 0.5rem 0 0;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  font-weight: 650;
+  margin: -0.5rem 0rem 0;
   color: #FFE7C9
 `;
 
 const Nav = styled.nav`
-  margin-top:1rem;
+  margin-bottom:-1rem;
 `;
 
 const NavLinks = styled.ul`
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   padding: 0;
 `;
 
@@ -71,7 +72,7 @@ function Header() {
           <TitleLink to="/">
             <Title>MycoNurseries</Title>
           </TitleLink>
-          <Catchphrase>Promoting sustainability through fungiculture</Catchphrase>
+          <Catchphrase>Promoting Sustainability Through Fungiculture</Catchphrase>
         </TitleSection>
       </HeaderContent>
       <Nav>
