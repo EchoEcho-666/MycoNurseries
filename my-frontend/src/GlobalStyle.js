@@ -88,7 +88,7 @@ const GlobalStyle = createGlobalStyle`
   }
   
   button:hover, .button:hover {
-    background-color: #9fb9ee;
+    background-color: #FF8C00;
     transform: scale(1.05);
   }
 

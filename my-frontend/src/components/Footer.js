@@ -81,10 +81,9 @@ function Footer() {
     <FooterWrapper>
       <FooterContainer>
         <FooterColumn>
-          <h2>About Us</h2>
           <ul>
             <li>
-              <h3>Contact Us</h3>
+              <h2>Contact Us</h2>
               <ul>
                 <li>
                   <a href="mailto:myconurseries@gmail.com">myconurseries@gmail.com</a>
@@ -111,9 +110,9 @@ function Footer() {
               </ul>
             </li>
             <li>
-              <h3>
+              <h2>
                 <Link to="/our-partners">Our Partners</Link>
-              </h3>
+              </h2>
             </li>
           </ul>
         </FooterColumn>
