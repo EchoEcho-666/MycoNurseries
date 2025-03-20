@@ -29,7 +29,10 @@ const TitleSection = styled.div`
 
 const TitleLink = styled(Link)`
   text-decoration: none;
-  color: inherit; /* Inherit color from parent */
+  color: inherit; 
+  &&:hover {
+    color: inherit;
+  }
 `;
 
 const Title = styled.h1`

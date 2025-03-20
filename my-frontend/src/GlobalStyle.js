@@ -110,12 +110,12 @@ const GlobalStyle = createGlobalStyle`
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -2px; /* adjust as needed */
+    bottom: -2px; 
     transform: translateX(-50%) scaleX(0);
     transform-origin: center;
     width: 100%;
-    height: 2px; /* Thickness of the underline */
-    background-color: #9fb9ee; /* The blue color from your CSS */
+    height: 2px; 
+    background-color: #9fb9ee;
     transition: transform 0.3s ease;
   }
   
