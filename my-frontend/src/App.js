@@ -7,6 +7,7 @@ import Team from './pages/TeamPage';
 import Founders from './pages/Founders';
 import GrowingProcess from './pages/GrowingProcessPage';
 import AboutMycoNurseries from './pages/AboutPage';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/founders" element={<Founders />} />
         <Route path="/growing-process" element={<GrowingProcess />} />
         <Route path="/about-myconurseries" element={<AboutMycoNurseries />} /> 
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

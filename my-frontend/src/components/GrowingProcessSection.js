@@ -6,7 +6,7 @@ const Section = styled.section`
   padding: 3em 2em;
   background-color: #E3F1DD;
   text-align: center;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 3em auto;
   border-radius: 12px;
 `;

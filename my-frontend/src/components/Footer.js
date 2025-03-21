@@ -23,6 +23,14 @@ const FooterColumn = styled.div`
   text-align: left;
 `;
 
+const NoBulletList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0em;
+  font-size:1.05em;
+  font-weight: 500;
+`;
+
 const FooterText = styled.p`
   font-size: 1.2em;
   color: #FFE7C9;
@@ -57,6 +65,8 @@ const Message = styled.p`
   color: #FFE7C9;
 `;
 
+
+
 function Footer() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -73,10 +83,11 @@ function Footer() {
     <FooterWrapper>
       <FooterContainer>
         <FooterColumn>
-          <ul>
+          <NoBulletList>
             <li>
-              <h2>Contact Us</h2>
-              <ul>
+              <h2><Link to="/contact">Contact Us</Link></h2>
+              <NoBulletList>
+                {/*
                 <li>
                   <a href="mailto:myconurseries@gmail.com">myconurseries@gmail.com</a>
                 </li>
@@ -99,25 +110,26 @@ function Footer() {
                     LinkedIn
                   </a>
                 </li>
-              </ul>
+                */}
+              </NoBulletList>
             </li>
             <li>
               <h2>
                 <Link to="/our-partners">Our Partners</Link>
               </h2>
             </li>
-          </ul>
+          </NoBulletList>
         </FooterColumn>
         <FooterColumn>
           <h2>Get Involved</h2>
-          <ul>
+          <NoBulletList>
             <li>
               <Link to="/partner-with-us">Partner with Us</Link>
             </li>
             <li>
               <Link to="/become-a-volunteer">Become a Volunteer</Link>
             </li>
-          </ul>
+          </NoBulletList>
         </FooterColumn>
         <FooterColumn>
           <h2>Join the Newsletter</h2>
@@ -135,7 +147,7 @@ function Footer() {
           {message && <Message>{message}</Message>}
         </FooterColumn>
       </FooterContainer>
-      <FooterText>&copy; 2024 MycoNurseries</FooterText>
+      <FooterText>&copy; 2025 MycoNurseries</FooterText>
     </FooterWrapper>
   );
 }
