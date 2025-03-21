@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
     h1 {
-    font-family: 'Abril Fatface', serif;
+    font-family: 'Abril Fatface', sans-serif;
     font-size: 2.5rem;   
     letter-spacing: 0.04em;         
     margin: 0;
@@ -101,7 +101,11 @@ const GlobalStyle = createGlobalStyle`
   a:not(.button):hover {
     color: #9fb9ee;
   }
-
+  
+  .active {
+    font-weight: 900;
+  }
+  
   nav a {
     position: relative;
   }
@@ -123,5 +127,5 @@ const GlobalStyle = createGlobalStyle`
     transform: translateX(-50%) scaleX(1);
   }
 `;
-  /* Other global styles here */
+
 export default GlobalStyle;

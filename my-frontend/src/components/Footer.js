@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const FooterWrapper = styled.footer`
   background-color: #3A693C;
   color: #FFE7C9;
-  padding: 2em 0;
+  padding: 1em 0;
   text-align: center;
 `;
 
@@ -20,7 +20,6 @@ const FooterContainer = styled.div`
 const FooterColumn = styled.div`
   flex: 1;
   min-width: 250px;
-  margin: 10px;
   text-align: left;
 `;
 
@@ -45,18 +44,11 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  padding: 0.5em;
-  border-radius: 4px;
   border: none;
   background-color: #FFE7C9;
   color: #3A693C;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  
-  &:hover {
-    background-color: #EE9F9F;
-  }
 `;
 
 const Message = styled.p`

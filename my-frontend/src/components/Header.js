@@ -1,9 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
+const Divider = styled.hr`
+  border: none;
+  border-top: 2px solid #FFE7C9;
+  width: 60%;
+  margin: 1rem auto;
+`;
 
-// Styled components for the header
 const HeaderWrapper = styled.header`
   background-color: #39683B;
   color: #FFE7C9;
@@ -27,7 +32,7 @@ const TitleSection = styled.div`
   margin-left: 1rem;
 `;
 
-const TitleLink = styled(Link)`
+const TitleLink = styled(NavLink)`
   text-decoration: none;
   color: inherit; 
   &&:hover {
@@ -44,12 +49,12 @@ const Catchphrase = styled.p`
   font-family: 'Caveat', cursive;
   font-size: 1.5rem;
   font-weight: 650;
-  margin: -0.5rem 0rem 0;
-  color: #FFE7C9
+  margin: -0.5rem 0 0;
+  color: #FFE7C9;
 `;
 
 const Nav = styled.nav`
-  margin-bottom:-1rem;
+  margin-bottom: -1rem;
 `;
 
 const NavLinks = styled.ul`
@@ -58,19 +63,27 @@ const NavLinks = styled.ul`
   justify-content: center;
   gap: 2rem;
   padding: 0;
+  font-weight: 500;
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
   color: #FFE7C9;
   text-decoration: none;
   font-size: 1.3rem;
+
+  &.active {
+    font-weight: 900; /* extra bold if you want it heavier */
+  }
 `;
 
 function Header() {
   return (
     <HeaderWrapper>
       <HeaderContent>
-        <Logo src={process.env.PUBLIC_URL + '/assets/logo-cut-out.png'} alt="MycoNurseries Logo" />
+        <Logo
+          src={process.env.PUBLIC_URL + '/assets/logo-cut-out.png'}
+          alt="MycoNurseries Logo"
+        />
         <TitleSection>
           <TitleLink to="/">
             <Title>MycoNurseries</Title>
@@ -78,10 +91,15 @@ function Header() {
           <Catchphrase>Promoting Sustainability Through Fungiculture</Catchphrase>
         </TitleSection>
       </HeaderContent>
+
+      <Divider />
+
       <Nav>
         <NavLinks>
           <li>
-            <StyledLink to="/about-myconurseries">About MycoNurseries</StyledLink>
+            <StyledLink to="/about-myconurseries">
+              About MycoNurseries
+            </StyledLink>
           </li>
           <li>
             <StyledLink to="/team">Meet the Team</StyledLink>
