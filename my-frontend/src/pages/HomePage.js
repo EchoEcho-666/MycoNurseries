@@ -13,9 +13,8 @@ function HomePage() {
       <Header />
       <Slideshow />
       <About />
-      <Team />
       <GrowingProcessSection />
-      <News />
+      <Team />
       <Footer />
     </>
   );

@@ -98,18 +98,6 @@ function TeamPage() {
               </p>
             </TeamInfo>
           </TeamCard>
-
-          <TeamCard>
-            <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/daniel-picture.jpg'} alt="Daniel" />
-            <TeamInfo>
-              <h3>Daniel Cha</h3>
-              <h4>Co-Founder & CTO</h4>
-              <p>
-                Daniel is passionate about using fungi to improve sustainability and waste management. 
-                He has experience in biological research and tech innovation.
-              </p>
-            </TeamInfo>
-          </TeamCard>
         </TeamRow>
 
         {/* General Team Section */}

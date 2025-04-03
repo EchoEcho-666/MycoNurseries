@@ -72,7 +72,7 @@ const GlobalStyle = createGlobalStyle`
     display: inline-block;
     background-color: #39683B;
     color: #FFF8ED;
-    padding: 0.4em 1.5em;
+    padding: 0.5em 1em;
     font-size: 1.3em;
     font-weight: bold;
     text-align: center;
@@ -126,6 +126,26 @@ const GlobalStyle = createGlobalStyle`
   nav a:hover::after {
     transform: translateX(-50%) scaleX(1);
   }
+
+  .page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
 `;
 
 export default GlobalStyle;
