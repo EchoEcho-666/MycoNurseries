@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 
 const Divider = styled.hr`
   border: none;
-  border-top: 2px solid #FFE7C9;
-  width: 60%;
-  margin: 1rem auto;
+  border-top: 1.2px solid #FFE7C9;
+  width: 68%;
+  margin-top: 15px;
 `;
 
 const HeaderWrapper = styled.header`
@@ -23,7 +23,7 @@ const HeaderContent = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 80px;
+  width: 65px;
   height: auto;
 `;
 
@@ -41,13 +41,13 @@ const TitleLink = styled(NavLink)`
 `;
 
 const Title = styled.h1`
-  font-size: 2.8rem;
+  font-size: 2rem;
   margin: 0;
 `;
 
 const Catchphrase = styled.p`
   font-family: 'Caveat', cursive;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 650;
   margin: -0.5rem 0 0;
   color: #FFE7C9;
@@ -69,7 +69,7 @@ const NavLinks = styled.ul`
 const StyledLink = styled(NavLink)`
   color: #FFE7C9;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 
   &.active {
     font-weight: 900; /* extra bold if you want it heavier */

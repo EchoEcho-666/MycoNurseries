@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.section`
   padding: 1em 0em;
-  max-width: 1200px;
+  max-width: 68%;
   margin: 0 auto;
   background-color: #FFF8ED;
   border-radius: 12px;
@@ -20,8 +20,6 @@ const ContactWrapper = styled.div`
 `;
 
 const ContactTitle = styled.h2`
-  color: #39683B;
-  font-size: 2.5rem;
 `;
 
 const ContactList = styled.ul`

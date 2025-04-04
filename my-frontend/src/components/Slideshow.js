@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const SlideshowContainer = styled.div`
   position: relative;
   max-width: 100%;
-  height: 900px;
+  height: 650px;
   margin: auto;
   overflow: hidden;
   background-color: #FFE7C9;
@@ -18,8 +18,10 @@ const Slide = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
   }
 `;
+
 
 const DotsContainer = styled.div`
   position: absolute;
@@ -42,10 +44,10 @@ const Dot = styled.span`
 
 const slidesData = [
   { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow1.jpg', alt: "Slide 1" },
-  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow2.JPG', alt: "Slide 2" },
-  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow3.JPG', alt: "Slide 3" },
-  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow4.JPG', alt: "Slide 4" },
-  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow5.JPG', alt: "Slide 5" },
+  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow2.jpg', alt: "Slide 2" },
+  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow3.jpg', alt: "Slide 3" },
+  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow4.jpg', alt: "Slide 4" },
+  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow5.jpg', alt: "Slide 5" },
 ];
 
 function Slideshow() {

@@ -9,10 +9,20 @@ const CtaWrapper = styled.div`
   color: #382F2F;
 `;
 
-const CtaTitle = styled.h1`
-  font-size: 2rem;
-  margin-bottom: 1rem;
+const CtaTitle = styled.h2`
+  color: #39683B;
+  margin-bottom: 1em;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #A52A2A;
+    margin: 0.5em 0 0;
+  }
 `;
+
 
 const CtaForm = styled.form`
   display: flex;
@@ -40,13 +50,8 @@ const Textarea = styled.textarea`
 
 const SubmitButton = styled.button`
   margin-top: 1.5rem;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 4px;
   background-color: #39683B;
   color: #FFE7C9;
-  font-weight: bold;
-  cursor: pointer;
 `;
 
 function Cta() {

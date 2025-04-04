@@ -10,7 +10,7 @@ const FooterWrapper = styled.footer`
 `;
 
 const FooterContainer = styled.div`
-  max-width: 1200px;
+  max-width: 68%;
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -27,12 +27,11 @@ const NoBulletList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0em;
-  font-size:1.05em;
   font-weight: 500;
 `;
 
 const FooterText = styled.p`
-  font-size: 1.2em;
+  font-size: 0.9em;
   color: #FFE7C9;
   text-align: center;
   margin-bottom: 1em;
@@ -61,7 +60,7 @@ const Button = styled.button`
 
 const Message = styled.p`
   margin-top: 0.5em;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #FFE7C9;
 `;
 
@@ -85,7 +84,7 @@ function Footer() {
         <FooterColumn>
           <NoBulletList>
             <li>
-              <h2><Link to="/contact">Contact Us</Link></h2>
+              <h3><Link to="/contact">Contact Us</Link></h3>
               <NoBulletList>
                 {/*
                 <li>
@@ -114,14 +113,14 @@ function Footer() {
               </NoBulletList>
             </li>
             <li>
-              <h2>
+              <h3>
                 <Link to="/our-partners">Our Partners</Link>
-              </h2>
+              </h3>
             </li>
           </NoBulletList>
         </FooterColumn>
         <FooterColumn>
-          <h2>Get Involved</h2>
+          <h3>Get Involved</h3>
           <NoBulletList>
             <li>
               <Link to="/partner-with-us">Partner with Us</Link>
@@ -132,7 +131,7 @@ function Footer() {
           </NoBulletList>
         </FooterColumn>
         <FooterColumn>
-          <h2>Join the Newsletter</h2>
+          <h3>Join the Newsletter</h3>
           <Form onSubmit={handleSubmit}>
             <Input 
               type="email" 

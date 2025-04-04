@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.section`
   padding: 1em 2em;
-  max-width: 1200px;
+  max-width: 60%;
   margin: 0 auto;
   background-color: #FFF8ED;
   border-radius: 12px;
@@ -11,8 +11,6 @@ const Container = styled.section`
 `;
 
 const Heading = styled.h2`
-  color: #39683B;
-  font-size: 2.5rem;
 `;
 
 const AboutRow = styled.div`
@@ -31,7 +29,6 @@ const Image = styled.img`
 `;
 
 const Paragraph = styled.p`
-  font-size: 1.2rem;
   text-align: left;
   margin-bottom: 1.5em;
 `;

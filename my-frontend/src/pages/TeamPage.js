@@ -10,18 +10,6 @@ const TeamContainer = styled.section`
 `;
 
 const TeamHeading = styled.h2`
-  color: #39683B;
-  font-size: 2.5rem;
-  margin-bottom: 1em;
-  position: relative;
-  &::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #A52A2A;
-    margin: 0.5em auto 0;
-  }
 `;
 
 const TeamRow = styled.div`
@@ -59,7 +47,7 @@ const TeamInfo = styled.div`
   h3 {
     margin: 0.5em 0;
     color: #39683B;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   h4 {
@@ -70,7 +58,7 @@ const TeamInfo = styled.div`
   }
   
   p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     color: #382F2F;
   }
@@ -88,7 +76,7 @@ function TeamPage() {
             <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/julia-picture.jpg'} alt="Julia" />
             <TeamInfo>
               <h3>Julia Wright</h3>
-              <h4>Co-Founder & CEO</h4>
+              <h4>Co-Founder</h4>
               <p>
                 Julia studies chemistry and mathematics at McGill University and enjoys promoting sustainability.
                 When not growing mushrooms, she hikes, knits, and spends time with family.
@@ -115,8 +103,8 @@ function TeamPage() {
           <TeamCard>
             <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/nico-picture.jpg'} alt="Nico" />
             <TeamInfo>
-              <h3>Nico Alvarez</h3>
-              <h4>Sustainability Strategist</h4>
+              <h3>Nico</h3>
+              <h4>Operation Lead</h4>
               <p>
                 Nico, a final-year Cognitive Science student at McGill, explores fungal sustainable solutions.
                 He enjoys puzzles, drawing, and geeking out over TV shows.

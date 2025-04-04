@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const PartnersSection = styled.section`
   padding: 1em 2em;
-  max-width: 1200px;
+  max-width: 68%;
   margin: 0 auto;
   background-color: #FFF8ED;
   border-radius: 12px;
@@ -49,7 +49,7 @@ function OurPartners() {
   return (
     <>
       <PartnersSection id="our-partners">
-        <h1>Our Partners</h1>
+        <h2>Our Partners</h2>
         <p>Meet the organizations and individuals supporting us</p>
         {/* Row 1: Logo | Founder text */}
         <PartnerRow>

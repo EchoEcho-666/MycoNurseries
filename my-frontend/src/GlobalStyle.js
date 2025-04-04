@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
 
     h1 {
     font-family: 'Abril Fatface', sans-serif;
-    font-size: 2.5rem;   
+    font-size: 2rem;   
     letter-spacing: 0.04em;         
     margin: 0;
   }
@@ -25,15 +25,14 @@ const GlobalStyle = createGlobalStyle`
     font-size: 2rem;
   }
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.628rem;
   }
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .small-serif {
     font-family:'Merriweather Sans', serif;
-    font-size: 0.875rem;
   }
 
   section h2,
@@ -48,21 +47,21 @@ const GlobalStyle = createGlobalStyle`
   }
 
   section h2 {
-    font-size: 2rem;
+    font-size: 1.628rem;
     position: relative;
   }
   
   section h2::after {
     content: "";
     display: block;
-    width: 80px;
-    height: 3px;
+    width: 100px;
+    height: 2px;
     background-color: #A52A2A;
-    margin: 0.5em auto 0;
+    margin: 0.28em auto 0;
   }
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 1em;
     color: #382F2F;
@@ -73,7 +72,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: #39683B;
     color: #FFF8ED;
     padding: 0.5em 1em;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bold;
     text-align: center;
     text-decoration: none;

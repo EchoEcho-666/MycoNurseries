@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const Section = styled.section`
-  padding: 3em 2em;
+  padding: 2em 1em;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 68%;
   background-color: #FFF8ED;
   border-radius: 12px;
   text-align: center;

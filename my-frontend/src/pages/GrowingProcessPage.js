@@ -17,12 +17,9 @@ const Image = styled.img`
 `;
 
 const Heading = styled.h2`
-  color: #39683B;
-  font-size: 2.5rem;
 `;
 
 const Paragraph = styled.p`
-  font-size: 1.2rem;
 `;
 
 function GrowingProcess() {
