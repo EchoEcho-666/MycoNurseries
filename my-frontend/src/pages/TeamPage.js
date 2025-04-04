@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const TeamContainer = styled.section`
   padding: 3em 2em;
@@ -81,7 +79,6 @@ const TeamInfo = styled.div`
 function TeamPage() {
   return (
     <>
-      <Header />
       <TeamContainer id="team">
 
         {/* Founders Section */}
@@ -141,7 +138,6 @@ function TeamPage() {
         </TeamRow>
 
       </TeamContainer>
-      <Footer />
     </>
   );
 }

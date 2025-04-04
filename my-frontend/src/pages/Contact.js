@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const Container = styled.section`
   padding: 2em 0em;
@@ -41,7 +39,6 @@ const ContactItem = styled.li`
 function Contact() {
   return (
     <>
-      <Header />
       <Container>
             <ContactWrapper>
             <ContactTitle>Contact Us</ContactTitle>
@@ -79,7 +76,6 @@ function Contact() {
             </ContactList>
             </ContactWrapper>
       </Container>
-      <Footer />
     </>
   );
 }

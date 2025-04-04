@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 // Styled Components (adjust colors and layout to match your design)
 const CtaWrapper = styled.div`
@@ -75,46 +73,48 @@ function Cta() {
   };
 
   return (
-    <CtaWrapper>
-      <CtaTitle>Get Involved</CtaTitle>
-      <p>We’d love to hear from you. Please fill out the form below.</p>
-      
-      <CtaForm onSubmit={handleSubmit}>
-        <Label htmlFor="name">Name</Label>
-        <Input
-          id="name"
-          name="name"
-          type="text"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
+    <>
+      <CtaWrapper>
+        <CtaTitle>Get Involved</CtaTitle>
+        <p>We’d love to hear from you. Please fill out the form below.</p>
+        
+        <CtaForm onSubmit={handleSubmit}>
+          <Label htmlFor="name">Name</Label>
+          <Input
+            id="name"
+            name="name"
+            type="text"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
 
-        <Label htmlFor="email">Email</Label>
-        <Input
-          id="email"
-          name="email"
-          type="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
+          <Label htmlFor="email">Email</Label>
+          <Input
+            id="email"
+            name="email"
+            type="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
 
-        <Label htmlFor="message">Message</Label>
-        <Textarea
-          id="message"
-          name="message"
-          rows="5"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
+          <Label htmlFor="message">Message</Label>
+          <Textarea
+            id="message"
+            name="message"
+            rows="5"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
 
-        <SubmitButton type="submit">Send</SubmitButton>
-      </CtaForm>
+          <SubmitButton type="submit">Send</SubmitButton>
+        </CtaForm>
 
-      {status && <p style={{ marginTop: '1rem', color: '#39683B' }}>{status}</p>}
-    </CtaWrapper>
+        {status && <p style={{ marginTop: '1rem', color: '#39683B' }}>{status}</p>}
+      </CtaWrapper>
+    </>
   );
 }
 

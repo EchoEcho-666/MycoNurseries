@@ -129,23 +129,26 @@ const GlobalStyle = createGlobalStyle`
 
   .page-enter {
   opacity: 0;
-  transform: translateY(20px);
-}
-.page-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 300ms ease, transform 300ms ease;
-}
+  transform: translateY(20px); /* Removed scale(0.95) */
+  will-change: opacity, transform;
+  }
+  .page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms cubic-bezier(0.22, 1, 0.36, 1), transform 1200ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
 
-.page-exit {
-  opacity: 1;
-  transform: translateY(0);
-}
-.page-exit-active {
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 300ms ease, transform 300ms ease;
-}
+  .page-exit {
+    opacity: 1;
+    transform: translateY(0);
+    will-change: opacity, transform;
+  }
+  .page-exit-active {
+    opacity: 0;
+    transform: translateY(-20px); /* Removed scale(1.05) */
+    transition: opacity 500ms cubic-bezier(0.22, 1, 0.36, 1), transform 1200ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
 `;
 
 export default GlobalStyle;

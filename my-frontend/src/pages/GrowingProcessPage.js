@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const Container = styled.section`
   padding: 3em 2em;
@@ -30,7 +28,6 @@ const Paragraph = styled.p`
 function GrowingProcess() {
   return (
     <>
-      <Header />
       <Container>
         <Heading>Our Mushroom Growing Process</Heading>
         <Paragraph>Discover how we sustainably grow oyster mushrooms from recycled organic waste.</Paragraph>
@@ -41,7 +38,6 @@ function GrowingProcess() {
         <Image src={process.env.PUBLIC_URL + "/assets/growing-process/infographic.jpg"} alt="Mushroom Growing Infographic" />
         <Paragraph>Our impact: Reducing waste, fostering community, and promoting food security.</Paragraph>
       </Container>
-      <Footer />
     </>
   );
 }

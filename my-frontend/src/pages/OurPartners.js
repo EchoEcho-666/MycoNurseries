@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const PartnersSection = styled.section`
   padding: 3em 2em;
@@ -50,7 +48,6 @@ const PartnerText = styled.p`
 function OurPartners() {
   return (
     <>
-      <Header />
       <PartnersSection id="our-partners">
         <h1>Our Partners</h1>
         <p>Meet the organizations and individuals supporting us</p>
@@ -95,7 +92,6 @@ function OurPartners() {
           />
         </PartnerRow>
       </PartnersSection>
-      <Footer />
     </>
   );
 }

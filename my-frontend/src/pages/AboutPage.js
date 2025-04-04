@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 const Container = styled.section`
   padding: 3em 2em;
@@ -41,7 +39,6 @@ const Paragraph = styled.p`
 function AboutMycoNurseries() {
   return (
     <>
-      <Header />
       <Container>
         <Heading>About MycoNurseries</Heading>
         <AboutRow>
@@ -84,7 +81,6 @@ function AboutMycoNurseries() {
           </Paragraph>
         </AboutRow>
       </Container>
-      <Footer />
     </>
   );
 }
