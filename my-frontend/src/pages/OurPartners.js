@@ -36,6 +36,7 @@ const PartnerTextGroup = styled.div`
   border-radius: 8px;
 `;
 
+
 const PartnerText = styled.p`
   flex: 1;
   margin: 0.5em;
