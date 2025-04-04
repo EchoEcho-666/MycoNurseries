@@ -10,6 +10,9 @@ const TeamContainer = styled.section`
 `;
 
 const TeamHeading = styled.h2`
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: #39683B;
 `;
 
 const TeamRow = styled.div`
@@ -23,7 +26,7 @@ const TeamCard = styled.div`
   background: #f5f5f5;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+  width: 300px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
@@ -36,7 +39,9 @@ const TeamCard = styled.div`
 `;
 
 const TeamImage = styled.img`
-  width: 100%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
   border-radius: 10px;
 `;
 
@@ -48,6 +53,8 @@ const TeamInfo = styled.div`
     margin: 0.5em 0;
     color: #39683B;
     font-size: 1.1rem;
+    display: flex;
+    align-items: baseline;
   }
 
   h4 {
@@ -64,6 +71,12 @@ const TeamInfo = styled.div`
   }
 `;
 
+const Pronoun = styled.span`
+  font-size: 0.8rem;
+  color: #666;
+  margin-left: 0.5em;
+`;
+
 function TeamPage() {
   return (
     <>
@@ -75,55 +88,58 @@ function TeamPage() {
           <TeamCard>
             <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/julia-picture.jpg'} alt="Julia" />
             <TeamInfo>
-              <h3>Julia Wright</h3>
+              <h3>
+                Julia Wright<Pronoun>(they/them)</Pronoun>
+              </h3>
               <h4>Co-Founder</h4>
               <p>
-                Julia studies chemistry and mathematics at McGill University and enjoys promoting sustainability.
-                When not growing mushrooms, she hikes, knits, and spends time with family.
+                Julia studies chemistry and mathematics at McGill University and enjoys promoting all forms of sustainability. When they’re not growing mushrooms you can find them hiking, knitting, and hanging out with friends and family
               </p>
             </TeamInfo>
           </TeamCard>
         </TeamRow>
 
-        {/* General Team Section */}
-        <TeamHeading>Meet the Team</TeamHeading>
+        {/* Research Team Section */}
+        <TeamHeading>Research Team</TeamHeading>
         <TeamRow>
           <TeamCard>
             <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/minh-picture2.jpg'} alt="Minh" />
             <TeamInfo>
-              <h3>Minh Nguyen</h3>
+              <h3>
+                Minh<Pronoun></Pronoun>
+              </h3>
               <h4>Research Lead</h4>
               <p>
-                Minh is a final-year Pharmacology student at McGill University. She researches sustainability strategies
-                and loves her cats and music.
+                Minh is a final year Pharmacology student at McGill University, and enjoys researching the different ways a society can achieve and maintain sustainability. When not sniffing the greenhouse due to mold suspects, you can find her petting her cats, bopping to her latest music craze or reading. 
               </p>
             </TeamInfo>
           </TeamCard>
-
+          {/* Add additional Research Team members here */}
+        </TeamRow>
+        
+        {/* Operation Section */}
+        <TeamHeading>Operation Team</TeamHeading>
+        <TeamRow>
           <TeamCard>
             <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/nico-picture.jpg'} alt="Nico" />
             <TeamInfo>
-              <h3>Nico</h3>
+              <h3>
+                Nico<Pronoun>(they/them)</Pronoun>
+              </h3>
               <h4>Operation Lead</h4>
               <p>
-                Nico, a final-year Cognitive Science student at McGill, explores fungal sustainable solutions.
-                He enjoys puzzles, drawing, and geeking out over TV shows.
+                Nico is a final year Cognitive Science student at McGill University, and enjoys exploring fungal sustainable solutions to environmental challenges. When they’re not mixing mushroom substrate, you can find them drawing, doing puzzles or geeking out over a TV show. 
               </p>
             </TeamInfo>
           </TeamCard>
-
-          <TeamCard>
-            <TeamImage src={process.env.PUBLIC_URL + '/assets/team-member/michael-picture.jpg'} alt="Michael" />
-            <TeamInfo>
-              <h3>Michael Li</h3>
-              <h4>Technology & Data Lead</h4>
-              <p>
-                Michael developed a sensor system to monitor environmental conditions in our mushroom-growing area.
-                He is passionate about tech solutions for sustainability.
-              </p>
-            </TeamInfo>
-          </TeamCard>
+          {/* Add additional Operation members here */}
         </TeamRow>
+
+        {/* Education Section */}
+        <TeamHeading>Education Team</TeamHeading>
+
+        {/* Events and Social Media Section */}
+        <TeamHeading>Events and Social Media</TeamHeading>
 
       </TeamContainer>
     </>
@@ -131,6 +147,7 @@ function TeamPage() {
 }
 
 export default TeamPage;
+
 
 
 /*

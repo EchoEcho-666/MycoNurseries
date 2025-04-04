@@ -58,13 +58,19 @@ function OurPartners() {
             alt="Sustainability Projects Fund Logo" 
           />
           <PartnerText>
-            <strong>Sustainability Projects Fund:</strong> The SPF mandate is to build a culture of sustainability on McGill campuses through interdisciplinary projects. Valued at $1 million annually, it has allocated over $10 million since 2010 to more than 260 projects.
+            The Sustainability Projects Fund (SPF) mandate is to build a culture of sustainability on McGill campuses through the development and seed-funding of interdisciplinary projects. It creates opportunities for the McGill community to actively engage in sustainability initiatives on campus, empowering individuals to be change agents in their own studying and work environment. Valued at $1 million annually, the SPF is the largest fund of its kind in Canada. Since 2010, more than $10 million has been allocated toward over 260 projects.
+          </PartnerText>
+          <PartnerText>
+            We’re grateful to the Sustainability Projects Fund for providing us with seed funding to kickstart our project. With their support, we secured a place in the McGill University Phytotron and produced our very first batch of oyster mushrooms.
           </PartnerText>
         </PartnerRow>
         {/* Row 2: Founder text | Logo */}
         <PartnerRow className="reverse">
           <PartnerText>
-            <strong>Sprout Ideas Fellowship:</strong> This fellowship provided our CEO and board member Julia Wright with a seed grant, skill building, and mentorship, enabling her to expand our oyster mushroom growing process.
+            The Sprout Ideas Fellowship provided MycoNurseries CEO and board member Julia Wright with access to a seed grant, skill building, and mentorship. The Sprout Ideas Fellowship is funded in part by Canada Service Corps, a national movement that empowers youth aged 15 to 30 to gain experience and build important skills while giving back to their community.
+          </PartnerText>
+          <PartnerText>
+            Julia completed several learning modules to become a better social innovator and is currently expanding MycoNurseries mushrooms growing process through the seed grant.
           </PartnerText>
           <PartnerLogo 
             src={process.env.PUBLIC_URL + "/assets/founders/founder-2.jpg"} 
@@ -78,13 +84,19 @@ function OurPartners() {
             alt="McGill University Faculty of Engineering Logo" 
           />
           <PartnerText>
-            <strong>McGill University Faculty of Engineering:</strong> Their Global Challenges Award allowed us to hire Michael Li as an intern in summer 2024, who developed a sensor system to monitor conditions in our growing area.
+            The McGill University’s Faculty of Engineering Global Challenges Award allows undergraduate students to participate in experiential learning opportunities providing them with experience in teamwork, leadership, and communication within the greater community, further complementing the education they receive.
+          </PartnerText>
+          <PartnerText>
+            Through the Global Challenges Award, we hired Michael Li as an intern in the summer of 2024. He developed a sensor system to monitor conditions in the growing area and helped with operations.
           </PartnerText>
         </PartnerRow>
         {/* Row 4: Founder text | Logo */}
         <PartnerRow className="reverse">
           <PartnerText>
-            <strong>Dobson Centre for Entrepreneurship:</strong> As the hub for entrepreneurship at McGill, they provided coaching and development through the 2024 Dobson Weston Innovation in Sustainability Lean Program, advancing our efforts in pitch competitions.
+            The Dobson Centre for Entrepreneurship is the hub of entrepreneurship at McGill University with the mission to teach, coach, and support entrepreneurs stemming from across McGill as they seek to build innovative companies with a purpose.
+          </PartnerText>
+          <PartnerText>
+            The Dobson Centre for Entrepreneurship has provided invaluable coaching and development to MycoNurseries members as they completed the 2024 Dobson Weston Innovation in Sustainability Lean Program. They are now semi-finalists in the McGill Dobson Bootcamp and Cup, where they are learning more about operating a non-profit and preparing for a pitch competition in April.
           </PartnerText>
           <PartnerLogo 
             src={process.env.PUBLIC_URL + "/assets/founders/founder-4.jpg"} 
