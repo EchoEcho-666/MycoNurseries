@@ -108,9 +108,6 @@ function Header() {
             <StyledLink to="/cta">Get Involved</StyledLink>
           </li>
           <li>
-            <StyledLink to="/news">News</StyledLink>
-          </li>
-          <li>
             <StyledLink to="/contact">Contact</StyledLink>
           </li>
         </NavLinks>
