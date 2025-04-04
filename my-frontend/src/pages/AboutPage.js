@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.section`
   padding: 1em 2em;
-  max-width: 60%;
+  max-width: 68%;
   margin: 0 auto;
   background-color: #FFF8ED;
   border-radius: 12px;
@@ -17,7 +17,6 @@ const AboutRow = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2em 0;
   flex-wrap: wrap;
   flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
 `;
@@ -30,7 +29,7 @@ const Image = styled.img`
 
 const Paragraph = styled.p`
   text-align: left;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 `;
 
 function AboutMycoNurseries() {
@@ -39,9 +38,6 @@ function AboutMycoNurseries() {
       <Container>
         <Heading>About MycoNurseries</Heading>
         <AboutRow>
-          <Image>
-
-          </Image>
           <Paragraph>
             <strong>MycoNurseries was started by Julia Wright and Daniel Cha</strong>, who wanted to make a difference in their community through their passion for fungi. Over the past two years, MycoNurseries has become a Montreal-based non-profit dedicated to promoting sustainability through fungiculture and the only organization growing mushrooms on the McGill University downtown campus.
           </Paragraph>

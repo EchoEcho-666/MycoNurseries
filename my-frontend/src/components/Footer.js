@@ -47,7 +47,7 @@ const Input = styled.input`
   margin-bottom: 0.5em;
   border-radius: 4px;
   border: none;
-  font-size: 1em;
+  font-size: 0.8em;
 `;
 
 const Button = styled.button`
@@ -56,6 +56,7 @@ const Button = styled.button`
   color: #3A693C;
   font-weight: bold;
   cursor: pointer;
+  font-size:0.9em;
 `;
 
 const Message = styled.p`
@@ -84,6 +85,11 @@ function Footer() {
         <FooterColumn>
           <NoBulletList>
             <li>
+              <h3>
+                <Link to="/our-partners">Our Partners</Link>
+              </h3>
+            </li>
+            <li>
               <h3><Link to="/contact">Contact Us</Link></h3>
               <NoBulletList>
                 {/*
@@ -111,11 +117,6 @@ function Footer() {
                 </li>
                 */}
               </NoBulletList>
-            </li>
-            <li>
-              <h3>
-                <Link to="/our-partners">Our Partners</Link>
-              </h3>
             </li>
           </NoBulletList>
         </FooterColumn>

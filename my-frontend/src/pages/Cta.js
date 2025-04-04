@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const CtaWrapper = styled.div`
   max-width: 600px;
-  margin: 2rem auto;
+  margin: 0rem auto;
   padding: 1rem;
   background-color: #FFF8ED;
   color: #382F2F;
@@ -81,14 +81,24 @@ function Cta() {
       <CtaWrapper>
         <CtaTitle>Get Involved</CtaTitle>
         <p>We’d love to hear from you. Please fill out the form below.</p>
-        
+
         <CtaForm onSubmit={handleSubmit}>
-          <Label htmlFor="name">Name</Label>
+          <Label htmlFor="firstName">First Name</Label>
           <Input
-            id="name"
-            name="name"
+            id="firstName"
+            name="firstName"
             type="text"
-            value={formData.name}
+            value={formData.firstName}
+            onChange={handleChange}
+            required
+          />
+
+          <Label htmlFor="lastName">Last Name</Label>
+          <Input
+            id="lastName"
+            name="lastName"
+            type="text"
+            value={formData.lastName}
             onChange={handleChange}
             required
           />
@@ -103,12 +113,12 @@ function Cta() {
             required
           />
 
-          <Label htmlFor="message">Message</Label>
-          <Textarea
-            id="message"
-            name="message"
-            rows="5"
-            value={formData.message}
+          <Label htmlFor="mcgillId">McGill ID</Label>
+          <Input
+            id="mcgillId"
+            name="mcgillId"
+            type="text"
+            value={formData.mcgillId}
             onChange={handleChange}
             required
           />
@@ -123,4 +133,3 @@ function Cta() {
 }
 
 export default Cta;
-

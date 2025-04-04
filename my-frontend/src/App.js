@@ -13,6 +13,7 @@ import GrowingProcess from './pages/GrowingProcessPage';
 import AboutMycoNurseries from './pages/AboutPage';
 import Contact from './pages/Contact';
 import Cta from './pages/Cta';
+import Shop from './pages/Shop';
 
 const PageWrapper = styled.div`
   display: flex;
@@ -50,11 +51,12 @@ function AnimatedRoutes() {
         <ContentWrapper>
           <Routes location={location}>
             <Route path="/" element={<Home />} />
-            <Route path="/our-partners" element={<OurPartners />} />
+            <Route path="/shop" element={<Shop/>} />
+            <Route path="/about-myconurseries" element={<AboutMycoNurseries />} /> 
+            <Route path="/growing-process" element={<GrowingProcess />} />
             <Route path="/team" element={<Team />} />
             <Route path="/cta" element={<Cta />} />
-            <Route path="/growing-process" element={<GrowingProcess />} />
-            <Route path="/about-myconurseries" element={<AboutMycoNurseries />} /> 
+            <Route path="/our-partners" element={<OurPartners />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </ContentWrapper>
