@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-// Styled Components (adjust colors and layout to match your design)
 const CtaWrapper = styled.div`
   max-width: 600px;
   margin: 2rem auto;

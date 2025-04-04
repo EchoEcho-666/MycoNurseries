@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const TeamContainer = styled.section`
-  padding: 3em 2em;
+  padding: 1em 2em;
   background-color: #FFF8ED;
   text-align: center;
-  max-width: 2000px;
+  max-width: 1200px;
   margin: 0 auto;
 `;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.section`
-  padding: 3em 2em;
+  padding: 1em 2em;
   max-width: 1200px;
   margin: 0 auto;
   background-color: #FFF8ED;

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.section`
-  padding: 2em 0em;
+  padding: 1em 0em;
   max-width: 1200px;
   margin: 0 auto;
   background-color: #FFF8ED;
@@ -14,9 +14,9 @@ const ContactWrapper = styled.div`
   max-width: 600px;
   margin: 0rem auto;
   padding: 1rem;
-  background-color: #FFF8ED; /* Adjust or remove as needed */
+  background-color: #FFF8ED;
   color: #382F2F;
-  text-align: center;        /* Center the content */
+  text-align: center;
 `;
 
 const ContactTitle = styled.h2`
@@ -25,11 +25,11 @@ const ContactTitle = styled.h2`
 `;
 
 const ContactList = styled.ul`
-  list-style: none; /* Remove bullets if desired */
+  list-style: none;
   padding: 0;
   margin: 0 auto;
-  max-width: 300px; /* Limit the width of the links */
-  text-align: left; /* Align links to the left */
+  max-width: 300px;
+  text-align: left;
 `;
 
 const ContactItem = styled.li`
