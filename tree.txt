@@ -597,6 +597,10 @@
 │   │   │   ├── DSC_9083.JPG
 │   │   │   ├── DSC_9089.JPG
 │   │   │   ├── MycoNurseriesintro_post.png
+│   │   │   ├── about
+│   │   │   │   ├── section1.jpg
+│   │   │   │   ├── section2.1.jpg
+│   │   │   │   └── section2.2.jpg
 │   │   │   ├── founders
 │   │   │   │   ├── founder-1.jpg
 │   │   │   │   ├── founder-2.jpg
@@ -610,10 +614,10 @@
 │   │   │   ├── photo-1454425064867-5ba516caf601.avif
 │   │   │   ├── slideshow
 │   │   │   │   ├── slideshow1.jpg
-│   │   │   │   ├── slideshow2.JPG
-│   │   │   │   ├── slideshow3.JPG
-│   │   │   │   ├── slideshow4.JPG
-│   │   │   │   └── slideshow5.JPG
+│   │   │   │   ├── slideshow2.jpg
+│   │   │   │   ├── slideshow3.jpg
+│   │   │   │   ├── slideshow4.jpg
+│   │   │   │   └── slideshow5.jpg
 │   │   │   ├── social
 │   │   │   │   ├── logo-email.png
 │   │   │   │   ├── logo-facebook.png
@@ -636,9 +640,9 @@
 │   │       └── js
 │   │           ├── 453.b34e65be.chunk.js
 │   │           ├── 453.b34e65be.chunk.js.map
-│   │           ├── main.ae36ed06.js
-│   │           ├── main.ae36ed06.js.LICENSE.txt
-│   │           └── main.ae36ed06.js.map
+│   │           ├── main.ac9e7594.js
+│   │           ├── main.ac9e7594.js.LICENSE.txt
+│   │           └── main.ac9e7594.js.map
 │   ├── node_modules
 │   │   ├── @adobe
 │   │   │   └── css-tools
@@ -43225,6 +43229,10 @@
 │   │   │   ├── DSC_9083.JPG
 │   │   │   ├── DSC_9089.JPG
 │   │   │   ├── MycoNurseriesintro_post.png
+│   │   │   ├── about
+│   │   │   │   ├── section1.jpg
+│   │   │   │   ├── section2.1.jpg
+│   │   │   │   └── section2.2.jpg
 │   │   │   ├── founders
 │   │   │   │   ├── founder-1.jpg
 │   │   │   │   ├── founder-2.jpg
@@ -43237,11 +43245,13 @@
 │   │   │   ├── myconurseriesLogoWorking.ai
 │   │   │   ├── photo-1454425064867-5ba516caf601.avif
 │   │   │   ├── slideshow
+│   │   │   │   ├── slideshow1-1.jpg
 │   │   │   │   ├── slideshow1.jpg
-│   │   │   │   ├── slideshow2.JPG
-│   │   │   │   ├── slideshow3.JPG
-│   │   │   │   ├── slideshow4.JPG
-│   │   │   │   └── slideshow5.JPG
+│   │   │   │   ├── slideshow2-2.jpg
+│   │   │   │   ├── slideshow2.jpg
+│   │   │   │   ├── slideshow3.jpg
+│   │   │   │   ├── slideshow4.jpg
+│   │   │   │   └── slideshow5.jpg
 │   │   │   ├── social
 │   │   │   │   ├── logo-email.png
 │   │   │   │   ├── logo-facebook.png
@@ -43262,6 +43272,7 @@
 │       ├── App.js
 │       ├── App.test.js
 │       ├── GlobalStyle.js
+│       ├── ScrollToTop.js
 │       ├── components
 │       │   ├── About.js
 │       │   ├── Footer.js
@@ -43276,10 +43287,10 @@
 │       │   ├── AboutPage.js
 │       │   ├── Contact.js
 │       │   ├── Cta.js
-│       │   ├── Founders.js
 │       │   ├── GrowingProcessPage.js
 │       │   ├── HomePage.js
 │       │   ├── OurPartners.js
+│       │   ├── Shop.js
 │       │   └── TeamPage.js
 │       ├── reportWebVitals.js
 │       └── setupTests.js
@@ -44246,4 +44257,4 @@
 ├── package.json
 └── tree.txt
 
-5000 directories, 39247 files
+5002 directories, 39256 files

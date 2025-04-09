@@ -17,7 +17,7 @@ const AboutRow = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 2、em;
   flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
   margin: 2em 0;
 `;

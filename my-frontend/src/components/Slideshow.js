@@ -43,8 +43,8 @@ const Dot = styled.span`
 `;
 
 const slidesData = [
-  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow1.jpg', alt: "Slide 1" },
-  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow2.jpg', alt: "Slide 2" },
+  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow1-1.jpg', alt: "Slide 1" },
+  { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow2-2.jpg', alt: "Slide 2" },
   { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow3.jpg', alt: "Slide 3" },
   { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow4.jpg', alt: "Slide 4" },
   { src: process.env.PUBLIC_URL + '/assets/slideshow/slideshow5.jpg', alt: "Slide 5" },
