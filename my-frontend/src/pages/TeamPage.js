@@ -120,7 +120,7 @@ function TeamPage() {
         </TeamRow>
 
         {/* Research Team Section */}
-        <TeamHeading>Research Team</TeamHeading>
+        <TeamHeading>Research</TeamHeading>
         <TeamRow>
           <TeamCardComponent
             image={process.env.PUBLIC_URL + '/assets/team-member/minh-picture2.jpg'} 
@@ -134,7 +134,7 @@ function TeamPage() {
         </TeamRow>
         
         {/* Operation Section */}
-        <TeamHeading>Operation Team</TeamHeading>
+        <TeamHeading>Operation</TeamHeading>
         <TeamRow>
           <TeamCardComponent
             key='3.1'
@@ -149,10 +149,10 @@ function TeamPage() {
         </TeamRow>
 
         {/* Education Section */}
-        <TeamHeading>Education Team</TeamHeading>
+        <TeamHeading>Education</TeamHeading>
 
         {/* Events and Social Media Section */}
-        <TeamHeading>Events and Social Media</TeamHeading>
+        <TeamHeading>Communication and Events</TeamHeading>
 
       </TeamContainer>
     </>
