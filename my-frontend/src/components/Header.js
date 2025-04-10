@@ -96,7 +96,7 @@ function Header() {
 
       <Nav>
         <NavLinks>
-          <li><StyledLink to="/shop">Shop</StyledLink></li>
+          {/*<li><StyledLink to="/shop">Shop</StyledLink></li>*/}
           <li><StyledLink to="/about-myconurseries">About MycoNurseries</StyledLink></li>
           <li><StyledLink to="/growing-process">Growing Process</StyledLink></li>
           <li><StyledLink to="/team">Meet the Team</StyledLink></li>
