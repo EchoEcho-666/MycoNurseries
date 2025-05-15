@@ -120,7 +120,7 @@ function Contact() {
           <a href="https://www.facebook.com/profile.php?id=61555856812571" target="_blank" rel="noreferrer">
             <img src={process.env.PUBLIC_URL + "/assets/social/logo-facebook.png"} alt="Facebook" />
           </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/company/myconurseries/posts/?feedView=all" target="_blank" rel="noreferrer">
             <img src={process.env.PUBLIC_URL + "/assets/social/logo-linkedin.png"} alt="LinkedIn" />
           </a>
         </SocialIcons>

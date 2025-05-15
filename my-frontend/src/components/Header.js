@@ -2,17 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-const Divider = styled.hr`
-  border: none;
-  border-top: 1.2px solid #FFE7C9;
-  width: 68%;
-  margin-top: 15px;
-`;
-
 const HeaderWrapper = styled.header`
   background-color: #39683B;
   color: #FFE7C9;
-  padding: 1rem;
+  padding: 1rem 0.2rem 0.2rem;
   text-align: center;
 `;
 
@@ -34,10 +27,8 @@ const TitleSection = styled.div`
 
 const TitleLink = styled(NavLink)`
   text-decoration: none;
-  color: inherit; 
-  &&:hover {
-    color: inherit;
-  }
+  color: inherit;
+  &&:hover { color: inherit; }
 `;
 
 const Title = styled.h1`
@@ -53,8 +44,15 @@ const Catchphrase = styled.p`
   color: #FFE7C9;
 `;
 
+const Divider = styled.hr`
+  border: none;
+  border-top: 1.2px solid #FFE7C9;
+  width: 68%;
+  margin: 15px auto 0;
+`;
+
 const Nav = styled.nav`
-  margin-bottom: -1rem;
+  margin-top: 0.5rem;
 `;
 
 const NavLinks = styled.ul`
@@ -66,24 +64,48 @@ const NavLinks = styled.ul`
   font-weight: 500;
 `;
 
+const NavItem = styled.li`
+  position: relative;
+`;
+
 const StyledLink = styled(NavLink)`
   color: #FFE7C9;
   text-decoration: none;
   font-size: 1.1rem;
+  &.active { font-weight: 900; }
+`;
 
-  &.active {
-    font-weight: 900; /* extra bold if you want it heavier */
+const DropdownMenu = styled.ul`
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: -7%;
+  background-color: #39683B;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  border-radius: 4px;
+  min-width: 200px;
+  z-index: 100;
+  ${NavItem}:hover & {
+    display: block;
   }
+`;
+
+const DropdownItem = styled(NavLink)`
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #FFE7C9;
+  text-decoration: none;
+  font-size: 1rem;
+  &:hover { background-color: #2E7D32; }
 `;
 
 function Header() {
   return (
     <HeaderWrapper>
       <HeaderContent>
-        <Logo
-          src={process.env.PUBLIC_URL + '/assets/logo-cut-out.png'}
-          alt="MycoNurseries Logo"
-        />
+        <Logo src={process.env.PUBLIC_URL + '/assets/logo-cut-out.png'} alt="MycoNurseries Logo" />
         <TitleSection>
           <TitleLink to="/">
             <Title>MycoNurseries</Title>
@@ -96,13 +118,17 @@ function Header() {
 
       <Nav>
         <NavLinks>
-          {/*<li><StyledLink to="/shop">Shop</StyledLink></li>*/}
-          <li><StyledLink to="/about-myconurseries">About MycoNurseries</StyledLink></li>
-          <li><StyledLink to="/growing-process">Growing Process</StyledLink></li>
-          <li><StyledLink to="/team">Meet the Team</StyledLink></li>
-          <li><StyledLink to="/cta">Get Involved</StyledLink></li>
-          <li><StyledLink to="/our-partners">Our Partner</StyledLink></li>
-          <li><StyledLink to="/contact">Contact</StyledLink></li>
+          <NavItem>
+            <StyledLink to="/about-myconurseries">About MycoNurseries</StyledLink>
+            <DropdownMenu>
+              <li><DropdownItem to="/our-story">Our Story</DropdownItem></li>
+              <li><DropdownItem to="/team">Our Team</DropdownItem></li>
+              <li><DropdownItem to="/growing-process">Our Growing Process</DropdownItem></li>
+              <li><DropdownItem to="/our-partners">Our Partners</DropdownItem></li>
+            </DropdownMenu>
+          </NavItem>
+          <NavItem><StyledLink to="/contact">Contact</StyledLink></NavItem>
+          {/* add other top-level links here */}
         </NavLinks>
       </Nav>
     </HeaderWrapper>
@@ -110,3 +136,4 @@ function Header() {
 }
 
 export default Header;
+

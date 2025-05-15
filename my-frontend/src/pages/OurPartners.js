@@ -32,7 +32,7 @@ const PartnerTextGroup = styled.div`
   margin: 0.2em;
   padding: 1em;
   text-align: left;
-  background-color: #E6F7E6; /* Light green background */
+  background-color: #39683B; /* dark green background */
   border-radius: 8px;
 `;
 
@@ -41,6 +41,7 @@ const PartnerText = styled.p`
   flex: 1;
   margin: 0.5em;
   text-align: left;
+  color: #FFF8ED
 `;
 
 function OurPartners() {
