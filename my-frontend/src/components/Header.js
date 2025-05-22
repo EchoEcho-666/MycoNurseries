@@ -53,6 +53,7 @@ const Divider = styled.hr`
 
 const Nav = styled.nav`
   margin-top: 0.5rem;
+  margin-right: 5em
 `;
 
 const NavLinks = styled.ul`
@@ -101,9 +102,27 @@ const DropdownItem = styled(NavLink)`
   &:hover { background-color: #2E7D32; }
 `;
 
+const CornerLink = styled(NavLink)`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #FFE7C9;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #2E7D32;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  &:hover {
+    background-color: #1B5E20;
+  }
+`;
+
+
 function Header() {
   return (
     <HeaderWrapper>
+      <CornerLink to="/Volunteer">Sign In</CornerLink>
       <HeaderContent>
         <Logo src={process.env.PUBLIC_URL + '/assets/logo-cut-out.png'} alt="MycoNurseries Logo" />
         <TitleSection>
@@ -121,12 +140,14 @@ function Header() {
           <NavItem>
             <StyledLink to="/about-myconurseries">About MycoNurseries</StyledLink>
             <DropdownMenu>
-              <li><DropdownItem to="/our-story">Our Story</DropdownItem></li>
+              <li><DropdownItem to="/about-myconurseries">Our Story</DropdownItem></li>
               <li><DropdownItem to="/team">Our Team</DropdownItem></li>
               <li><DropdownItem to="/growing-process">Our Growing Process</DropdownItem></li>
               <li><DropdownItem to="/our-partners">Our Partners</DropdownItem></li>
             </DropdownMenu>
           </NavItem>
+          <NavItem><StyledLink to="/Cta">Get Inveolved</StyledLink></NavItem>
+          <NavItem><StyledLink to="/Shop">Join Our Shop</StyledLink></NavItem>
           <NavItem><StyledLink to="/contact">Contact</StyledLink></NavItem>
           {/* add other top-level links here */}
         </NavLinks>

@@ -14,6 +14,7 @@ import AboutMycoNurseries from './pages/AboutPage';
 import Contact from './pages/Contact';
 import Cta from './pages/Cta';
 import Shop from './pages/Shop';
+import Volunteer from './pages/Volunteer';
 
 const PageWrapper = styled.div`
   display: flex;
@@ -58,6 +59,7 @@ function AnimatedRoutes() {
             <Route path="/cta" element={<Cta />} />
             <Route path="/our-partners" element={<OurPartners />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/volunteer" element={<Volunteer />} />
           </Routes>
         </ContentWrapper>
       </CSSTransition>

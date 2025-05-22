@@ -41,7 +41,7 @@ const PartnerText = styled.p`
   flex: 1;
   margin: 0.5em;
   text-align: left;
-  color: #FFF8ED
+  color: #FFE7C9
 `;
 
 function OurPartners() {
