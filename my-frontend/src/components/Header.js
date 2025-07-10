@@ -146,8 +146,8 @@ function Header() {
               <li><DropdownItem to="/our-partners">Our Partners</DropdownItem></li>
             </DropdownMenu>
           </NavItem>
-          <NavItem><StyledLink to="/Cta">Get Inveolved</StyledLink></NavItem>
-          <NavItem><StyledLink to="/Shop">Join Our Shop</StyledLink></NavItem>
+          <NavItem><StyledLink to="/Cta">Get Involved</StyledLink></NavItem>
+          <NavItem><StyledLink to="/Shop">Shop</StyledLink></NavItem>
           <NavItem><StyledLink to="/contact">Contact</StyledLink></NavItem>
           {/* add other top-level links here */}
         </NavLinks>
