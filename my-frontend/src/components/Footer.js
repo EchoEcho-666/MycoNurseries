@@ -131,7 +131,7 @@ function Footer() {
             </li>
           </NoBulletList>
         </FooterColumn>
-        <FooterColumn>
+        {/*<FooterColumn>
           <h3>Join the Newsletter</h3>
           <Form onSubmit={handleSubmit}>
             <Input 
@@ -145,7 +145,7 @@ function Footer() {
             <Button type="submit">Subscribe</Button>
           </Form>
           {message && <Message>{message}</Message>}
-        </FooterColumn>
+        </FooterColumn>*/}
       </FooterContainer>
       <FooterText>&copy; 2025 MycoNurseries</FooterText>
     </FooterWrapper>

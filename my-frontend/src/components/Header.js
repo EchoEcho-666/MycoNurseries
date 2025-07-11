@@ -139,16 +139,20 @@ function Header() {
         <NavLinks>
           <NavItem>
             <StyledLink to="/about-myconurseries">About MycoNurseries</StyledLink>
+              <DropdownMenu>
+                <li><DropdownItem to="/about-myconurseries">Our Story</DropdownItem></li>
+                <li><DropdownItem to="/team">Our Team</DropdownItem></li>
+                <li><DropdownItem to="/growing-process">Our Growing Process</DropdownItem></li>
+                <li><DropdownItem to="/our-partners">Our Partners</DropdownItem></li>
+              </DropdownMenu>
+          </NavItem>
+          <NavItem><StyledLink to="/Cta">Get Involved</StyledLink>
             <DropdownMenu>
-              <li><DropdownItem to="/about-myconurseries">Our Story</DropdownItem></li>
-              <li><DropdownItem to="/team">Our Team</DropdownItem></li>
-              <li><DropdownItem to="/growing-process">Our Growing Process</DropdownItem></li>
-              <li><DropdownItem to="/our-partners">Our Partners</DropdownItem></li>
+             {/*<li><DropdownItem to="/contact">Contact</DropdownItem></li>
+             <li><DropdownItem to ="/partner-with-us">Partner with Us</DropdownItem></li>*/}
             </DropdownMenu>
           </NavItem>
-          <NavItem><StyledLink to="/Cta">Get Involved</StyledLink></NavItem>
           <NavItem><StyledLink to="/Shop">Shop</StyledLink></NavItem>
-          {/*<NavItem><StyledLink to="/contact">Contact</StyledLink></NavItem>*/}
           {/* add other top-level links here */}
         </NavLinks>
       </Nav>
