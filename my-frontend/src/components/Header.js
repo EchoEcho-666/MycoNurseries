@@ -148,7 +148,7 @@ function Header() {
           </NavItem>
           <NavItem><StyledLink to="/Cta">Get Involved</StyledLink></NavItem>
           <NavItem><StyledLink to="/Shop">Shop</StyledLink></NavItem>
-          <NavItem><StyledLink to="/contact">Contact</StyledLink></NavItem>
+          {/*<NavItem><StyledLink to="/contact">Contact</StyledLink></NavItem>*/}
           {/* add other top-level links here */}
         </NavLinks>
       </Nav>

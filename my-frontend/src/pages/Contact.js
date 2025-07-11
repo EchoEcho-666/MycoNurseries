@@ -14,7 +14,7 @@ const Container = styled.section`
 `;
 
 const LeftPanel = styled.div`
-  padding: 0.5em
+  padding: 0.5em;
   flex: 1;
   min-width: 280px;
   text-align: center;
@@ -52,6 +52,8 @@ const SocialIcons = styled.div`
 `;
 
 const RightPanel = styled.div`
+  margin-top: 2rem;
+  margin-left: 5rem;
   flex: 1;
   max-width: 500px;
   justify-content: center;
@@ -108,9 +110,14 @@ function Contact() {
     <Container>
       <LeftPanel>
         <ContactTitle>Contact Us</ContactTitle>
+        <div style={{ marginBottom: '1.5rem' }}>
+          <h3 style={{ color: '#382F2F' }}>Get in touch with MycoNurseries today!</h3>
+          <p>If you have any questions, comments, or are interested in collaborating with us, our contact form is a good place to start.</p>
+          <p>Fill out the relevant information and someone from the MycoNurseries team will get back to you soon.</p>
+        </div>
         <ContactList>
           <ContactItem>
-            myconurseries@gmail.com
+            Email: myconurseries@gmail.com
           </ContactItem>
         </ContactList>
         <SocialIcons>
@@ -127,6 +134,7 @@ function Contact() {
       </LeftPanel>
 
       <RightPanel>
+
         <Form onSubmit={handleSubmit}>
           <Label htmlFor="firstName">First Name</Label>
           <Input
