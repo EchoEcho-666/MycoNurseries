@@ -196,7 +196,7 @@ function Cta() {
 
       <SponsorWrapper>
         <SponsorTitle>Sponsor Us</SponsorTitle>
-        <p>Watch our 30-second sponsorship teaser to learn how you can support us.</p>
+        <p>Stay tune for our sponsorship teaser to learn more about us.</p>
         <VideoWrapper>
           {/* Replace src with your video file or YouTube embed URL */}
           <video controls src="/videos/sponsor-teaser.mp4" />
