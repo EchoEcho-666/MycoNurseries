@@ -67,28 +67,6 @@ const FooterText = styled.p`
   font-size: 0.85em;
 `;
 
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-`;
-
-const Input = styled.input`
-  padding: 0.5em;
-  margin-bottom: 0.5em;
-  border-radius: 4px;
-  border: none;
-  font-size: 0.9em;
-`;
-
-const Button = styled.button`
-  border: none;
-  background-color: #FFE7C9;
-  color: #3A693C;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 0.5em;
-`;
-
 const Message = styled.p`
   margin-top: 0.5em;
   font-size: 0.9em;
@@ -96,20 +74,8 @@ const Message = styled.p`
 `;
 
 function Footer() {
-  const [email, setEmail] = useState('');
   const [contactMessage, setContactMessage] = useState('');
-  const [newsletterMessage, setNewsletterMessage] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Subscribing email:', email);
-    setNewsletterMessage('Thank you for subscribing!');
-    setEmail('');
-
-    setTimeout(() => {
-      setNewsletterMessage('');
-    }, 1000);
-  };
+  const [newsletterMessage] = useState('');
 
   return (
     <FooterWrapper>
@@ -143,7 +109,7 @@ function Footer() {
                   e.preventDefault();
                   navigator.clipboard.writeText("myconurseries@gmail.com");
                   setContactMessage("Email copied to clipboard!");
-                  setTimeout(() => setContactMessage(''), 3000);
+                  setTimeout(() => setContactMessage(''), 1500);
                 }}
                 title="Click to copy"
               >
@@ -166,17 +132,13 @@ function Footer() {
 
         <FooterColumn>
           <ColumnTitle>Newsletter</ColumnTitle>
-          <Form onSubmit={handleSubmit}>
-            <Input
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-            <Button type="submit">Subscribe</Button>
-          </Form>
+          <iframe 
+            src="https://zengyu.substack.com/embed" 
+            width="100%" 
+            height="150" 
+            style={{ border: 'none', background: 'transparent' }} 
+            title="Substack Subscribe Form"
+          />
           {newsletterMessage && <Message>{newsletterMessage}</Message>}
         </FooterColumn>
       </FooterContainer>
