@@ -48,7 +48,7 @@ function OurPartners() {
   return (
     <>
       <PartnersSection id="our-partners">
-        <h2>Our Partners</h2>
+        <h2>Our Collaborators & Supporters</h2>
         <p>Meet the organizations and individuals supporting us!</p>
         {/* Row 1: Logo | Founder text */}
         <PartnerRow>
