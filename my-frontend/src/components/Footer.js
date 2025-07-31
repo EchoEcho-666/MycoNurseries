@@ -133,7 +133,7 @@ function Footer() {
         <FooterColumn>
           <ColumnTitle>Newsletter</ColumnTitle>
           <iframe 
-            src="https://zengyu.substack.com/embed" 
+            src="https://myconurseries.substack.com/embed" 
             width="100%" 
             height="150" 
             style={{ border: 'none', background: 'transparent' }} 
