@@ -656,9 +656,9 @@
 │   │       └── js
 │   │           ├── 453.b34e65be.chunk.js
 │   │           ├── 453.b34e65be.chunk.js.map
-│   │           ├── main.ff8e00ea.js
-│   │           ├── main.ff8e00ea.js.LICENSE.txt
-│   │           └── main.ff8e00ea.js.map
+│   │           ├── main.3203c1e2.js
+│   │           ├── main.3203c1e2.js.LICENSE.txt
+│   │           └── main.3203c1e2.js.map
 │   ├── node_modules
 │   │   ├── @adobe
 │   │   │   └── css-tools
@@ -1366,8 +1366,22 @@
 │   │   │   │   │   │   ├── possibleConstructorReturn.js.map
 │   │   │   │   │   │   ├── readOnlyError.js
 │   │   │   │   │   │   ├── readOnlyError.js.map
+│   │   │   │   │   │   ├── regenerator.js
+│   │   │   │   │   │   ├── regenerator.js.map
+│   │   │   │   │   │   ├── regeneratorAsync.js
+│   │   │   │   │   │   ├── regeneratorAsync.js.map
+│   │   │   │   │   │   ├── regeneratorAsyncGen.js
+│   │   │   │   │   │   ├── regeneratorAsyncGen.js.map
+│   │   │   │   │   │   ├── regeneratorAsyncIterator.js
+│   │   │   │   │   │   ├── regeneratorAsyncIterator.js.map
+│   │   │   │   │   │   ├── regeneratorDefine.js
+│   │   │   │   │   │   ├── regeneratorDefine.js.map
+│   │   │   │   │   │   ├── regeneratorKeys.js
+│   │   │   │   │   │   ├── regeneratorKeys.js.map
 │   │   │   │   │   │   ├── regeneratorRuntime.js
 │   │   │   │   │   │   ├── regeneratorRuntime.js.map
+│   │   │   │   │   │   ├── regeneratorValues.js
+│   │   │   │   │   │   ├── regeneratorValues.js.map
 │   │   │   │   │   │   ├── set.js
 │   │   │   │   │   │   ├── set.js.map
 │   │   │   │   │   │   ├── setFunctionName.js
@@ -1404,6 +1418,8 @@
 │   │   │   │   │   │   ├── toPropertyKey.js.map
 │   │   │   │   │   │   ├── toSetter.js
 │   │   │   │   │   │   ├── toSetter.js.map
+│   │   │   │   │   │   ├── tsRewriteRelativeImportExtensions.js
+│   │   │   │   │   │   ├── tsRewriteRelativeImportExtensions.js.map
 │   │   │   │   │   │   ├── typeof.js
 │   │   │   │   │   │   ├── typeof.js.map
 │   │   │   │   │   │   ├── unsupportedIterableToArray.js
@@ -1431,7 +1447,6 @@
 │   │   │   │   ├── bin
 │   │   │   │   │   └── babel-parser.js
 │   │   │   │   ├── CHANGELOG.md
-│   │   │   │   ├── index.cjs
 │   │   │   │   ├── lib
 │   │   │   │   │   ├── index.js
 │   │   │   │   │   └── index.js.map
@@ -2399,7 +2414,14 @@
 │   │   │   │   │   │   ├── package.json
 │   │   │   │   │   │   ├── possibleConstructorReturn.js
 │   │   │   │   │   │   ├── readOnlyError.js
+│   │   │   │   │   │   ├── regenerator.js
+│   │   │   │   │   │   ├── regeneratorAsync.js
+│   │   │   │   │   │   ├── regeneratorAsyncGen.js
+│   │   │   │   │   │   ├── regeneratorAsyncIterator.js
+│   │   │   │   │   │   ├── regeneratorDefine.js
+│   │   │   │   │   │   ├── regeneratorKeys.js
 │   │   │   │   │   │   ├── regeneratorRuntime.js
+│   │   │   │   │   │   ├── regeneratorValues.js
 │   │   │   │   │   │   ├── set.js
 │   │   │   │   │   │   ├── setFunctionName.js
 │   │   │   │   │   │   ├── setPrototypeOf.js
@@ -2418,6 +2440,7 @@
 │   │   │   │   │   │   ├── toPrimitive.js
 │   │   │   │   │   │   ├── toPropertyKey.js
 │   │   │   │   │   │   ├── toSetter.js
+│   │   │   │   │   │   ├── tsRewriteRelativeImportExtensions.js
 │   │   │   │   │   │   ├── typeof.js
 │   │   │   │   │   │   ├── unsupportedIterableToArray.js
 │   │   │   │   │   │   ├── using.js
@@ -2456,7 +2479,14 @@
 │   │   │   │   │   ├── OverloadYield.js
 │   │   │   │   │   ├── possibleConstructorReturn.js
 │   │   │   │   │   ├── readOnlyError.js
+│   │   │   │   │   ├── regenerator.js
+│   │   │   │   │   ├── regeneratorAsync.js
+│   │   │   │   │   ├── regeneratorAsyncGen.js
+│   │   │   │   │   ├── regeneratorAsyncIterator.js
+│   │   │   │   │   ├── regeneratorDefine.js
+│   │   │   │   │   ├── regeneratorKeys.js
 │   │   │   │   │   ├── regeneratorRuntime.js
+│   │   │   │   │   ├── regeneratorValues.js
 │   │   │   │   │   ├── set.js
 │   │   │   │   │   ├── setFunctionName.js
 │   │   │   │   │   ├── setPrototypeOf.js
@@ -2475,6 +2505,7 @@
 │   │   │   │   │   ├── toPrimitive.js
 │   │   │   │   │   ├── toPropertyKey.js
 │   │   │   │   │   ├── toSetter.js
+│   │   │   │   │   ├── tsRewriteRelativeImportExtensions.js
 │   │   │   │   │   ├── typeof.js
 │   │   │   │   │   ├── unsupportedIterableToArray.js
 │   │   │   │   │   ├── using.js
@@ -9999,6 +10030,7 @@
 │   │   │   │   │   ├── cors.js
 │   │   │   │   │   ├── createimagebitmap.js
 │   │   │   │   │   ├── credential-management.js
+│   │   │   │   │   ├── cross-document-view-transitions.js
 │   │   │   │   │   ├── cryptography.js
 │   │   │   │   │   ├── css-all.js
 │   │   │   │   │   ├── css-anchor-positioning.js
@@ -10056,6 +10088,7 @@
 │   │   │   │   │   ├── css-hanging-punctuation.js
 │   │   │   │   │   ├── css-has.js
 │   │   │   │   │   ├── css-hyphens.js
+│   │   │   │   │   ├── css-if.js
 │   │   │   │   │   ├── css-image-orientation.js
 │   │   │   │   │   ├── css-image-set.js
 │   │   │   │   │   ├── css-in-out-of-range.js
@@ -26388,6 +26421,7 @@
 │   │   │   ├── package.json
 │   │   │   └── README.md
 │   │   ├── form-data
+│   │   │   ├── CHANGELOG.md
 │   │   │   ├── index.d.ts
 │   │   │   ├── lib
 │   │   │   │   ├── browser.js
@@ -26395,7 +26429,7 @@
 │   │   │   │   └── populate.js
 │   │   │   ├── License
 │   │   │   ├── package.json
-│   │   │   └── Readme.md
+│   │   │   └── README.md
 │   │   ├── formdata-polyfill
 │   │   │   ├── esm.min.d.ts
 │   │   │   ├── esm.min.js
@@ -27030,6 +27064,18 @@
 │   │   │       ├── htmlparser.js
 │   │   │       ├── tokenchain.js
 │   │   │       └── utils.js
+│   │   ├── html-parse-stringify
+│   │   │   ├── dist
+│   │   │   │   ├── html-parse-stringify.js
+│   │   │   │   ├── html-parse-stringify.js.map
+│   │   │   │   ├── html-parse-stringify.modern.js
+│   │   │   │   ├── html-parse-stringify.modern.js.map
+│   │   │   │   ├── html-parse-stringify.module.js
+│   │   │   │   ├── html-parse-stringify.module.js.map
+│   │   │   │   ├── html-parse-stringify.umd.js
+│   │   │   │   └── html-parse-stringify.umd.js.map
+│   │   │   ├── package.json
+│   │   │   └── README.md
 │   │   ├── html-webpack-plugin
 │   │   │   ├── default_index.ejs
 │   │   │   ├── index.js
@@ -27178,6 +27224,25 @@
 │   │   │   │       ├── signals.js
 │   │   │   │       └── signals.js.map
 │   │   │   ├── CHANGELOG.md
+│   │   │   ├── LICENSE
+│   │   │   ├── package.json
+│   │   │   └── README.md
+│   │   ├── i18next
+│   │   │   ├── CONTRIBUTING.md
+│   │   │   ├── dist
+│   │   │   │   ├── cjs
+│   │   │   │   │   └── i18next.js
+│   │   │   │   ├── esm
+│   │   │   │   │   ├── i18next.bundled.js
+│   │   │   │   │   ├── i18next.js
+│   │   │   │   │   └── package.json
+│   │   │   │   └── umd
+│   │   │   │       ├── i18next.js
+│   │   │   │       └── i18next.min.js
+│   │   │   ├── i18next.js
+│   │   │   ├── i18next.min.js
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.js
 │   │   │   ├── LICENSE
 │   │   │   ├── package.json
 │   │   │   └── README.md
@@ -34032,6 +34097,75 @@
 │   │   │   ├── LICENSE
 │   │   │   ├── package.json
 │   │   │   └── README.md
+│   │   ├── react-i18next
+│   │   │   ├── CHANGELOG.md
+│   │   │   ├── dist
+│   │   │   │   ├── amd
+│   │   │   │   │   ├── react-i18next.js
+│   │   │   │   │   └── react-i18next.min.js
+│   │   │   │   ├── commonjs
+│   │   │   │   │   ├── context.js
+│   │   │   │   │   ├── defaults.js
+│   │   │   │   │   ├── I18nextProvider.js
+│   │   │   │   │   ├── i18nInstance.js
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   ├── initReactI18next.js
+│   │   │   │   │   ├── Trans.js
+│   │   │   │   │   ├── Translation.js
+│   │   │   │   │   ├── TransWithoutContext.js
+│   │   │   │   │   ├── unescape.js
+│   │   │   │   │   ├── useSSR.js
+│   │   │   │   │   ├── useTranslation.js
+│   │   │   │   │   ├── utils.js
+│   │   │   │   │   ├── withSSR.js
+│   │   │   │   │   └── withTranslation.js
+│   │   │   │   ├── es
+│   │   │   │   │   ├── context.js
+│   │   │   │   │   ├── defaults.js
+│   │   │   │   │   ├── I18nextProvider.js
+│   │   │   │   │   ├── i18nInstance.js
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   ├── initReactI18next.js
+│   │   │   │   │   ├── package.json
+│   │   │   │   │   ├── Trans.js
+│   │   │   │   │   ├── Translation.js
+│   │   │   │   │   ├── TransWithoutContext.js
+│   │   │   │   │   ├── unescape.js
+│   │   │   │   │   ├── useSSR.js
+│   │   │   │   │   ├── useTranslation.js
+│   │   │   │   │   ├── utils.js
+│   │   │   │   │   ├── withSSR.js
+│   │   │   │   │   └── withTranslation.js
+│   │   │   │   └── umd
+│   │   │   │       ├── react-i18next.js
+│   │   │   │       └── react-i18next.min.js
+│   │   │   ├── icu.macro.d.ts
+│   │   │   ├── icu.macro.js
+│   │   │   ├── index.d.ts
+│   │   │   ├── initReactI18next.d.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── package.json
+│   │   │   ├── react-i18next.js
+│   │   │   ├── react-i18next.min.js
+│   │   │   ├── README.md
+│   │   │   ├── src
+│   │   │   │   ├── context.js
+│   │   │   │   ├── defaults.js
+│   │   │   │   ├── I18nextProvider.js
+│   │   │   │   ├── i18nInstance.js
+│   │   │   │   ├── index.js
+│   │   │   │   ├── initReactI18next.js
+│   │   │   │   ├── Trans.js
+│   │   │   │   ├── Translation.js
+│   │   │   │   ├── TransWithoutContext.js
+│   │   │   │   ├── unescape.js
+│   │   │   │   ├── useSSR.js
+│   │   │   │   ├── useTranslation.js
+│   │   │   │   ├── utils.js
+│   │   │   │   ├── withSSR.js
+│   │   │   │   └── withTranslation.js
+│   │   │   ├── TransWithoutContext.d.ts
+│   │   │   └── tslint.json
 │   │   ├── react-icons
 │   │   │   ├── ai
 │   │   │   │   ├── index.d.ts
@@ -34885,12 +35019,6 @@
 │   │   │   │   ├── Yi.js
 │   │   │   │   └── Zanabazar_Square.js
 │   │   │   └── unicode-version.js
-│   │   ├── regenerator-runtime
-│   │   │   ├── LICENSE
-│   │   │   ├── package.json
-│   │   │   ├── path.js
-│   │   │   ├── README.md
-│   │   │   └── runtime.js
 │   │   ├── regenerator-transform
 │   │   │   ├── lib
 │   │   │   │   ├── emit.js
@@ -40032,6 +40160,11 @@
 │   │   │   ├── LICENSE
 │   │   │   ├── package.json
 │   │   │   └── README.md
+│   │   ├── void-elements
+│   │   │   ├── index.js
+│   │   │   ├── LICENSE
+│   │   │   ├── package.json
+│   │   │   └── README.md
 │   │   ├── w3c-hr-time
 │   │   │   ├── CHANGELOG.md
 │   │   │   ├── index.js
@@ -43264,8 +43397,14 @@
 │       │   ├── Slideshow.js
 │       │   └── TeamSection.js
 │       ├── GlobalStyle.js
+│       ├── i18n.js
 │       ├── index.css
 │       ├── index.js
+│       ├── locales
+│       │   ├── en
+│       │   │   └── translation.json
+│       │   └── fr
+│       │       └── translation.json
 │       ├── logo.svg
 │       ├── pages
 │       │   ├── AboutPage.js
@@ -44243,4 +44382,4 @@
 ├── package.json
 └── tree.txt
 
-5022 directories, 39222 files
+5039 directories, 39344 files

@@ -1,0 +1,232 @@
+{
+  "components": {
+    "about": {
+      "title": "About MycoNurseries",
+      "subtitle": "Promoting Sustainability Through Fungiculture",
+      "text1": "MycoNurseries is a non-profit promoting sustainability fungiculture. We do this primarily through growing oyster mushrooms from discarded organic matter and fostering an inclusive and diverse community passionate about fungi.",
+      "text2": "Based on the McGill University Campus, MycoNurseries collects used coffee grounds from local coffee shops and uses them as food for the oyster mushrooms.",
+      "text3": "After harvest, these mushrooms are donated to projects addressing food insecurity on campus.",
+      "link": "Learn more about us"
+    },
+    "footer": {
+      "about": "About",
+      "home": "Home",
+      "ourPartners": "Our Partners",
+      "team": "Team",
+      "growingProcess": "Growing Process",
+      "getInvolved": "Get Involved",
+      "partnerWithUs": "Partner with Us",
+      "becomeAVolunteer": "Become a Volunteer",
+      "shop": "Shop",
+      "contact": "Contact",
+      "emailCopied": "Email copied to clipboard!",
+      "clickToCopy": "Click to copy",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "newsletter": "Newsletter",
+      "copyright": "2025 MycoNurseries"
+    },
+    "growingProcess": {
+      "title": "Our Mushroom Growing Process",
+      "text": "Learn how we turn recycled organic waste into nutritious oyster mushrooms.",
+      "link": "More about our mushrooms"
+    },
+    "header": {
+      "signIn": "Sign In",
+      "mycoNurseries": "MycoNurseries",
+      "slogan": "Promoting Sustainability Through Fungiculture",
+      "about": "About MycoNurseries",
+      "ourStory": "Our Story",
+      "ourTeam": "Our Team",
+      "ourGrowingProcess": "Our Growing Process",
+      "ourPartners": "Our Partners",
+      "getInvolved": "Get Involved",
+      "shop": "Shop"
+    },
+    "team": {
+      "title": "Meet the Team",
+      "text1": "Our team is a group of passionate individuals working together to promote sustainability through innovative fungiculture solutions.",
+      "text2": "We’re dedicated to fostering community, learning, and sustainability at every step.",
+      "link": "Learn more about the team"
+    },
+    "page": {
+      "about": {
+        "title": "About MycoNurseries",
+        "story": "MycoNurseries was started by Julia Wright and Daniel Cha, who wanted to make a difference in their community through their passion for fungi.",
+        "growth": "Over the past two years, MycoNurseries has become a Montreal-based non-profit dedicated to promoting sustainability through fungiculture and the only organization growing mushrooms on the McGill University downtown campus.",
+        "howWeCreate": "How We Create a More Sustainable Community",
+        "intro": "We currently create a more sustainable community in three ways:",
+        "sustainableSubstrate": {
+          "title": "Sustainable Substrate",
+          "text1": "We grow oyster mushrooms, and these mushrooms need ‘food’ or substrate to live off of.",
+          "text2": "40% of the food we give our mushrooms is coffee grounds that otherwise would’ve been thrown into the landfill, where studies have shown they generate greenhouse gases and have a variety of bad environmental effects.",
+          "text3": "So far we’ve diverted over 40kg of used coffee grounds from landfills."
+        },
+        "community": {
+          "title": "Community",
+          "text1": "We have over 30 volunteers who help us grow the mushrooms.",
+          "text2": "These volunteers are all students or young people and through participating in growing sessions, they learn about sustainable urban agriculture.Through the community we create, we hope to inspire these volunteers with a love of nature that will make them more passionate about helping the environment."
+        },
+        "foodSecurity": {
+          "title": "Promoting Food Security",
+          "text": "We donate the oyster mushrooms we grow to SNAC, a group that provides free produce to members of the McGill University community facing food insecurity.We’re proud of this initiative because we believe that in addition to having access to foods which will satiate them, everyone deserves access to a variety of fresh produce to have a high quality diet."
+        },
+        "supportAndPlans": {
+          "title": "Our Support & Future Plans",
+          "text1": "Over the past two years, we’ve received funding from the Sustainability Projects Fund, McGill University Faculty of Engineering Global Challenges Award Program, and Canada Service Corps’s Sprout Fellowship.",
+          "text2": "Currently, we’re receiving support from the Dobson Centre for Entrepreneurship as we complete the McGill Dobson Bootcamp and Cup.",
+          "text3": "As we look towards the future, we’re hoping to develop an educational module around circular economies and waste management,to reach more people in the McGill University and broader Montreal Community.",
+          "stayTuned": "Stay tuned!"
+        }
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "text1": "Get in touch with MycoNurseries today!",
+      "text2": "If you have any questions, comments, or are interested in collaborating with us, our contact form is a good place to start.",
+      "text3": "Fill out the relevant information and someone from the MycoNurseries team will get back to you soon.",
+      "form": {
+        "title": "Contact Form",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send",
+        "thankYou": "Thank you! We’ll get back to you soon."
+      }
+    },
+    "cta": {
+      "getInvolved": {
+        "title": "Get Involved",
+        "text1": "We’d love to hear from you. Please fill out the form below.",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "mcgillId": "McGill ID",
+        "send": "Send",
+        "thankYou": "Thank you! We’ll get back to you soon."
+      },
+      "sponsorUs": {
+        "title": "Sponsor Us",
+        "text": "Stay tune for our sponsorship teaser to learn more about us.",
+        "downloadKit": "Download Sponsor Kit",
+        "contactTeam": "Contact Our Team"
+      }
+    },
+    "teamPage": {
+      "title": "Our Team",
+      "coFounders": "Co-Founders",
+      "juliaWright": {
+        "name": "Julia Wright (they/them)",
+        "bio": "Studies chemistry and mathematics at McGill University. Enjoys promoting all forms of sustainability.",
+        "hobbies": "Hobbies include hiking, knitting, and spending time with friends and family."
+      },
+      "minhLe": {
+        "name": "Minh Le",
+        "bio": "Studies pharmacology and leads research into societal sustainability.",
+        "hobbies": "Hobbies include petting cats, listening to music, and reading."
+      },
+      "nicoVilkoff": {
+        "name": "Nico Vilkoff (they/them)",
+        "bio": "Studies cognitive science and explores fungal sustainable solutions to environmental challenges.",
+        "hobbies": "Hobbies include drawing, solving puzzles, and watching TV shows."
+      },
+      "research": "Research",
+      "deanBaghdadi": {
+        "name": "Dean Baghdadi (he/him)",
+        "bio": "Bioresource Engineering student at McGill University. Hopes to work in transportation design and sustainable development.",
+        "hobbies": "Hobbies include spending time with his dog, reading, or baking."
+      },
+      "siqiLiu": {
+        "name": "Siqi Liu (she/her)",
+        "bio": "First-year student at McGill planning to major in immunology & microbiology.",
+        "hobbies": "Joined MycoNurseries to see the growth of fungi. Hobbies include traveling and playing tennis."
+      },
+      "kalynaLevytsky": {
+        "name": "Kalyna Levytsky (any/tous)",
+        "bio": "Chemistry student at McGill University. Loves music and the outdoors.",
+        "hobbies": "Their interest in fungi started on the trails."
+      },
+      "operations": "Operations",
+      "mariaAreizagaGarcia": {
+        "name": "Maria E. Areizaga-García (she/her)",
+        "bio": "Pursuing a bachelor’s degree in Microbiology and Immunology at McGill University, with the intent of going to pharmacy school.",
+        "hobbies": "Hobbies include spending time with her friends, drinking coffee, and exploring Montreal."
+      },
+      "margaritaGauto": {
+        "name": "Margarita Gauto (she/her)",
+        "bio": "Majors in Environment at McGill and hopes to pursue a concentration in Renewable Resource Management.",
+        "hobbies": "Her interest in nature started when she was young on road trips to the Paraguayan jungle. Hobbies include listening to music, watching movies, and playing volleyball."
+      },
+      "education": "Education",
+      "mayaFarres": {
+        "name": "Maya Farres (she/her)",
+        "bio": "A bachelor's student at McGill University with plans to major in environmental biology.",
+        "hobbies": "Hobbies include writing, hiking, and making mug cakes."
+      },
+      "biankaDusseault": {
+        "name": "Bianka Dusseault (she/her)",
+        "bio": "A student-athlete pursuing a bachelor's in environmental science specializing in health determination.",
+        "hobbies": "Hobbies include learning new skills, creating art, playing board games, and basketball."
+      },
+      "communicationsAndEvents": "Communications & Events",
+      "shimonaSingh": {
+        "name": "Shimona Singh (she/her)",
+        "bio": "Studying Computer Science at McGill University.",
+        "hobbies": "Hobbies include hiking at Mount Royal, traveling, or crocheting."
+      },
+      "maxineBisera": {
+        "name": "Maxine Bisera",
+        "bio": "A student at McGill University with majors in Biology and Urban Studies.",
+        "hobbies": "Interested in the effects of urbanization on ecosystems and urban farming practices like MycoNurseries."
+      },
+      "nayaTawil": {
+        "name": "Naya Tawil (she/her)",
+        "bio": "Enjoys learning about fungi and designing. Plans to pursue a Master’s in Architecture with a specialization in sustainability and climate resilience."
+      }
+    },
+    "partners": {
+      "title": "Our Collaborators & Supporters",
+      "text": "Meet the organizations and individuals supporting us!",
+      "spf": {
+        "title": "Sustainability Projects Fund (SPF)",
+        "text1": "The Sustainability Projects Fund (SPF) builds a culture of sustainability on McGill campuses by developing and funding interdisciplinary projects.",
+        "text2": "The SPF is the largest fund of its kind in Canada, valued at $1 million annually.",
+        "text3": "Since 2010, over $10 million has been allocated to more than 260 projects.",
+        "text4": "We received seed funding from the SPF to kickstart our project, which helped us secure a place in the McGill University Phytotron and produce our first batch of oyster mushrooms."
+      },
+      "sproutFellowship": {
+        "title": "Sprout Ideas Fellowship",
+        "text1": "The Sprout Ideas Fellowship provided MycoNurseries CEO and board member Julia Wright with a seed grant, skill building, and mentorship.",
+        "text2": "The fellowship is funded in part by Canada Service Corps and empowers youth aged 15 to 30 to gain experience and skills while giving back to their community.",
+        "text3": "Through this program, Julia completed several learning modules to become a better social innovator and is expanding the mushroom growing process with the seed grant."
+      },
+      "globalChallengesAward": {
+        "title": "McGill University Faculty of Engineering Global Challenges Award",
+        "text1": "The McGill University’s Faculty of Engineering Global Challenges Award provides undergraduate students with experiential learning opportunities to gain experience in teamwork, leadership, and communication.",
+        "text2": "Through this award, we hired Michael Li as an intern in the summer of 2024. He developed a sensor system to monitor growing conditions and helped with operations."
+      },
+      "dobsonCentre": {
+        "title": "Dobson Centre for Entrepreneurship",
+        "text1": "The Dobson Centre for Entrepreneurship is the hub of entrepreneurship at McGill University.",
+        "text2": "Its mission is to teach, coach, and support entrepreneurs from across the university in building innovative companies with a purpose.",
+        "text3": "The center provided coaching and development to MycoNurseries members who completed the 2024 Dobson Weston Innovation in Sustainability Lean Program.",
+        "text4": "They are now semi-finalists in the McGill Dobson Bootcamp and Cup, where they are learning about operating a non-profit and preparing for a pitch competition in April."
+      }
+    },
+    "volunteer": {
+      "passwordPrompt": "Enter Password to Access",
+      "password": "Password",
+      "submit": "Submit",
+      "posting": {
+        "title": "Volunteer Posting",
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "notes": "Notes or Form Link",
+        "post": "Post"
+      }
+    }
+  }
+}

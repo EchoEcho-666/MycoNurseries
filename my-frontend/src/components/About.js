@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 // eslint-disable-next-line no-unused-vars
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Section = styled.section`
   padding: 2em 1em;
@@ -24,6 +25,7 @@ const ButtonContainer = styled.div`
 
 
 function AboutSection() {
+  const { t } = useTranslation();
   return (
     <Section id="about">
       <Heading>About MycoNurseries</Heading>

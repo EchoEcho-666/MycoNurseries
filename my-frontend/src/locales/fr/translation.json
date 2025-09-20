@@ -1,0 +1,232 @@
+{
+  "components": {
+    "about": {
+      "title": "À propos de MycoNurseries",
+      "subtitle": "Promouvoir la durabilité à travers la fongiculture",
+      "text1": "MycoNurseries est une organisation à but non lucratif qui promeut la durabilité à travers la fongiculture.",
+      "text2": "Basée sur le campus de l'Université McGill, MycoNurseries collecte le marc de café usagé auprès des cafés locaux et l'utilise comme nourriture pour les pleurotes.",
+      "text3": "Après la récolte, ces champignons sont donnés à des projets qui luttent contre l'insécurité alimentaire sur le campus.",
+      "link": "En savoir plus sur nous"
+    },
+    "footer": {
+      "about": "À propos",
+      "home": "Accueil",
+      "ourPartners": "Nos partenaires",
+      "team": "Équipe",
+      "growingProcess": "Processus de croissance",
+      "getInvolved": "S'impliquer",
+      "partnerWithUs": "Devenir partenaire",
+      "becomeAVolunteer": "Devenir bénévole",
+      "shop": "Boutique",
+      "contact": "Contact",
+      "emailCopied": "E-mail copié dans le presse-papiers !",
+      "clickToCopy": "Cliquez pour copier",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "newsletter": "Newsletter",
+      "copyright": "2025 MycoNurseries"
+    },
+    "growingProcess": {
+      "title": "Notre processus de culture de champignons",
+      "text": "Découvrez comment nous transformons les déchets organiques recyclés en pleurotes nutritives.",
+      "link": "En savoir plus sur nos champignons"
+    },
+    "header": {
+      "signIn": "Se connecter",
+      "mycoNurseries": "MycoNurseries",
+      "slogan": "Promouvoir la durabilité à travers la fongiculture",
+      "about": "À propos de MycoNurseries",
+      "ourStory": "Notre histoire",
+      "ourTeam": "Notre équipe",
+      "ourGrowingProcess": "Notre processus de croissance",
+      "ourPartners": "Nos partenaires",
+      "getInvolved": "S'impliquer",
+      "shop": "Boutique"
+    },
+    "team": {
+      "title": "Rencontrez l'équipe",
+      "text1": "Notre équipe est un groupe de personnes passionnées qui travaillent ensemble pour promouvoir la durabilité à travers des solutions de fongiculture innovantes.",
+      "text2": "Nous sommes dévoués à favoriser la communauté, l'apprentissage et la durabilité à chaque étape.",
+      "link": "En savoir plus sur l'équipe"
+    },
+    "page": {
+      "about": {
+        "title": "À propos",
+        "story": "MycoNurseries a été fondée par Julia Wright et Daniel Cha, qui voulaient faire une différence dans leur communauté grâce à leur passion pour les champignons.",
+        "growth": "Au cours des deux dernières années, MycoNurseries est devenue une organisation à but non lucratif basée à Montréal, dédiée à la promotion de la durabilité à travers la fongiculture et la seule organisation à cultiver des champignons sur le campus du centre-ville de l'Université McGill.",
+        "howWeCreate": "Comment nous créons une communauté plus durable",
+        "intro": "Nous créons actuellement une communauté plus durable de trois manières:",
+        "sustainableSubstrate": {
+          "title": "Substrat durable",
+          "text1": "Nous cultivons des pleurotes, et ces champignons ont besoin de « nourriture » ou de substrat pour vivre.",
+          "text2": "40 % de la nourriture que nous donnons à nos champignons est du marc de café qui, autrement, aurait été jeté à la décharge, où des études ont montré qu'il génère des gaz à effet de serre et a divers effets néfastes sur l'environnement.",
+          "text3": "Jusqu'à présent, nous avons détourné plus de 40 kg de marc de café usagé des décharges."
+        },
+        "community": {
+          "title": "Communauté",
+          "text1": "Nous avons plus de 30 bénévoles qui nous aident à cultiver les champignons.",
+          "text2": "Ces bénévoles sont tous des étudiants ou des jeunes et, en participant aux sessions de culture, ils apprennent l'agriculture urbaine durable. Grâce à la communauté que nous créons, nous espérons inspirer ces bénévoles avec un amour de la nature qui les rendra plus passionnés par l'aide à l'environnement."
+        },
+        "foodSecurity": {
+          "title": "Promotion de la sécurité alimentaire",
+          "text": "Nous donnons les pleurotes que nous cultivons à SNAC, un groupe qui fournit des produits frais gratuits aux membres de la communauté de l'Université McGill confrontés à l'insécurité alimentaire. Nous sommes fiers de cette initiative car nous croyons qu'en plus d'avoir accès à des aliments qui les rassasieront, tout le monde mérite d'avoir accès à une variété de produits frais pour avoir une alimentation de haute qualité."
+        },
+        "supportAndPlans": {
+          "title": "Notre soutien et nos plans futurs",
+          "text1": "Au cours des deux dernières années, nous avons reçu des fonds du Fonds des projets de développement durable, du programme de bourses Global Challenges de la Faculté de génie de l'Université McGill et de la bourse Sprout de Service Canada.",
+          "text2": "Actuellement, nous recevons le soutien du Centre Dobson pour l'entrepreneuriat alors que nous terminons le Bootcamp et la Coupe Dobson de McGill.",
+          "text3": "Pour l'avenir, nous espérons développer un module éducatif sur les économies circulaires et la gestion des déchets, afin d'atteindre plus de gens sur le campus de l'Université McGill et dans la communauté montréalaise en général.",
+          "stayTuned": "Restez à l'écoute !"
+        }
+      }
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "text1": "Contactez MycoNurseries dès aujourd'hui !",
+      "text2": "Si vous avez des questions, des commentaires ou si vous souhaitez collaborer avec nous, notre formulaire de contact est un bon point de départ.",
+      "text3": "Remplissez les informations pertinentes et un membre de l'équipe de MycoNurseries vous répondra bientôt.",
+      "form": {
+        "title": "Formulaire de contact",
+        "firstName": "Prénom",
+        "lastName": "Nom de famille",
+        "email": "E-mail",
+        "message": "Message",
+        "send": "Envoyer",
+        "thankYou": "Merci ! Nous vous répondrons bientôt"
+      }
+    },
+    "cta": {
+      "getInvolved": {
+        "title": "S'impliquer",
+        "text1": "Nous aimerions avoir de vos nouvelles. Veuillez remplir le formulaire ci-dessous.",
+        "firstName": "Prénom",
+        "lastName": "Nom de famille",
+        "email": "E-mail",
+        "mcgillId": "ID McGill",
+        "send": "Envoyer",
+        "thankYou": "Merci ! Nous vous répondrons bientôt"
+      },
+      "sponsorUs": {
+        "title": "Nous parrainer",
+        "text": "Restez à l'écoute pour notre teaser de parrainage pour en savoir plus sur nous.",
+        "downloadKit": "Télécharger le kit de parrainage",
+        "contactTeam": "Contacter notre équipe"
+      }
+    },
+    "teamPage": {
+      "title": "Notre Équipe",
+      "coFounders": "Co-fondateurs",
+      "juliaWright": {
+        "name": "Julia Wright (ils/elles)",
+        "bio": "Étudie la chimie et les mathématiques à l'Université McGill. Aime promouvoir toutes les formes de durabilité.",
+        "hobbies": "Ses hobbies incluent la randonnée, le tricot et passer du temps avec ses amis et sa famille."
+      },
+      "minhLe": {
+        "name": "Minh Le",
+        "bio": "Étudie la pharmacologie et mène des recherches sur la durabilité sociétale.",
+        "hobbies": "Ses hobbies incluent caresser les chats, écouter de la musique et lire."
+      },
+      "nicoVilkoff": {
+        "name": "Nico Vilkoff (ils/elles)",
+        "bio": "Étudie les sciences cognitives et explore les solutions fongiques durables aux défis environnementaux.",
+        "hobbies": "Ses hobbies incluent le dessin, la résolution de puzzles et le visionnage de séries télévisées."
+      },
+      "research": "Recherche",
+      "deanBaghdadi": {
+        "name": "Dean Baghdadi (il/lui)",
+        "bio": "Étudiant en génie des bioressources à l'Université McGill. Espère travailler dans la conception de transports et le développement durable.",
+        "hobbies": "Ses hobbies incluent passer du temps avec son chien, lire ou faire de la pâtisserie."
+      },
+      "siqiLiu": {
+        "name": "Siqi Liu (elle/sa)",
+        "bio": "Étudiante de première année à McGill, prévoyant de se spécialiser en immunologie et microbiologie.",
+        "hobbies": "A rejoint MycoNurseries pour voir la croissance des champignons. Ses hobbies incluent voyager et jouer au tennis."
+      },
+      "kalynaLevytsky": {
+        "name": "Kalyna Levytsky (n'importe quel pronom/tous)",
+        "bio": "Étudiant en chimie à l'Université McGill. Aime la musique et le plein air.",
+        "hobbies": "Son intérêt pour les champignons a commencé sur les sentiers."
+      },
+      "operations": "Opérations",
+      "mariaAreizagaGarcia": {
+        "name": "Maria E. Areizaga-García (elle/sa)",
+        "bio": "Poursuit un baccalauréat en microbiologie et immunologie à l'Université McGill, avec l'intention d'aller à l'école de pharmacie.",
+        "hobbies": "Ses hobbies incluent passer du temps avec ses amis, boire du café et explorer Montréal."
+      },
+      "margaritaGauto": {
+        "name": "Margarita Gauto (elle/sa)",
+        "bio": "Se spécialise en environnement à McGill et espère poursuivre une concentration en gestion des ressources renouvelables.",
+        "hobbies": "Son intérêt pour la nature a commencé quand elle était jeune lors de voyages en voiture dans la jungle paraguayenne. Ses hobbies incluent écouter de la musique, regarder des films et jouer au volleyball."
+      },
+      "education": "Éducation",
+      "mayaFarres": {
+        "name": "Maya Farres (elle/sa)",
+        "bio": "Étudiante en baccalauréat à l'Université McGill avec des projets de spécialisation en biologie environnementale.",
+        "hobbies": "Ses hobbies incluent l'écriture, la randonnée et la préparation de gâteaux dans une tasse."
+      },
+      "biankaDusseault": {
+        "name": "Bianka Dusseault (elle/sa)",
+        "bio": "Une étudiante-athlète poursuivant un baccalauréat en sciences de l'environnement avec une spécialisation en détermination de la santé.",
+        "hobbies": "Ses hobbies incluent l'apprentissage de nouvelles compétences, la création artistique, le jeu de société et le basketball."
+      },
+      "communicationsAndEvents": "Communications & Événements",
+      "shimonaSingh": {
+        "name": "Shimona Singh (elle/sa)",
+        "bio": "Étudie l'informatique à l'Université McGill.",
+        "hobbies": "Ses hobbies incluent la randonnée au Mont-Royal, les voyages ou le crochet."
+      },
+      "maxineBisera": {
+        "name": "Maxine Bisera",
+        "bio": "Étudiante à l'Université McGill avec des spécialisations en biologie et en études urbaines.",
+        "hobbies": "Intéressée par les effets de l'urbanisation sur les écosystèmes et les pratiques agricoles urbaines comme MycoNurseries."
+      },
+      "nayaTawil": {
+        "name": "Naya Tawil (elle/sa)",
+        "bio": "Aime apprendre sur les champignons et le design. Prévoit de poursuivre une maîtrise en architecture avec une spécialisation en durabilité et résilience climatique."
+      }
+    },
+    "partners": {
+      "title": "Nos collaborateurs et supporters",
+      "text": "Rencontrez les organisations et les personnes qui nous soutiennent !",
+      "spf": {
+        "title": "Fonds des projets de développement durable (SPF)",
+        "text1": "Le Fonds des projets de développement durable (SPF) construit une culture de durabilité sur les campus de McGill en développant et en finançant des projets interdisciplinaires.",
+        "text2": "Le SPF est le plus grand fonds de ce type au Canada, d'une valeur d'un million de dollars par an.",
+        "text3": "Depuis 2010, plus de 10 millions de dollars ont été alloués à plus de 260 projets.",
+        "text4": "Nous avons reçu un financement de démarrage du SPF pour lancer notre projet, ce qui nous a aidés à obtenir une place dans le Phytotron de l'Université McGill et à produire notre première récolte de pleurotes."
+      },
+      "sproutFellowship": {
+        "title": "Bourse Sprout Ideas Fellowship",
+        "text1": "La bourse Sprout Ideas Fellowship a fourni à Julia Wright, PDG et membre du conseil d'administration de MycoNurseries, une subvention de démarrage, un renforcement des compétences et un mentorat.",
+        "text2": "La bourse est financée en partie par Service Canada et permet aux jeunes de 15 à 30 ans d'acquérir de l'expérience et des compétences tout en redonnant à leur communauté.",
+        "text3": "Grâce à ce programme, Julia a suivi plusieurs modules d'apprentissage pour devenir une meilleure innovatrice sociale et élargit le processus de culture des champignons avec la subvention de démarrage."
+      },
+      "globalChallengesAward": {
+        "title": "Prix Global Challenges de la Faculté de génie de l'Université McGill",
+        "text1": "Le Prix Global Challenges de la Faculté de génie de l'Université McGill offre aux étudiants de premier cycle des occasions d'apprentissage expérientiel pour acquérir de l'expérience en travail d'équipe, en leadership et en communication.",
+        "text2": "Grâce à ce prix, nous avons embauché Michael Li comme stagiaire à l'été 2024. Il a développé un système de capteurs pour surveiller les conditions de croissance et a aidé aux opérations."
+      },
+      "dobsonCentre": {
+        "title": "Centre Dobson pour l'entrepreneuriat",
+        "text1": "Le Centre Dobson pour l'entrepreneuriat est le pôle de l'entrepreneuriat à l'Université McGill.",
+        "text2": "Sa mission est d'enseigner, de coacher et de soutenir les entrepreneurs de toute l'université dans la création d'entreprises innovantes avec un but.",
+        "text3": "Le centre a fourni un coaching et un développement aux membres de MycoNurseries qui ont terminé le programme Dobson Weston Innovation in Sustainability Lean 2024.",
+        "text4": "Ils sont maintenant demi-finalistes du Bootcamp et de la Coupe Dobson de McGill, où ils apprennent à gérer une organisation à but non lucratif et se préparent pour une compétition de pitch en avril."
+      }
+    },
+    "volunteer": {
+      "passwordPrompt": "Entrez le mot de passe pour accéder",
+      "password": "Mot de passe",
+      "submit": "Soumettre",
+      "posting": {
+        "title": "Publication de bénévolat",
+        "name": "Nom",
+        "email": "E-mail",
+        "role": "Rôle",
+        "notes": "Notes ou lien du formulaire",
+        "post": "Publier"
+      }
+    }
+  }
+}
