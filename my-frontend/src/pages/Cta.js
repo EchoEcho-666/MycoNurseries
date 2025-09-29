@@ -127,7 +127,6 @@ const ContactButton = styled.a`
 `;
 
 function Cta() {
-  const { t } = useTranslation();
   const [formData, setFormData] = useState({ firstName: '', lastName: '', email: '', mcgillId: '' });
   const [status, setStatus] = useState('');
 
@@ -139,51 +138,81 @@ function Cta() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('CTA form data submitted:', formData);
-    setStatus(t('cta.getInvolved.thankYou') || 'Thank you! We’ll get back to you soon.');
+    setStatus('Thank you! We’ll get back to you soon.');
     setFormData({ firstName: '', lastName: '', email: '', mcgillId: '' });
   };
 
   return (
     <>
       <CtaWrapper>
-        <CtaTitle>{t('cta.getInvolved.title')}</CtaTitle>
-        <p>{t('cta.getInvolved.text1')}</p>
+        <CtaTitle>Get Involved</CtaTitle>
+        <p>We’d love to hear from you. Please fill out the form below.</p>
 
         <CtaForm onSubmit={handleSubmit}>
-          <Label htmlFor="firstName">{t('cta.getInvolved.firstName')}</Label>
-          <Input id="firstName" name="firstName" type="text" value={formData.firstName} onChange={handleChange} required />
+          <Label htmlFor="firstName">First Name</Label>
+          <Input
+            id="firstName"
+            name="firstName"
+            type="text"
+            value={formData.firstName}
+            onChange={handleChange}
+            required
+          />
 
-          <Label htmlFor="lastName">{t('cta.getInvolved.lastName')}</Label>
-          <Input id="lastName" name="lastName" type="text" value={formData.lastName} onChange={handleChange} required />
+          <Label htmlFor="lastName">Last Name</Label>
+          <Input
+            id="lastName"
+            name="lastName"
+            type="text"
+            value={formData.lastName}
+            onChange={handleChange}
+            required
+          />
 
-          <Label htmlFor="email">{t('cta.getInvolved.email')}</Label>
-          <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required />
+          <Label htmlFor="email">Email</Label>
+          <Input
+            id="email"
+            name="email"
+            type="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
 
-          <Label htmlFor="mcgillId">{t('cta.getInvolved.mcgillId')}</Label>
-          <Input id="mcgillId" name="mcgillId" type="text" value={formData.mcgillId} onChange={handleChange} required />
+          <Label htmlFor="mcgillId">McGill ID</Label>
+          <Input
+            id="mcgillId"
+            name="mcgillId"
+            type="text"
+            value={formData.mcgillId}
+            onChange={handleChange}
+            required
+          />
 
-          <SubmitButton type="submit">{t('cta.getInvolved.send')}</SubmitButton>
+          <SubmitButton type="submit">Send</SubmitButton>
         </CtaForm>
 
         {status && <p style={{ marginTop: '1rem', color: '#39683B' }}>{status}</p>}
       </CtaWrapper>
 
       <SponsorWrapper>
-        <SponsorTitle>{t('cta.sponsorUs.title')}</SponsorTitle>
-        <p>{t('cta.sponsorUs.text')}</p>
+        <SponsorTitle>Sponsor Us</SponsorTitle>
+        <p>Stay tune for our sponsorship teaser to learn more about us.</p>
         <VideoWrapper>
+          {/* Replace src with your video file or YouTube embed URL */}
           <video controls src="/videos/sponsor-teaser.mp4" />
         </VideoWrapper>
 
         <PdfWrapper>
+          {/* Replace src with your PDF path */}
           <PdfEmbed src={process.env.PUBLIC_URL + "/assets/cta/sponsor_kit_eng.pdf"} />
           <DownloadButton href={process.env.PUBLIC_URL + "/assets/cta/sponsor_kit_eng.pdf"} download>
-            {t('cta.sponsorUs.downloadKit')}
+            Download Sponsor Kit
           </DownloadButton>
         </PdfWrapper>
 
         <ContactButton href="mailto:sponsorship@example.com?subject=Interested%20in%20Sponsoring">
-          {t('cta.sponsorUs.contactTeam')}
+          Contact Our Team
         </ContactButton>
       </SponsorWrapper>
     </>
@@ -191,3 +220,4 @@ function Cta() {
 }
 
 export default Cta;
+

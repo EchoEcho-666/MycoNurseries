@@ -8,6 +8,7 @@ const HeaderWrapper = styled.header`
   color: #FFE7C9;
   padding: 1rem 0.2rem 0.2rem;
   text-align: center;
+  position: relative;
 `;
 
 const HeaderContent = styled.div`
@@ -54,7 +55,7 @@ const Divider = styled.hr`
 
 const Nav = styled.nav`
   margin-top: 0.5rem;
-  margin-right: 5em
+  margin-right: 5em;
 `;
 
 const NavLinks = styled.ul`
@@ -119,12 +120,36 @@ const CornerLink = styled(NavLink)`
   }
 `;
 
+const LanguageToggleButton = styled.button`
+  position: absolute;
+  top: 1rem;
+  right: 8rem; /* position it left of the sign-in button */
+  color: #FFE7C9;
+  font-size: 1rem;
+  background-color: #2E7D32;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    background-color: #1B5E20;
+  }
+`;
 
 function Header() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'en' ? 'fr' : 'en';
+    i18n.changeLanguage(newLang);
+  };
 
   return (
     <HeaderWrapper>
+      <LanguageToggleButton onClick={toggleLanguage}>
+        {i18n.language === 'en' ? 'FR' : 'EN'}
+      </LanguageToggleButton>
       <CornerLink to="/Volunteer">{t('components.header.signIn')}</CornerLink>
       <HeaderContent>
         <Logo src={process.env.PUBLIC_URL + '/assets/logo-cut-out.png'} alt={t('components.header.mycoNurseries')} />
