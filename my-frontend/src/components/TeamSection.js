@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const TeamContainer = styled.section`
   padding: 2em 1em;
@@ -51,6 +52,7 @@ const ButtonContainer = styled.div`
 `;
 
 function TeamSection() {
+  const { t } = useTranslation();
   return (
     <TeamContainer id="team">
       <TeamIntro>
@@ -58,14 +60,13 @@ function TeamSection() {
           <TeamPhoto src={process.env.PUBLIC_URL + '/assets/team-photo.jpg'} alt="Team Photo" />
         </TeamPhotoContainer>
         <TeamText>
-          <Heading>Meet the Team</Heading>
-          <Description>
-            Our team is a group of passionate individuals working together to promote sustainability
-            through innovative fungiculture solutions. We’re dedicated to fostering community, learning,
-            and sustainability at every step.
-          </Description>
+          <Heading>{t('components.team.title')}</Heading>
+          <Description>{t('components.team.text1')}</Description>
+          <Description>{t('components.team.text2')}</Description>
           <ButtonContainer>
-            <Link to="/team" className="button">Learn more about the team</Link>
+            <Link to="/team" className="button">
+              {t('components.team.link')}
+            </Link>
           </ButtonContainer>
         </TeamText>
       </TeamIntro>

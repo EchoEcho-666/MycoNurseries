@@ -10,10 +10,10 @@
     },
     "footer": {
       "about": "About",
-      "home": "Home",
+      "aboutMyconurseries": "About us",
       "ourPartners": "Our Partners",
-      "team": "Team",
-      "growingProcess": "Growing Process",
+      "team": "Our Team",
+      "growingProcess": "Our Growing Process",
       "getInvolved": "Get Involved",
       "partnerWithUs": "Partner with Us",
       "becomeAVolunteer": "Become a Volunteer",
@@ -216,6 +216,7 @@
       }
     },
     "volunteer": {
+      "volunteerPrompt": "Volunteer form submitted:",
       "passwordPrompt": "Enter Password to Access",
       "password": "Password",
       "submit": "Submit",

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+
 const Section = styled.section`
   padding: 2em 1em;
   margin: 0 auto;
@@ -26,17 +27,17 @@ const ButtonContainer = styled.div`
 
 function AboutSection() {
   const { t } = useTranslation();
+  
   return (
     <Section id="about">
-      <Heading>About MycoNurseries</Heading>
-      <Paragraph>
-        MycoNurseries is a non-profit promoting sustainability fungiculture. We do this primarily through growing oyster mushrooms from discarded organic matter and fostering an inclusive and diverse community passionate about fungi.
-      </Paragraph>
-      <Paragraph>
-        Based on the McGill University Campus, MycoNurseries collects used coffee grounds from local coffee shops and uses them as food for the oyster mushrooms. After harvest, these mushrooms are donated to projects addressing food insecurity on campus.
-      </Paragraph>
+      <Heading>{t('components.about.title')}</Heading>
+      <Paragraph>{t('components.about.text1')}</Paragraph>
+      <Paragraph>{t('components.about.text2')}</Paragraph>
+      <Paragraph>{t('components.about.text3')}</Paragraph>
       <ButtonContainer>
-        <Link to="/about-myconurseries" className="button">Learn more about us</Link>
+        <Link to="/about-myconurseries" className="button">
+          {t('components.about.link')}
+        </Link>
       </ButtonContainer>
     </Section>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const HeaderWrapper = styled.header`
   background-color: #39683B;
@@ -120,16 +121,18 @@ const CornerLink = styled(NavLink)`
 
 
 function Header() {
+  const { t } = useTranslation();
+
   return (
     <HeaderWrapper>
-      <CornerLink to="/Volunteer">Sign In</CornerLink>
+      <CornerLink to="/Volunteer">{t('components.header.signIn')}</CornerLink>
       <HeaderContent>
-        <Logo src={process.env.PUBLIC_URL + '/assets/logo-cut-out.png'} alt="MycoNurseries Logo" />
+        <Logo src={process.env.PUBLIC_URL + '/assets/logo-cut-out.png'} alt={t('components.header.mycoNurseries')} />
         <TitleSection>
           <TitleLink to="/">
-            <Title>MycoNurseries</Title>
+            <Title>{t('components.header.mycoNurseries')}</Title>
           </TitleLink>
-          <Catchphrase>Promoting Sustainability Through Fungiculture</Catchphrase>
+          <Catchphrase>{t('components.header.slogan')}</Catchphrase>
         </TitleSection>
       </HeaderContent>
 
@@ -138,22 +141,33 @@ function Header() {
       <Nav>
         <NavLinks>
           <NavItem>
-            <StyledLink to="/about-myconurseries">About MycoNurseries</StyledLink>
-              <DropdownMenu>
-                <li><DropdownItem to="/about-myconurseries">Our Story</DropdownItem></li>
-                <li><DropdownItem to="/team">Our Team</DropdownItem></li>
-                <li><DropdownItem to="/growing-process">Our Growing Process</DropdownItem></li>
-                <li><DropdownItem to="/our-partners">Our Partners</DropdownItem></li>
-              </DropdownMenu>
-          </NavItem>
-          <NavItem><StyledLink to="/Cta">Get Involved</StyledLink>
+            <StyledLink to="/about-myconurseries">{t('components.header.about')}</StyledLink>
             <DropdownMenu>
-             {/*<li><DropdownItem to="/contact">Contact</DropdownItem></li>
-             <li><DropdownItem to ="/partner-with-us">Partner with Us</DropdownItem></li>*/}
+              <li>
+                <DropdownItem to="/about-myconurseries">{t('components.header.ourStory')}</DropdownItem>
+              </li>
+              <li>
+                <DropdownItem to="/team">{t('components.header.ourTeam')}</DropdownItem>
+              </li>
+              <li>
+                <DropdownItem to="/growing-process">{t('components.header.ourGrowingProcess')}</DropdownItem>
+              </li>
+              <li>
+                <DropdownItem to="/our-partners">{t('components.header.ourPartners')}</DropdownItem>
+              </li>
             </DropdownMenu>
           </NavItem>
-          <NavItem><StyledLink to="/Shop">Shop</StyledLink></NavItem>
-          {/* add other top-level links here */}
+          <NavItem>
+            <StyledLink to="/Cta">{t('components.header.getInvolved')}</StyledLink>
+            <DropdownMenu>
+              {/* Uncomment if needed */}
+              {/* <li><DropdownItem to="/contact">{t('components.footer.contact')}</DropdownItem></li>
+              <li><DropdownItem to="/partner-with-us">{t('components.footer.partnerWithUs')}</DropdownItem></li> */}
+            </DropdownMenu>
+          </NavItem>
+          <NavItem>
+            <StyledLink to="/Shop">{t('components.header.shop')}</StyledLink>
+          </NavItem>
         </NavLinks>
       </Nav>
     </HeaderWrapper>
@@ -161,4 +175,3 @@ function Header() {
 }
 
 export default Header;
-

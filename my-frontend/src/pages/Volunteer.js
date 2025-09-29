@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 const Wrapper = styled.div`
   max-width: 800px;
@@ -47,13 +48,14 @@ const Button = styled.button`
 `;
 
 function Volunteer() {
+  const { t } = useTranslation();
   const [password, setPassword] = useState('');
   const [authenticated, setAuthenticated] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', role: '', notes: '' });
 
   const handleAuth = (e) => {
     e.preventDefault();
-    if (password === 'letmein') setAuthenticated(true); // Simple client-side password
+    if (password === 'letmein') setAuthenticated(true);
   };
 
   const handleChange = (e) => {
@@ -63,22 +65,22 @@ function Volunteer() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Volunteer form submitted:', formData);
+    console.log(`${t('volunteer.volunteerPrompt')} ${JSON.stringify(formData)}`);
     setFormData({ name: '', email: '', role: '', notes: '' });
   };
 
   if (!authenticated) {
     return (
       <Wrapper>
-        <Title>Enter Password to Access</Title>
+        <Title>{t('volunteer.passwordPrompt')}</Title>
         <Form onSubmit={handleAuth}>
-          <Label>Password</Label>
+          <Label>{t('volunteer.password')}</Label>
           <Input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Button type="submit">Submit</Button>
+          <Button type="submit">{t('volunteer.submit')}</Button>
         </Form>
       </Wrapper>
     );
@@ -86,21 +88,21 @@ function Volunteer() {
 
   return (
     <Wrapper>
-      <Title>Volunteer Posting</Title>
+      <Title>{t('volunteer.posting.title')}</Title>
       <Form onSubmit={handleSubmit}>
-        <Label>Name</Label>
+        <Label>{t('volunteer.posting.name')}</Label>
         <Input name="name" value={formData.name} onChange={handleChange} />
 
-        <Label>Email</Label>
+        <Label>{t('volunteer.posting.email')}</Label>
         <Input name="email" value={formData.email} onChange={handleChange} />
 
-        <Label>Role</Label>
+        <Label>{t('volunteer.posting.role')}</Label>
         <Input name="role" value={formData.role} onChange={handleChange} />
 
-        <Label>Notes or Form Link</Label>
+        <Label>{t('volunteer.posting.notes')}</Label>
         <TextArea name="notes" rows={4} value={formData.notes} onChange={handleChange} />
 
-        <Button type="submit">Post</Button>
+        <Button type="submit">{t('volunteer.posting.post')}</Button>
       </Form>
     </Wrapper>
   );

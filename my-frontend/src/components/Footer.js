@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FaInstagram, FaFacebook, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const FooterWrapper = styled.footer`
   background-color: #3A693C;
@@ -76,6 +77,14 @@ const Message = styled.p`
 function Footer() {
   const [contactMessage, setContactMessage] = useState('');
   const [newsletterMessage] = useState('');
+  const { t } = useTranslation();
+
+  const handleCopyEmail = (e) => {
+    e.preventDefault();
+    navigator.clipboard.writeText("myconurseries@gmail.com");
+    setContactMessage(t("components.footer.emailCopied"));
+    setTimeout(() => setContactMessage(""), 1500);
+  };
 
   return (
     <FooterWrapper>
@@ -83,69 +92,72 @@ function Footer() {
         <FooterColumn>
           <ColumnTitle>About</ColumnTitle>
           <NoBulletList>
-            <li><FooterLink to="/">Home</FooterLink></li>
-            <li><FooterLink to="/our-partners">Our Partners</FooterLink></li>
-            <li><FooterLink to="/team">Team</FooterLink></li>
-            <li><FooterLink to="/growing-process">Growing Process</FooterLink></li>
+            <li><FooterLink to="/about-myconurseries">{t("components.footer.aboutMyconurseries")}</FooterLink></li>
+            <li><FooterLink to="/our-partners">{t("components.footer.ourPartners")}</FooterLink></li>
+            <li><FooterLink to="/team">{t("components.footer.team")}</FooterLink></li>
+            <li><FooterLink to="/growing-process">{t("components.footer.growingProcess")}</FooterLink></li>
           </NoBulletList>
         </FooterColumn>
 
         <FooterColumn>
-          <ColumnTitle>Get Involved</ColumnTitle>
+          <ColumnTitle>{t("components.footer.getInvolved")}</ColumnTitle>
           <NoBulletList>
-            <li><FooterLink to="/partner-with-us">Partner with Us</FooterLink></li>
-            <li><FooterLink to="/become-a-volunteer">Become a Volunteer</FooterLink></li>
-            <li><FooterLink to="/shop">Shop</FooterLink></li>
+            <li><FooterLink to="/partner-with-us">{t("components.footer.partnerWithUs")}</FooterLink></li>
+            <li><FooterLink to="/become-a-volunteer">{t("components.footer.becomeAVolunteer")}</FooterLink></li>
+            <li><FooterLink to="/shop">{t("components.footer.shop")}</FooterLink></li>
           </NoBulletList>
         </FooterColumn>
 
         <FooterColumn>
-          <ColumnTitle>Contact</ColumnTitle>
+          <ColumnTitle>{t("components.footer.contact")}</ColumnTitle>
           <NoBulletList>
             <li>
               <ExternalLink
                 href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigator.clipboard.writeText("myconurseries@gmail.com");
-                  setContactMessage("Email copied to clipboard!");
-                  setTimeout(() => setContactMessage(''), 1500);
-                }}
-                title="Click to copy"
+                onClick={handleCopyEmail}
+                title={t("components.footer.clickToCopy")}
               >
-                <FaEnvelope style={{ marginRight: '0.5em' }} />
-                myconurseries@gmail.com
+                <FaEnvelope />
+                {" "}myconurseries@gmail.com
               </ExternalLink>
             </li>
             <li>
-              <ExternalLink href="https://www.instagram.com/myconurseries" target="_blank" rel="noreferrer"><FaInstagram /> Instagram</ExternalLink>
+              <ExternalLink href="https://www.instagram.com/myconurseries" target="_blank" rel="noreferrer">
+                <FaInstagram />
+                {" "}{t("components.footer.instagram")}
+              </ExternalLink>
             </li>
             <li>
-              <ExternalLink href="https://www.facebook.com/profile.php?id=61555856812571" target="_blank" rel="noreferrer"><FaFacebook /> Facebook</ExternalLink>
+              <ExternalLink href="https://www.facebook.com/profile.php?id=61555856812571" target="_blank" rel="noreferrer">
+                <FaFacebook />
+                {" "}{t("components.footer.facebook")}
+              </ExternalLink>
             </li>
             <li>
-              <ExternalLink href="https://www.linkedin.com" target="_blank" rel="noreferrer"><FaLinkedin /> LinkedIn</ExternalLink>
+              <ExternalLink href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+                <FaLinkedin />
+                {" "}{t("components.footer.linkedin")}
+              </ExternalLink>
             </li>
           </NoBulletList>
           {contactMessage && <Message>{contactMessage}</Message>}
         </FooterColumn>
 
         <FooterColumn>
-          <ColumnTitle>Newsletter</ColumnTitle>
+          <ColumnTitle>{t("components.footer.newsletter")}</ColumnTitle>
           <iframe 
             src="https://myconurseries.substack.com/embed" 
             width="100%" 
             height="150" 
             style={{ border: 'none', background: 'transparent' }} 
-            title="Substack Subscribe Form"
+            title={t("components.footer.newsletter")}
           />
           {newsletterMessage && <Message>{newsletterMessage}</Message>}
         </FooterColumn>
       </FooterContainer>
-      <FooterText>&copy; 2025 MycoNurseries</FooterText>
+      <FooterText>© {t("components.footer.copyright")}</FooterText>
     </FooterWrapper>
   );
 }
 
 export default Footer;
-

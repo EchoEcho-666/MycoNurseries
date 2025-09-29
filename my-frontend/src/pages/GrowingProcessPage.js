@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 const Container = styled.section`
   padding: 1em 2em;
@@ -23,17 +24,19 @@ const Paragraph = styled.p`
 `;
 
 function GrowingProcess() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Container>
-        <Heading>Our Mushroom Growing Process</Heading>
-        <Paragraph>Discover how we sustainably grow oyster mushrooms from recycled organic waste.</Paragraph>
+        <Heading>{t('components.growingProcess.title')}</Heading>
+        <Paragraph>{t('components.growingProcess.text')}</Paragraph>
         
         <Image src={process.env.PUBLIC_URL + "/assets/growing-process/flowchart.jpg"} alt="Mushroom Growing Flowchart" />
-        <Paragraph>Our structured process ensures optimal growth using sustainable practices.</Paragraph>
+        <Paragraph>{t('components.growingProcess.flowchartDesc')}</Paragraph>
 
         <Image src={process.env.PUBLIC_URL + "/assets/growing-process/infographic.jpg"} alt="Mushroom Growing Infographic" />
-        <Paragraph>Our impact: Reducing waste, fostering community, and promoting food security.</Paragraph>
+        <Paragraph>{t('components.growingProcess.infographicDesc')}</Paragraph>
       </Container>
     </>
   );

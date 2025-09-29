@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 /* 
 const Section = styled.section`
@@ -167,19 +168,21 @@ const ButtonContainer = styled.div`
 */
 
 
-
 function GrowingProcessSection() {
+  const { t } = useTranslation();
+
   return (
     <Section id="growing-process">
-      <Heading>Our Mushroom Growing Process</Heading>
-      <Paragraph>
-        Learn how we turn recycled organic waste into nutritious oyster mushrooms.
-      </Paragraph>
+      <Heading>{t('components.growingProcess.title')}</Heading>
+      <Paragraph>{t('components.growingProcess.text')}</Paragraph>
       <ButtonContainer>
-        <Link to="/growing-process" className="button">More about our mushrooms</Link>
+        <Link to="/growing-process" className="button">
+          {t('components.growingProcess.link')}
+        </Link>
       </ButtonContainer>
     </Section>
   );
 }
+
 
 export default GrowingProcessSection;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 const Container = styled.section`
   padding: 2em;
@@ -86,38 +87,50 @@ const SubmitButton = styled.button`
 `;
 
 function Contact() {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
-    mcgillId: ''
+    mcgillId: '',
+    message: ''
   });
+
   const [status, setStatus] = useState('');
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
+    // Simulate form submit logic here
     console.log('Form submitted:', formData);
-    setStatus('Thank you! We’ll get back to you soon.');
-    setFormData({ firstName: '', lastName: '', email: '', mcgillId: '' });
+    setStatus(t('contact.form.thankYou'));
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      mcgillId: '',
+      message: ''
+    });
   };
 
   return (
     <Container>
       <LeftPanel>
-        <ContactTitle>Contact Us</ContactTitle>
+        <ContactTitle>{t('contact.title')}</ContactTitle>
         <div style={{ marginBottom: '1.5rem' }}>
-          <h3 style={{ color: '#382F2F' }}>Get in touch with MycoNurseries today!</h3>
-          <p>If you have any questions, comments, or are interested in collaborating with us, our contact form is a good place to start.</p>
-          <p>Fill out the relevant information and someone from the MycoNurseries team will get back to you soon.</p>
+          <h3 style={{ color: '#382F2F' }}>{t('contact.text1')}</h3>
+          <p>{t('contact.text2')}</p>
+          <p>{t('contact.text3')}</p>
         </div>
         <ContactList>
           <ContactItem>
-            Email: myconurseries@gmail.com
+            {t('contact.email')}:{' '}
+            <a href="mailto:myconurseries@gmail.com">myconurseries@gmail.com</a>
           </ContactItem>
         </ContactList>
         <SocialIcons>
@@ -134,9 +147,8 @@ function Contact() {
       </LeftPanel>
 
       <RightPanel>
-
         <Form onSubmit={handleSubmit}>
-          <Label htmlFor="firstName">First Name</Label>
+          <Label htmlFor="firstName">{t('contact.form.firstName')}</Label>
           <Input
             id="firstName"
             name="firstName"
@@ -146,7 +158,7 @@ function Contact() {
             required
           />
 
-          <Label htmlFor="lastName">Last Name</Label>
+          <Label htmlFor="lastName">{t('contact.form.lastName')}</Label>
           <Input
             id="lastName"
             name="lastName"
@@ -156,7 +168,7 @@ function Contact() {
             required
           />
 
-          <Label htmlFor="email">Email</Label>
+          <Label htmlFor="email">{t('contact.form.email')}</Label>
           <Input
             id="email"
             name="email"
@@ -166,7 +178,16 @@ function Contact() {
             required
           />
 
-          <Label htmlFor="message">Message</Label>
+          <Label htmlFor="mcgillId">{t('contact.form.mcgillId')}</Label>
+          <Input
+            id="mcgillId"
+            name="mcgillId"
+            type="text"
+            value={formData.mcgillId}
+            onChange={handleChange}
+          />
+
+          <Label htmlFor="message">{t('contact.form.message')}</Label>
           <Input
             id="message"
             name="message"
@@ -176,7 +197,7 @@ function Contact() {
             required
           />
 
-          <SubmitButton type="submit">Send</SubmitButton>
+          <SubmitButton type="submit">{t('contact.form.send')}</SubmitButton>
         </Form>
 
         {status && <p style={{ marginTop: '1rem', color: '#39683B' }}>{status}</p>}
@@ -186,4 +207,3 @@ function Contact() {
 }
 
 export default Contact;
-
