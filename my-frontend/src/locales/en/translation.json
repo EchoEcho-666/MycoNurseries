@@ -29,7 +29,11 @@
     },
     "growingProcess": {
       "title": "Our Mushroom Growing Process",
-      "text": "Learn how we turn recycled organic waste into nutritious oyster mushrooms.",
+      "text1": "MycoNurseries sources at least 40% of all starting material we use for our mushrooms from food waste, whether that be used coffee grounds or processed food waste from McGill University’s dining halls. We also emphasize community in our growing process by inviting fellow youth to start and check on crops of oyster mushrooms with the core team members.",
+      "text2":"Our oyster mushrooms are either donated to members of the McGill University and Montréal community facing food insecurity or sold at an accessible price.",
+      "sectionTitle1": "Our Impact",
+      "text3": "Through growing oyster mushrooms, we’ve diverted over 60kg of oyster mushrooms which otherwise would have gone to the landfill and provided over 220 hours of experiential education to youth in Montréal relating to sustainable urban agriculture.",
+      "text4": "(Last updated September 2025)",
       "link": "More about our mushrooms"
     },
     "header": {
