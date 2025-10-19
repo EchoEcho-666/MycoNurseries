@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 const Container = styled.section`
   padding: 1em 2em;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   background-color: #FFF8ED;
   border-radius: 12px;
@@ -15,6 +15,23 @@ const Image = styled.img`
   width: 100%;
   max-width: 800px;
   margin: 2em 0;
+`;
+
+const ImageRow = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin: 3em 0;
+  flex-wrap: wrap;
+`;
+
+const SmallImage = styled.img`
+  width: 100%;
+  max-width: 320px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
 `;
 
 const Heading = styled.h2`
@@ -55,9 +72,11 @@ function GrowingProcess() {
         <SectionTitle>{t('components.growingProcess.sectionTitle1')}</SectionTitle>
         <Paragraph>{t('components.growingProcess.text3')}</Paragraph>
         <Paragraph>{t('components.growingProcess.text4')}</Paragraph>
-        <Image src={process.env.PUBLIC_URL + "/assets/growing-process/group.webp"} alt="Group Picture" />
-        <Image src={process.env.PUBLIC_URL + "/assets/growing-process/growBag.webp"} alt="Grow Bag" />
-        <Image src={process.env.PUBLIC_URL + "/assets/growing-process/mushroom.webp"} alt="Mushroom" />      
+        <ImageRow>
+          <SmallImage src={process.env.PUBLIC_URL + "/assets/growing-process/group.webp"} alt="Group Picture" />
+          <SmallImage src={process.env.PUBLIC_URL + "/assets/growing-process/growBag.png"} alt="Grow Bag" />
+          <SmallImage src={process.env.PUBLIC_URL + "/assets/growing-process/mushroom.webp"} alt="Mushroom" />
+        </ImageRow>   
       </Container>
     </>
   );
