@@ -103,6 +103,7 @@ function TeamPage() {
     <TeamContainer id="team">
       <TeamTitle>Our Team</TeamTitle>
 
+
       {/* Co-Founders */}
       <TeamHeading>Co-Founders</TeamHeading>
       <TeamRow>
@@ -131,6 +132,7 @@ function TeamPage() {
           description="Nico studies cognitive science and explores fungal sustainable solutions to environmental challenges. When not mixing mushroom substrate, they’re drawing, solving puzzles, or geeking out over TV shows."
         />
       </TeamRow>
+
 
       {/* Research Team */}
       <TeamHeading>Research</TeamHeading>
@@ -161,6 +163,7 @@ function TeamPage() {
         />
       </TeamRow>
 
+
       {/* Operations Team */}
       <TeamHeading>Operations</TeamHeading>
       <TeamRow>
@@ -182,6 +185,7 @@ function TeamPage() {
         />
       </TeamRow>
 
+
       {/* Education Team */}
       <TeamHeading>Education</TeamHeading>
       <TeamRow>
@@ -202,6 +206,7 @@ function TeamPage() {
           description="Bianka is a student-athlete pursuing a bachelor's in environmental science specializing in health determination. If she’s not learning a new skill or studying, you’ll find her in the basketball gym, creating art, playing board games, or racing to her next commitment!"
         />
       </TeamRow>
+
 
       {/* Communications & Events Team */}
       <TeamHeading>Communications & Events</TeamHeading>
@@ -234,5 +239,6 @@ function TeamPage() {
     </TeamContainer>
   );
 }
+
 
 export default TeamPage;

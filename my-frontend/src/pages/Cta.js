@@ -148,6 +148,7 @@ function Cta() {
         <CtaTitle>Get Involved</CtaTitle>
         <p>We’d love to hear from you. Please fill out the form below.</p>
 
+        {/*
         <CtaForm onSubmit={handleSubmit}>
           <Label htmlFor="firstName">First Name</Label>
           <Input
@@ -191,30 +192,32 @@ function Cta() {
 
           <SubmitButton type="submit">Send</SubmitButton>
         </CtaForm>
+        */}
 
         {status && <p style={{ marginTop: '1rem', color: '#39683B' }}>{status}</p>}
       </CtaWrapper>
 
+      {/*
       <SponsorWrapper>
         <SponsorTitle>Sponsor Us</SponsorTitle>
         <p>Stay tune for our sponsorship teaser to learn more about us.</p>
         <VideoWrapper>
-          {/* Replace src with your video file or YouTube embed URL */}
+          Replace src with your video file or YouTube embed URL
           <video controls src="/videos/sponsor-teaser.mp4" />
         </VideoWrapper>
 
         <PdfWrapper>
-          {/* Replace src with your PDF path */}
+          Replace src with your PDF path
           <PdfEmbed src={process.env.PUBLIC_URL + "/assets/cta/sponsor_kit_eng.pdf"} />
           <DownloadButton href={process.env.PUBLIC_URL + "/assets/cta/sponsor_kit_eng.pdf"} download>
             Download Sponsor Kit
           </DownloadButton>
         </PdfWrapper>
-
         <ContactButton href="mailto:sponsorship@example.com?subject=Interested%20in%20Sponsoring">
           Contact Our Team
         </ContactButton>
       </SponsorWrapper>
+      */}
     </>
   );
 }
