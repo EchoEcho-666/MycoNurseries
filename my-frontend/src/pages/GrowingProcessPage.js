@@ -71,12 +71,12 @@ function GrowingProcess() {
         <Image src={process.env.PUBLIC_URL + "/assets/growing-process/Myco Flow Chart.png"} alt="Mushroom Growing Flowchart" />
         <SectionTitle>{t('components.growingProcess.sectionTitle1')}</SectionTitle>
         <Paragraph>{t('components.growingProcess.text3')}</Paragraph>
-        <Paragraph>{t('components.growingProcess.text4')}</Paragraph>
         <ImageRow>
           <SmallImage src={process.env.PUBLIC_URL + "/assets/growing-process/group.webp"} alt="Group Picture" />
           <SmallImage src={process.env.PUBLIC_URL + "/assets/growing-process/growBag.png"} alt="Grow Bag" />
           <SmallImage src={process.env.PUBLIC_URL + "/assets/growing-process/mushroom.webp"} alt="Mushroom" />
         </ImageRow>   
+        <Paragraph>{t('components.growingProcess.text4')}</Paragraph>
       </Container>
     </>
   );
