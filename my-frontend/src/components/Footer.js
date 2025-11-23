@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaFacebook, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 
 const FooterWrapper = styled.footer`
@@ -128,13 +128,7 @@ function Footer() {
               </ExternalLink>
             </li>
             <li>
-              <ExternalLink href="https://www.facebook.com/profile.php?id=61555856812571" target="_blank" rel="noreferrer">
-                <FaFacebook />
-                {" "}{t("components.footer.facebook")}
-              </ExternalLink>
-            </li>
-            <li>
-              <ExternalLink href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+              <ExternalLink href="https://www.linkedin.com/company/myconurseries" target="_blank" rel="noreferrer">
                 <FaLinkedin />
                 {" "}{t("components.footer.linkedin")}
               </ExternalLink>

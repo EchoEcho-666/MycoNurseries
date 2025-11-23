@@ -1,3 +1,4 @@
+// my-frontend/src/pages/Contact.js is not used anymore
 import React, { useState } from 'react';
 import styled from 'styled-components';
 

@@ -150,7 +150,7 @@ function Header() {
       <LanguageToggleButton onClick={toggleLanguage}>
         {i18n.language === 'en' ? 'FR' : 'EN'}
       </LanguageToggleButton>
-      <CornerLink to="/Volunteer">{t('components.header.signIn')}</CornerLink>
+      <CornerLink to="/volunteer">{t('components.header.signIn')}</CornerLink>
       <HeaderContent>
         <Logo src={process.env.PUBLIC_URL + '/assets/logo-cut-out.png'} alt={t('components.header.mycoNurseries')} />
         <TitleSection>
@@ -183,7 +183,7 @@ function Header() {
             </DropdownMenu>
           </NavItem>
           <NavItem>
-            <StyledLink to="/Cta">{t('components.header.getInvolved')}</StyledLink>
+            <StyledLink to="/cta">{t('components.header.getInvolved')}</StyledLink>
             <DropdownMenu>
               {/* Uncomment if needed */}
               {/* <li><DropdownItem to="/contact">{t('components.footer.contact')}</DropdownItem></li>
@@ -191,7 +191,7 @@ function Header() {
             </DropdownMenu>
           </NavItem>
           <NavItem>
-            <StyledLink to="/Shop">{t('components.header.shop')}</StyledLink>
+            <StyledLink to="/shop">{t('components.header.shop')}</StyledLink>
           </NavItem>
         </NavLinks>
       </Nav>
