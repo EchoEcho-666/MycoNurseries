@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
@@ -74,6 +74,17 @@ const Message = styled.p`
   color: #FFE7C9;
 `;
 
+const NewsletterWrapper = styled.div`
+  font-size: 0.3em;  // Reduces the text size inside the embed
+`;
+
+const NewsletterMessage = styled.p`
+  color: #FFE7C9;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+  line-height: 1.4;
+`;
+
 function Footer() {
   const [contactMessage, setContactMessage] = useState('');
   const [newsletterMessage] = useState('');
@@ -81,10 +92,22 @@ function Footer() {
 
   const handleCopyEmail = (e) => {
     e.preventDefault();
-    navigator.clipboard.writeText("myconurseries@gmail.com");
+    navigator.clipboard.writeText("myconurseries[at]gmail[dot]com");
     setContactMessage(t("components.footer.emailCopied"));
     setTimeout(() => setContactMessage(""), 1500);
   };
+
+    useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://js.supascribe.com/v1/loader/4Vsl6EmY8tWHirwBpYzYu4Qbo2X2.js';
+    script.async = true;
+    document.head.appendChild(script);
+    return () => {
+      if (document.head.contains(script)) {
+        document.head.removeChild(script);
+      }
+    };
+  }, []);
 
   return (
     <FooterWrapper>
@@ -118,7 +141,7 @@ function Footer() {
                 title={t("components.footer.clickToCopy")}
               >
                 <FaEnvelope />
-                {" "}myconurseries@gmail.com
+                {" "}myconurseries[at]gmail[dot]com
               </ExternalLink>
             </li>
             <li>
@@ -139,14 +162,13 @@ function Footer() {
 
         <FooterColumn>
           <ColumnTitle>{t("components.footer.newsletter")}</ColumnTitle>
-          <iframe 
-            src="https://myconurseries.substack.com/embed" 
-            width="100%" 
-            height="150" 
-            style={{ border: 'none', background: 'transparent' }} 
-            title={t("components.footer.newsletter")}
-          />
+          <NewsletterWrapper>
+            <div data-supascribe-embed-id="182815291373" data-supascribe-subscribe></div>
+          </NewsletterWrapper>
           {newsletterMessage && <Message>{newsletterMessage}</Message>}
+          <NewsletterMessage>
+            This is our Substack newsletter. By entering and subscribing, you agree to <a href="https://substack.com/tos" target="_blank" rel="noreferrer" style={{ color: '#FFE7C9', textDecoration: 'underline' }}>Substack's terms and conditions</a>.
+          </NewsletterMessage>
         </FooterColumn>
       </FooterContainer>
       <FooterText>© {t("components.footer.copyright")}</FooterText>
