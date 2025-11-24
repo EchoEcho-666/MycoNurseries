@@ -153,6 +153,14 @@ function TeamPage() {
           position="Mushroom Care Coordinator"
           description="Kalyna is a student at McGill University, majoring in chemistry. They love music and the outdoors. Their free time is usually spent in rehearsal or on the trails, which is where their interest in fungi started!"
         />
+        <TeamCardComponent
+          image={process.env.PUBLIC_URL + '/assets/team-member/kaecy-picture.png'}
+          alt="Kaecy Elmes"
+          name="Kaecy Elmes"
+          pronoun="(she/her)"
+          position="Vermicomposting Coordinator"
+          description="Kaecy is currently a fourth year student at McGill University in the IHI program, with the intention of going to medical school afterwards. In her free time, she likes to read, bake, and spend time with friends."
+        />
       </TeamRow>
 
 
@@ -174,6 +182,30 @@ function TeamPage() {
           pronoun="(she/her)"
           position="Grow Session Coordinator"
           description="Margarita majors in Environment at McGill and hopes to pursue a concentration in Renewable Resource Management. Her interest in nature started since she was little, when she’d often go on road trips to the Paraguayan jungle with her family. In her free time, she loves listening to music, watching movies, and playing volleyball!"
+        />
+        <TeamCardComponent
+          image={process.env.PUBLIC_URL + '/assets/team-member/amy-picture.png'}
+          alt="Amy Guan"
+          name="Amy Guan"
+          pronoun="(she/her)"
+          position="Grow Session Coordinator"
+          description="Amy is currently a U3 student in Microbiology and Immunology at McGill University. She likes chilling at home with some tea and enjoys growing stuff, thus helping out with the vegetable patch in her backyard. Now she’s learning how to grow mushrooms."
+        />
+        <TeamCardComponent
+          image={process.env.PUBLIC_URL + '/assets/team-member/anonymous.jpg'}
+          alt="Piper Jacopille"
+          name="Piper Jacopille"
+          pronoun=""
+          position="Grow Session Coordinator"
+          description=""
+        />
+        <TeamCardComponent
+          image={process.env.PUBLIC_URL + '/assets/team-member/anonymous.jpg'}
+          alt="Sebastian Kent"
+          name="Sebastian Kent"
+          pronoun=""
+          position="Grow Session Coordinator"
+          description=""
         />
       </TeamRow>
 
@@ -218,6 +250,38 @@ function TeamPage() {
           pronoun="(she/her)"
           position="Graphic Designer"
           description="Naya enjoys learning about fungi and designing. She is set to pursue a Master’s in Architecture with a specialization in sustainability and climate resilience. "
+        />
+        <TeamCardComponent
+          image={process.env.PUBLIC_URL + '/assets/team-member/anonymous.jpg'}
+          alt="Antoine Larocque"
+          name="Antoine Larocque"
+          pronoun=""
+          position="Graphic Designer"
+          description=""
+        />
+        <TeamCardComponent
+          image={process.env.PUBLIC_URL + '/assets/team-member/anonymous.jpg'}
+          alt="Fah Michaud"
+          name="Fah Michaud"
+          pronoun=""
+          position="Blogwriter"
+          description=""
+        />
+        <TeamCardComponent
+          image={process.env.PUBLIC_URL + '/assets/team-member/anonymous.jpg'}
+          alt="Liam McClennan"
+          name="Liam McClennan"
+          pronoun=""
+          position="Sales Coordinator"
+          description=""
+        />
+        <TeamCardComponent
+          image={process.env.PUBLIC_URL + '/assets/team-member/anonymous.jpg'}
+          alt="Luyao Han"
+          name="Luyao Han"
+          pronoun=""
+          position="Marketing & Sales Coordinator"
+          description=""
         />
       </TeamRow>
     </TeamContainer>
