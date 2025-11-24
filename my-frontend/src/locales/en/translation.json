@@ -238,6 +238,22 @@
     "blog": {
       "title": "Blog",
       "description": "Welcome to our blog. Here you are our latest updates and articles."
+    },
+    "shop": {
+      "title": "Our Shop",
+      "handbook": "Buy Our Handbook",
+      "mushrooms": "Buy Our Mushrooms",
+      "policies": "Store Policies",
+      "returnPolicy": "Return Policy",
+      "lastUpdated": "Last updated September 17, 2025.",
+      "refunds": "Refunds: All sales are final and no refund will be issued.",
+      "returnContact": "If you have any questions concerning our return policy, please contact us at: myconurseriess[at]gmail[dot]com.",
+      "cancellationPolicy": "Cancellation Policy",
+      "cancellations": "Non-intentional & Intentional Cancellations for Pick-up of Mushrooms: Under circumstances where clients are unable to collect their purchase during the scheduled pick-up time, clients will not hold MycoNurseries responsible and clients will not be able to pick up their purchase on an alternate day. All sales are final, and no refund will be issued.",
+      "cancellationContact": "If you have any questions concerning our cancellation policy, please contact us at: myconurseriess[at]gmail[dot]com.",
+      "contactDetails": "Customer Service Contact Details",
+      "email": "Email: myconurseriess[at]gmail[dot]com",
+      "instagram": "Instagram: @myconurseriess"
     }
   }
 }

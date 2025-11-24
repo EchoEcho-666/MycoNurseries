@@ -108,12 +108,13 @@ const ContactLink = styled.a`
 `;
 
 export default function Shop() {
+  const { t } = useTranslation();
   return (
     <ShopWrapper>
-      <Title>Our Shop</Title>
+      <Title>{t('components.shop.title')}</Title>
       <ShopContainer>
         <div style={{ flex: 1 }}>
-          <Subtitle>Buy Our Handbook</Subtitle>
+          <Subtitle>{t('components.shop.handbook')}</Subtitle>
           <IframeContainer>
             <ZeffyIframe
               title="Zeffy Handbook Shop"
@@ -124,7 +125,7 @@ export default function Shop() {
           </IframeContainer>
         </div>
         <div style={{ flex: 1 }}>
-          <Subtitle>Buy Our Mushrooms</Subtitle>
+          <Subtitle>{t('components.shop.mushrooms')}</Subtitle>
           <IframeContainer>
             <ZeffyIframe
               title="Zeffy Mushroom Shop"
@@ -136,37 +137,37 @@ export default function Shop() {
         </div>
       </ShopContainer>
       <PoliciesWrapper>
-        <SectionTitle>Store Policies</SectionTitle>
+        <SectionTitle>{t('components.shop.policies')}</SectionTitle>
         
-        <Subtitle>Return Policy</Subtitle>
+        <Subtitle>{t('components.shop.returnPolicy')}</Subtitle>
         <PolicyText>
-          Last updated September 17, 2025.
+          {t('components.shop.lastUpdated')}
         </PolicyText>
         <PolicyText>
-          <strong>Refunds:</strong> All sales are final and no refund will be issued.
+          <strong>{t('components.shop.refunds')}</strong>
         </PolicyText>
         <PolicyText>
-          If you have any questions concerning our return policy, please contact us at: <ContactLink href="mailto:myconurseriess[at]gmail[dot]com">myconurseriess[at]gmail[dot]com</ContactLink>.
+          {t('components.shop.returnContact')}
         </PolicyText>
         
-        <Subtitle>Cancellation Policy</Subtitle>
+        <Subtitle>{t('components.shop.cancellationPolicy')}</Subtitle>
         <PolicyText>
-          Last updated September 17, 2025.
+          {t('components.shop.lastUpdated')}
         </PolicyText>
         <PolicyText>
-          <strong>Non-intentional & Intentional Cancellations for Pick-up of Mushrooms:</strong> Under circumstances where clients are unable to collect their purchase during the scheduled pick-up time, clients will not hold MycoNurseries responsible and clients will not be able to pick up their purchase on an alternate day. All sales are final, and no refund will be issued.
+          <strong>{t('components.shop.cancellations')}</strong>
         </PolicyText>
         <PolicyText>
-          If you have any questions concerning our cancellation policy, please contact us at: <ContactLink href="mailto:myconurseriess[at]gmail[dot]com">myconurseriess[at]gmail[dot]com</ContactLink>.
+          {t('components.shop.cancellationContact')}
         </PolicyText>
         
         <ContactInfo>
-          <Subtitle>Customer Service Contact Details</Subtitle>
+          <Subtitle>{t('components.shop.contactDetails')}</Subtitle>
           <PolicyText>
-            Email: <ContactLink href="mailto:myconurseriess[at]gmail[dot]com">myconurseriess[at]gmail[dot]com</ContactLink>
+            {t('components.shop.email')}
           </PolicyText>
           <PolicyText>
-            Instagram: <ContactLink href="https://instagram.com/myconurseriess" target="_blank" rel="noopener noreferrer">@myconurseriess</ContactLink>
+            {t('components.shop.instagram')}
           </PolicyText>
         </ContactInfo>
       </PoliciesWrapper>

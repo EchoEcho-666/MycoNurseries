@@ -237,6 +237,22 @@
     "blog": {
       "title": "Blog",
       "description": "Bienvenue sur notre blog. Voici nos dernières mises à jour et articles."
+    },
+    "shop": {
+      "title": "Notre Boutique",
+      "handbook": "Achetez Notre Manuel",
+      "mushrooms": "Achetez Nos Champignons",
+      "policies": "Politiques de Magasin",
+      "returnPolicy": "Politique de Retour",
+      "lastUpdated": "Dernière mise à jour le 17 septembre 2025.",
+      "refunds": "Remboursements : Toutes les ventes sont finales et aucun remboursement ne sera émis.",
+      "returnContact": "Si vous avez des questions concernant notre politique de retour, veuillez nous contacter à : myconurseriess[at]gmail[dot]com.",
+      "cancellationPolicy": "Politique d'Annulation",
+      "cancellations": "Annulations non intentionnelles et intentionnelles pour le ramassage de champignons : Dans les circonstances où les clients ne peuvent pas collecter leur achat pendant le temps de ramassage prévu, les clients ne tiendront pas MycoNurseries responsable et les clients ne pourront pas ramasser leur achat un autre jour. Toutes les ventes sont finales, et aucun remboursement ne sera émis.",
+      "cancellationContact": "Si vous avez des questions concernant notre politique d'annulation, veuillez nous contacter à : myconurseriess[at]gmail[dot]com.",
+      "contactDetails": "Détails de Contact du Service Client",
+      "email": "E-mail : myconurseriess[at]gmail[dot]com",
+      "instagram": "Instagram : @myconurseriess"
     }
   }
 }
