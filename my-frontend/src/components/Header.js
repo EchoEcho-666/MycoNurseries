@@ -191,6 +191,9 @@ function Header() {
             </DropdownMenu>
           </NavItem>
           <NavItem>
+            <StyledLink to="/blog">{t('components.header.blog')}</StyledLink>
+          </NavItem>
+          <NavItem>
             <StyledLink to="/shop">{t('components.header.shop')}</StyledLink>
           </NavItem>
         </NavLinks>

@@ -46,7 +46,8 @@
       "ourGrowingProcess": "Our Growing Process",
       "ourPartners": "Our Partners and Donors",
       "getInvolved": "Get Involved",
-      "shop": "Shop"
+      "shop": "Shop",
+      "blog": "Blog"
     },
     "team": {
       "title": "Meet the Team",
@@ -231,6 +232,22 @@
         "role": "Role",
         "notes": "Notes or Form Link",
         "post": "Post"
+      }
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Welcome to our blog. Here you can find the latest updates and articles.",
+      "post1": {
+        "title": "The Journey of Our First Mushroom Harvest",
+        "content": "Our first harvest was a milestone for MycoNurseries. Starting with used coffee grounds from local cafes, we cultivated oyster mushrooms that not only tasted delicious but also diverted waste from landfills. This experience taught us the power of sustainable practices in urban environments."
+      },
+      "post2": {
+        "title": "How Coffee Grounds Become Gourmet Mushrooms",
+        "content": "Did you know that coffee grounds make an excellent substrate for growing mushrooms? At MycoNurseries, we collect discarded grounds and transform them into nutrient-rich food for oyster mushrooms. This process reduces waste and promotes circular economies, proving that everyday items can fuel innovation."
+      },
+      "post3": {
+        "title": "Building Community Through Fungiculture",
+        "content": "Fungiculture isn't just about growing mushrooms—it's about fostering community. Our volunteers, mostly students, learn sustainable urban agriculture while contributing to food security initiatives. Through workshops and shared harvests, we're creating a network of environmentally conscious individuals passionate about change."
       }
     }
   }

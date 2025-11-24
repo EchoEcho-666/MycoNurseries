@@ -42,7 +42,8 @@
       "ourGrowingProcess": "Notre processus de croissance",
       "ourPartners": "Nos partenaires et donateurs",
       "getInvolved": "S'impliquer",
-      "shop": "Boutique"
+      "shop": "Boutique",
+      "blog": "Blog"
     },
     "team": {
       "title": "Rencontrez l'équipe",
@@ -226,6 +227,22 @@
         "role": "Rôle",
         "notes": "Notes ou lien du formulaire",
         "post": "Publier"
+      }
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Bienvenue sur notre blog. Ici, vous pouvez trouver les dernières mises à jour et articles.",
+      "post1": {
+        "title": "Le voyage de notre première récolte de champignons",
+        "content": "Notre première récolte a été une étape importante pour MycoNurseries. En commençant avec des marc de café usagé provenant de cafés locaux, nous avons cultivé des pleurotes qui non seulement avaient un goût délicieux, mais ont également détourné les déchets des décharges. Cette expérience nous a enseigné le pouvoir des pratiques durables dans les environnements urbains."
+      },
+      "post2": {
+        "title": "Comment les marc de café deviennent des champignons gastronomiques",
+        "content": "Saviez-vous que les marc de café font un excellent substrat pour cultiver des champignons ? Chez MycoNurseries, nous collectons les marc jetés et les transformons en nourriture riche en nutriments pour les pleurotes. Ce processus réduit les déchets et promeut les économies circulaires, prouvant que les objets quotidiens peuvent alimenter l'innovation."
+      },
+      "post3": {
+        "title": "Construire une communauté à travers la fongiculture",
+        "content": "La fongiculture n'est pas seulement une question de cultiver des champignons—c'est aussi une question de favoriser la communauté. Nos bénévoles, principalement des étudiants, apprennent l'agriculture urbaine durable tout en contribuant aux initiatives de sécurité alimentaire. Grâce aux ateliers et aux récoltes partagées, nous créons un réseau d'individus conscients de l'environnement passionnés par le changement."
       }
     }
   }
