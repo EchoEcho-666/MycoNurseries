@@ -218,7 +218,7 @@ function TeamPage() {
           alt="Maya Farres"
           name="Maya Farres"
           pronoun="(she/her)"
-          position="Education Lead"
+          position="Outreach Lead"
           description="Maya is a bachelors student at McGill university with plans to major in environmental biology. In her free time, she loves to write, hike, and make mug cakes!"
         />
       </TeamRow>
@@ -232,7 +232,7 @@ function TeamPage() {
           alt="Shimona Singh"
           name="Shimona Singh"
           pronoun="(she/her)"
-          position="Events Lead"
+          position="Communications & Marketing Lead"
           description="Shimona is currently studying Computer Science at McGill University. You will mostly liking find her hiking at Mount Royal, traveling to different places, or crocheting. "
         />
         <TeamCardComponent
