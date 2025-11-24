@@ -11,7 +11,7 @@ const ShopWrapper = styled.div`
 
 const Title = styled.h2`
   color: #39683B;
-  margin-bottom: 1em;
+  margin-bottom: 0em;
   text-align: center;
   font-size: 1.75rem;
 
@@ -27,12 +27,17 @@ const Title = styled.h2`
   }
 `;
 
+const ShopContainer = styled.div`
+  display: flex;
+  gap: 1rem;
+  margin-top: -1 rem;
+`;
+
 const IframeContainer = styled.div`
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 80%; /* Adjust aspect ratio as needed */
-  margin-top: 1rem;
+  height: 650px;
 `;
 
 const ZeffyIframe = styled.iframe`
@@ -53,7 +58,7 @@ const PoliciesWrapper = styled.div`
 const SectionTitle = styled.h2`
   color: #39683B;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.628rem;
+  font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 0.5em;
   text-align: center;
@@ -72,7 +77,7 @@ const SectionTitle = styled.h2`
 const Subtitle = styled.h3`
   font-family: 'Montserrat', sans-serif;
   color: #39683B;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
   margin-top: 2em;
   margin-bottom: 0.5em;
@@ -80,7 +85,7 @@ const Subtitle = styled.h3`
 `;
 
 const PolicyText = styled.p`
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 1em;
   color: #382F2F;
@@ -106,14 +111,30 @@ export default function Shop() {
   return (
     <ShopWrapper>
       <Title>Our Shop</Title>
-      <IframeContainer>
-        <ZeffyIframe
-          title="Zeffy Shop"
-          src="https://www.zeffy.com/embed/ticketing/myconurseriess-shop"
-          allow="paymentrequest"
-          allowTransparency="true"
-        />
-      </IframeContainer>
+      <ShopContainer>
+        <div style={{ flex: 1 }}>
+          <Subtitle>Buy Our Handbook</Subtitle>
+          <IframeContainer>
+            <ZeffyIframe
+              title="Zeffy Handbook Shop"
+              src="https://www.zeffy.com/embed/ticketing/myconurseriess-handbook-shop"
+              allow="paymentrequest"
+              allowTransparency="true"
+            />
+          </IframeContainer>
+        </div>
+        <div style={{ flex: 1 }}>
+          <Subtitle>Buy Our Mushrooms</Subtitle>
+          <IframeContainer>
+            <ZeffyIframe
+              title="Zeffy Mushroom Shop"
+              src="https://www.zeffy.com/embed/ticketing/myconurseriess-shop-2"
+              allow="paymentrequest"
+              allowTransparency="true"
+            />
+          </IframeContainer>
+        </div>
+      </ShopContainer>
       <PoliciesWrapper>
         <SectionTitle>Store Policies</SectionTitle>
         
@@ -125,7 +146,7 @@ export default function Shop() {
           <strong>Refunds:</strong> All sales are final and no refund will be issued.
         </PolicyText>
         <PolicyText>
-          If you have any questions concerning our return policy, please contact us at: <ContactLink href="mailto:myconurseries[at]gmail[dot]com">myconurseries[at]gmail[dot]com</ContactLink>.
+          If you have any questions concerning our return policy, please contact us at: <ContactLink href="mailto:myconurseriess[at]gmail[dot]com">myconurseriess[at]gmail[dot]com</ContactLink>.
         </PolicyText>
         
         <Subtitle>Cancellation Policy</Subtitle>
@@ -136,16 +157,16 @@ export default function Shop() {
           <strong>Non-intentional & Intentional Cancellations for Pick-up of Mushrooms:</strong> Under circumstances where clients are unable to collect their purchase during the scheduled pick-up time, clients will not hold MycoNurseries responsible and clients will not be able to pick up their purchase on an alternate day. All sales are final, and no refund will be issued.
         </PolicyText>
         <PolicyText>
-          If you have any questions concerning our cancellation policy, please contact us at: <ContactLink href="mailto:myconurseries[at]gmail[dot]com">myconurseries[at]gmail[dot]com</ContactLink>.
+          If you have any questions concerning our cancellation policy, please contact us at: <ContactLink href="mailto:myconurseriess[at]gmail[dot]com">myconurseriess[at]gmail[dot]com</ContactLink>.
         </PolicyText>
         
         <ContactInfo>
           <Subtitle>Customer Service Contact Details</Subtitle>
           <PolicyText>
-            Email: <ContactLink href="mailto:myconurseries[at]gmail[dot]com">myconurseries[at]gmail[dot]com</ContactLink>
+            Email: <ContactLink href="mailto:myconurseriess[at]gmail[dot]com">myconurseriess[at]gmail[dot]com</ContactLink>
           </PolicyText>
           <PolicyText>
-            Instagram: <ContactLink href="https://instagram.com/myconurseries" target="_blank" rel="noopener noreferrer">@myconurseries</ContactLink>
+            Instagram: <ContactLink href="https://instagram.com/myconurseriess" target="_blank" rel="noopener noreferrer">@myconurseriess</ContactLink>
           </PolicyText>
         </ContactInfo>
       </PoliciesWrapper>
