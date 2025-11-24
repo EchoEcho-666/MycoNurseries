@@ -138,14 +138,6 @@ function TeamPage() {
       <TeamHeading>Research</TeamHeading>
       <TeamRow>
         <TeamCardComponent
-          image={process.env.PUBLIC_URL + '/assets/team-member/dean-picture.png'}
-          alt="Dean Baghdadi"
-          name="Dean Baghdadi"
-          pronoun="(he/him)"
-          position="Research Manager"
-          description="Dean is a Bioresource Engineering student at McGill University hoping to work in transportation design and sustainable development. Outside of sustainability initiatives, he spends time with his dog, reads, or bakes for friends and family."
-        />
-        <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/siqi-picture.png'}
           alt="Siqi Liu"
           name="Siqi Liu"
@@ -186,30 +178,22 @@ function TeamPage() {
       </TeamRow>
 
 
-      {/* Education Team */}
-      <TeamHeading>Education</TeamHeading>
+      {/* Outreach Team */}
+      <TeamHeading>Outreach</TeamHeading>
       <TeamRow>
         <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/maya-picture.jpeg'}
           alt="Maya Farres"
           name="Maya Farres"
           pronoun="(she/her)"
-          position="Education Co-Lead"
+          position="Education Lead"
           description="Maya is a bachelors student at McGill university with plans to major in environmental biology. In her free time, she loves to write, hike, and make mug cakes!"
-        />
-        <TeamCardComponent
-          image={process.env.PUBLIC_URL + '/assets/team-member/bianka-picture.jpeg'}
-          alt="Bianka Dusseault"
-          name="Bianka Dusseault"
-          pronoun="(she/her)"
-          position="Education Co-Lead"
-          description="Bianka is a student-athlete pursuing a bachelor's in environmental science specializing in health determination. If she’s not learning a new skill or studying, you’ll find her in the basketball gym, creating art, playing board games, or racing to her next commitment!"
         />
       </TeamRow>
 
 
-      {/* Communications & Events Team */}
-      <TeamHeading>Communications & Events</TeamHeading>
+      {/* Communications & Marketing Team */}
+      <TeamHeading>Communications & Marketing</TeamHeading>
       <TeamRow>
         <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/shimona-picture.png'}
