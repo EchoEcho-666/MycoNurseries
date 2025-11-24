@@ -126,7 +126,6 @@ function Footer() {
           <ColumnTitle>{t("components.footer.getInvolved")}</ColumnTitle>
           <NoBulletList>
             <li><FooterLink to="/partner-with-us">{t("components.footer.partnerWithUs")}</FooterLink></li>
-            <li><FooterLink to="/become-a-volunteer">{t("components.footer.becomeAVolunteer")}</FooterLink></li>
             <li><FooterLink to="/shop">{t("components.footer.shop")}</FooterLink></li>
           </NoBulletList>
         </FooterColumn>
