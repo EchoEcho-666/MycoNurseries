@@ -112,7 +112,7 @@ const CornerLink = styled(NavLink)`
   font-size: 1rem;
   text-decoration: none;
   background-color: #2E7D32;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.7rem;
   border-radius: 6px;
   font-weight: bold;
   &:hover {
@@ -122,14 +122,14 @@ const CornerLink = styled(NavLink)`
 
 const LanguageToggleButton = styled.button`
   position: absolute;
-  top: 1rem;
-  right: 8rem; /* position it left of the sign-in button */
+  top: 3rem;
+  right: 1rem;
   color: #FFE7C9;
   font-size: 1rem;
   background-color: #2E7D32;
   border: none;
   border-radius: 6px;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.7rem;
   font-weight: bold;
   cursor: pointer;
   &:hover {
