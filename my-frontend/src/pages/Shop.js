@@ -97,15 +97,6 @@ const ContactInfo = styled.div`
   text-align: center;
 `;
 
-const ContactLink = styled.a`
-  font-weight: bold;
-  color: #39683B;
-  text-decoration: underline;
-
-  &:hover {
-    color: #FF8C00;
-  }
-`;
 
 export default function Shop() {
   const { t } = useTranslation();

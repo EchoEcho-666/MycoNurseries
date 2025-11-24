@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { useTranslation } from 'react-i18next';
 
 // Call-to-Action (Get Involved)
 const CtaWrapper = styled.div`
@@ -34,7 +33,17 @@ function Cta() {
         <p>We’d love to hear from you. Please fill out the form below.</p>
 
         <div style={{ marginLeft: '-40px' }}>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKm4kH4V71QsWqOxnhF6l12LeWLHZFHqJ6S3bpytgrqv46Rw/viewform?embedded=true" width="640" height="614" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLScKm4kH4V71QsWqOxnhF6l12LeWLHZFHqJ6S3bpytgrqv46Rw/viewform?embedded=true" 
+            width="640" 
+            height="614" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0"
+            title="Google Form for Getting Involved"
+          >
+            Loading…
+          </iframe>
         </div>
 
         {status && <p style={{ marginTop: '1rem', color: '#39683B' }}>{status}</p>}

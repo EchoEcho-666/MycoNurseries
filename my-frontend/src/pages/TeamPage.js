@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
+import styled from 'styled-components';
 
 const TeamContainer = styled.section`
   padding: 1em 2em;
@@ -99,81 +99,82 @@ function TeamCardComponent({ image, alt, name, pronoun, position, description })
 }
 
 function TeamPage() {
+  const { t } = useTranslation();
   return (
     <TeamContainer id="team">
-      <TeamTitle>Our Team</TeamTitle>
+      <TeamTitle>{t('Our Team')}</TeamTitle>
 
 
       {/* Co-Founders */}
-      <TeamHeading>Co-Founders</TeamHeading>
+      <TeamHeading>{t('Co-Founders')}</TeamHeading>
       <TeamRow>
         <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/julia-picture.jpg'}
-          alt="Julia Wright"
-          name="Julia Wright"
-          pronoun="(they/them)"
-          position="Co-Founder"
-          description="Julia studies chemistry and mathematics at McGill University and enjoys promoting all forms of sustainability. When they’re not growing mushrooms, you can find them hiking, knitting, and hanging out with friends and family."
+          alt={t('Julia Wright')}
+          name={t('Julia Wright')}
+          pronoun={t('(they/them)')}
+          position={t('Co-Founder')}
+          description={t('Julia studies chemistry and mathematics at McGill University and enjoys promoting all forms of sustainability. When they’re not growing mushrooms, you can find them hiking, knitting, and hanging out with friends and family.')}
         />
         <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/minh-picture2.jpg'}
-          alt="Minh Le"
-          name="Minh Le"
+          alt={t('Minh Le')}
+          name={t('Minh Le')}
           pronoun=""
-          position="Co-Founder"
-          description="Minh studies pharmacology and leads research into societal sustainability. Outside the lab, you can find them petting their cats, bopping to their latest music craze, or reading."
+          position={t('Co-Founder')}
+          description={t('Minh studies pharmacology and leads research into societal sustainability. Outside the lab, you can find them petting their cats, bopping to their latest music craze, or reading.')}
         />
         <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/nico-picture.jpg'}
-          alt="Nico Vilkoff"
-          name="Nico Vilkoff"
-          pronoun="(they/them)"
-          position="Co-Founder"
-          description="Nico studies cognitive science and explores fungal sustainable solutions to environmental challenges. When not mixing mushroom substrate, they’re drawing, solving puzzles, or geeking out over TV shows."
+          alt={t('Nico Vilkoff')}
+          name={t('Nico Vilkoff')}
+          pronoun={t('(they/them)')}
+          position={t('Co-Founder')}
+          description={t('Nico studies cognitive science and explores fungal sustainable solutions to environmental challenges. When not mixing mushroom substrate, they’re drawing, solving puzzles, or geeking out over TV shows.')}
         />
       </TeamRow>
 
 
       {/* Research Team */}
-      <TeamHeading>Research</TeamHeading>
+      <TeamHeading>{t('Research')}</TeamHeading>
       <TeamRow>
         <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/siqi-picture.png'}
-          alt="Siqi Liu"
-          name="Siqi Liu"
-          pronoun="(she/her)"
-          position="Mushroom Care Coordinator"
-          description="Siqi is a first year student at McGill with plans to major in immunology & microbiology! She loves exploring nature by traveling around, and she is interested in the development of organisms, which is why she joined MycoNurseries (would like to see the growth of fungi!). You can find her playing tennis at McGill outdoor tennis courts during the summer🎾 :D "
+          alt={t('Siqi Liu')}
+          name={t('Siqi Liu')}
+          pronoun={t('(she/her)')}
+          position={t('Mushroom Care Coordinator')}
+          description={t('Siqi is a first year student at McGill with plans to major in immunology & microbiology! She loves exploring nature by traveling around, and she is interested in the development of organisms, which is why she joined MycoNurseries (would like to see the growth of fungi!). You can find her playing tennis at McGill outdoor tennis courts during the summer🎾 :D ')}
         />
         <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/kalyna-picture.jpeg'}
-          alt="Kalyna Levytsky"
-          name="Kalyna Levytsky"
-          pronoun="(any/tous)"
-          position="Mushroom Care Coordinator"
-          description="Kalyna is a student at McGill University, majoring in chemistry. They love music and the outdoors. Their free time is usually spent in rehearsal or on the trails, which is where their interest in fungi started!"
+          alt={t('Kalyna Levytsky')}
+          name={t('Kalyna Levytsky')}
+          pronoun={t('(any/tous)')}
+          position={t('Mushroom Care Coordinator')}
+          description={t('Kalyna is a student at McGill University, majoring in chemistry. They love music and the outdoors. Their free time is usually spent in rehearsal or on the trails, which is where their interest in fungi started!')}
         />
         <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/kaecy-picture.png'}
-          alt="Kaecy Elmes"
-          name="Kaecy Elmes"
-          pronoun="(she/her)"
-          position="Vermicomposting Coordinator"
-          description="Kaecy is currently a fourth year student at McGill University in the IHI program, with the intention of going to medical school afterwards. In her free time, she likes to read, bake, and spend time with friends."
+          alt={t('Kaecy Elmes')}
+          name={t('Kaecy Elmes')}
+          pronoun={t('(she/her)')}
+          position={t('Vermicomposting Coordinator')}
+          description={t('Kaecy is currently a fourth year student at McGill University in the IHI program, with the intention of going to medical school afterwards. In her free time, she likes to read, bake, and spend time with friends.')}
         />
       </TeamRow>
 
 
       {/* Operations Team */}
-      <TeamHeading>Operations</TeamHeading>
+      <TeamHeading>{t('Operations')}</TeamHeading>
       <TeamRow>
         <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/maria-picture.png'}
-          alt="Maria E. Areizaga-García"
-          name="Maria E. Areizaga-García"
-          pronoun="(she/her)"
-          position="Grow Session Coordinator"
-          description="Maria is currently pursuing a bachelor’s degree in Microbiology and Immunology at McGill University, with the intent of going to pharmacy school afterwards. In her free time she loves spending time with her friends, drinking coffee, and exploring Montreal :)"
+          alt={t('Maria E. Areizaga-García')}
+          name={t('Maria E. Areizaga-García')}
+          pronoun={t('(she/her)')}
+          position={t('Grow Session Coordinator')}
+          description={t('')}
         />
         <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/margarita-picture.jpeg'}
