@@ -125,7 +125,7 @@ export default function Shop() {
           <strong>Refunds:</strong> All sales are final and no refund will be issued.
         </PolicyText>
         <PolicyText>
-          If you have any questions concerning our return policy, please contact us at: <ContactLink href="mailto:myconurseries@gmail.com">myconurseries@gmail.com</ContactLink>.
+          If you have any questions concerning our return policy, please contact us at: <ContactLink href="mailto:myconurseries[at]gmail[dot]com">myconurseries[at]gmail[dot]com</ContactLink>.
         </PolicyText>
         
         <Subtitle>Cancellation Policy</Subtitle>
@@ -136,13 +136,13 @@ export default function Shop() {
           <strong>Non-intentional & Intentional Cancellations for Pick-up of Mushrooms:</strong> Under circumstances where clients are unable to collect their purchase during the scheduled pick-up time, clients will not hold MycoNurseries responsible and clients will not be able to pick up their purchase on an alternate day. All sales are final, and no refund will be issued.
         </PolicyText>
         <PolicyText>
-          If you have any questions concerning our cancellation policy, please contact us at: <ContactLink href="mailto:myconurseries@gmail.com">myconurseries@gmail.com</ContactLink>.
+          If you have any questions concerning our cancellation policy, please contact us at: <ContactLink href="mailto:myconurseries[at]gmail[dot]com">myconurseries[at]gmail[dot]com</ContactLink>.
         </PolicyText>
         
         <ContactInfo>
           <Subtitle>Customer Service Contact Details</Subtitle>
           <PolicyText>
-            Email: <ContactLink href="mailto:myconurseries@gmail.com">myconurseries@gmail.com</ContactLink>
+            Email: <ContactLink href="mailto:myconurseries[at]gmail[dot]com">myconurseries[at]gmail[dot]com</ContactLink>
           </PolicyText>
           <PolicyText>
             Instagram: <ContactLink href="https://instagram.com/myconurseries" target="_blank" rel="noopener noreferrer">@myconurseries</ContactLink>
