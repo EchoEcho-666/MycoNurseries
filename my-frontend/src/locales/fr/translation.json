@@ -29,8 +29,13 @@
     },
     "growingProcess": {
       "title": "Notre processus de culture de champignons",
-      "text": "Découvrez comment nous transformons les déchets organiques recyclés en pleurotes nutritives.",
-      "link": "En savoir plus sur nos champignons"
+      "text1": "MycoNurseries s'approvisionne à au moins 40 % de tous les matériaux de départ que nous utilisons pour nos champignons à partir de déchets alimentaires, qu'il s'agisse de marc de café usagé ou de déchets alimentaires transformés provenant des salles à manger de l'Université McGill. Nous mettons également l'accent sur la communauté dans notre processus de culture en invitant d'autres jeunes à démarrer et à vérifier les récoltes de pleurotes avec les membres de l'équipe principale.",
+      "text2": "Nos pleurotes sont soit donnés aux membres de la communauté de l'Université McGill et de Montréal confrontés à l'insécurité alimentaire, soit vendus à un prix accessible.",
+      "sectionTitle1": "Notre Impact",
+      "text3": "Grâce à la culture de pleurotes, nous avons détourné plus de 60 kg de pleurotes qui, autrement, auraient été envoyés à la décharge et avons fourni plus de 220 heures d'éducation expérientielle aux jeunes de Montréal sur l'agriculture urbaine durable.",
+      "text4": "(Dernière mise à jour septembre 2025)",
+      "link": "En savoir plus sur nos champignons",
+      "text": "Découvrez comment nous transformons le marc de café en pleurotes."
     },
     "header": {
       "signIn": "Se connecter",
