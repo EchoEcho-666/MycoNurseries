@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
@@ -25,38 +25,33 @@ const BlogTitle = styled.h2`
   }
 `;
 
-const BlogPost = styled.div`
-  margin-bottom: 2rem;
-  padding: 1rem;
-  border: 1px solid #E0E0E0;
-  border-radius: 8px;
-  background-color: #FFFFFF;
-`;
-
-const PostTitle = styled.h3`
-  color: #39683B;
-  margin-bottom: 0.5rem;
-`;
-
-const PostContent = styled.p`
-  line-height: 1.6;
+const EmbedContainer = styled.div`
+  text-align: left;
+  margin-left: -15px;
 `;
 
 function Blog() {
   const { t } = useTranslation();
-  const posts = ['post1', 'post2', 'post3']; // Array of post keys for dynamic rendering
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://js.supascribe.com/v1/loader/4Vsl6EmY8tWHirwBpYzYu4Qbo2X2.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
 
   return (
     <>
       <BlogWrapper>
         <BlogTitle>{t('components.blog.title', 'Blog')}</BlogTitle>
-        <p>{t('components.blog.description', 'Welcome to our blog. Here you can find the latest updates and articles.')}</p>
-        {posts.map((postKey) => (
-          <BlogPost key={postKey}>
-            <PostTitle>{t(`components.blog.${postKey}.title`)}</PostTitle>
-            <PostContent>{t(`components.blog.${postKey}.content`)}</PostContent>
-          </BlogPost>
-        ))}
+        <p>{t('components.blog.description', 'Welcome to our blog. Here you are our latest updates and articles.')}</p>
+        <EmbedContainer>
+          <div data-supascribe-embed-id="761613072423" data-supascribe-feed></div>
+        </EmbedContainer>
       </BlogWrapper>
     </>
   );
