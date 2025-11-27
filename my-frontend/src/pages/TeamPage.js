@@ -253,6 +253,14 @@ function TeamPage() {
           description="Naya enjoys learning about fungi and designing. She is set to pursue a Master’s in Architecture with a specialization in sustainability and climate resilience. "
         />
         <TeamCardComponent
+          image={process.env.PUBLIC_URL + '/assets/team-member/zengyu-picture.jpg'}
+          alt="Zengyu"
+          name="Zengyu"
+          pronoun=""
+          position="Website Developer"
+          description="Zengyu is currently studying computer science and physics at McGill University. Love reading, watching, discussing about scifi, enjoy to cook new dishes for challenge"
+        />
+        <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/anonymous.jpg'}
           alt="Antoine Larocque"
           name="Antoine Larocque"
