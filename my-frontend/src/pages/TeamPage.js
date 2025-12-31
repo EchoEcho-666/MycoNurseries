@@ -219,8 +219,16 @@ function TeamPage() {
           alt="Maya Farres"
           name="Maya Farres"
           pronoun="(she/her)"
-          position="Outreach Lead"
+          position="Education Lead"
           description="Maya is a bachelors student at McGill university with plans to major in environmental biology. In her free time, she loves to write, hike, and make mug cakes!"
+        />
+        <TeamCardComponent
+          image={process.env.PUBLIC_URL + '/assets/team-member/shimona-picture.png'}
+          alt="Shimona Singh"
+          name="Shimona Singh"
+          pronoun="(she/her)"
+          position="Events Lead"
+          description="Shimona is currently studying Computer Science at McGill University. You will mostly liking find her hiking at Mount Royal, traveling to different places, or crocheting. "
         />
       </TeamRow>
 
@@ -228,14 +236,7 @@ function TeamPage() {
       {/* Communications & Marketing Team */}
       <TeamHeading>Communications & Marketing</TeamHeading>
       <TeamRow>
-        <TeamCardComponent
-          image={process.env.PUBLIC_URL + '/assets/team-member/shimona-picture.png'}
-          alt="Shimona Singh"
-          name="Shimona Singh"
-          pronoun="(she/her)"
-          position="Communications & Marketing Lead"
-          description="Shimona is currently studying Computer Science at McGill University. You will mostly liking find her hiking at Mount Royal, traveling to different places, or crocheting. "
-        />
+        
         <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/maxine-picture.png'}
           alt="Maxine Bisera"
