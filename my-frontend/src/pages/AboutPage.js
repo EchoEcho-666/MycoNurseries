@@ -102,6 +102,9 @@ function AboutMycoNurseries() {
             <Paragraph>{t('components.page.about.supportAndPlans.text1')}</Paragraph>
             <Paragraph>{t('components.page.about.supportAndPlans.text2')}</Paragraph>
             <Paragraph>{t('components.page.about.supportAndPlans.text3')} {t('components.page.about.supportAndPlans.stayTuned')}</Paragraph>
+            <Paragraph>
+              <a href="/educational-workshops">Learn more about our Educational Workshops</a>
+            </Paragraph>
           </ParagraphGroup>
         </AboutRow>
       </Container>

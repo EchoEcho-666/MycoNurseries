@@ -180,6 +180,9 @@ function Header() {
               <li>
                 <DropdownItem to="/our-partners">{t('components.header.ourPartners')}</DropdownItem>
               </li>
+              <li>
+                <DropdownItem to="/edworkshops">{t('components.header.edWorkshops')}</DropdownItem>
+              </li>
             </DropdownMenu>
           </NavItem>
           <NavItem>

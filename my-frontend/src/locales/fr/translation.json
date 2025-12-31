@@ -46,6 +46,7 @@
       "ourTeam": "Notre équipe",
       "ourGrowingProcess": "Notre processus de croissance",
       "ourPartners": "Nos partenaires et donateurs",
+      "edWorkshops": "Nos ateliers éducatifs",
       "getInvolved": "S'impliquer",
       "shop": "Boutique",
       "blog": "Blog"
@@ -253,6 +254,18 @@
       "contactDetails": "Détails de Contact du Service Client",
       "email": "E-mail : myconurseriess[at]gmail[dot]com",
       "instagram": "Instagram : @myconurseriess"
+    },
+    "edWorkshops": {
+      "title": "Ateliers éducatifs",
+      "vermicompostTitle": "Apprenez le vermicompostage",
+      "vermicompostText1": "Les vers vous intriguent et vous avez envie de vous salir les mains ? Rejoignez MycoNurseries pour le Vermicompostage 101, avec le soutien du Réseau UniC.",
+      "vermicompostText2": "Cet atelier est offert en personne et en ligne. Les participants en personne aideront à fabriquer collectivement un bac de vermicompostage et pourront repartir avec leur propre trousse de départ gratuite. Pour les participants en ligne, une liste de matériel sera fournie à l'avance afin que vous puissiez fabriquer votre propre compost en même temps que nous.",
+      "vermicompostText3": "Restez à l'affût de notre prochain atelier au début de 2026 !",
+      "fungiFrenzyTitle": "Jouez à Fungi Frenzy !",
+      "fungiFrenzyText1": "Êtes-vous capable de bâtir un écosystème fongique sain ? Venez le découvrir en jouant à notre nouveau jeu de cartes, Fungi Frenzy ! 🍄",
+      "fungiFrenzyText2": "Fungi Frenzy explore le lien entre les champignons, l'environnement et l'action climatique.",
+      "fungiFrenzyText3": "La première édition de cet atelier a été présentée en collaboration avec les Jardins éducatifs de McGill en septembre 2025. D'autres suivront en 2026.",
+      "contactText": "L'un de ces ateliers vous intéresse pour votre communauté ? Contactez-nous à myconurseries[at]gmail[dot]com pour plus d'informations !"
     }
   }
 }

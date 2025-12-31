@@ -16,6 +16,7 @@ import Cta from './pages/Cta';
 import Shop from './pages/Shop';
 import Volunteer from './pages/Volunteer';
 import Blog from './pages/Blog';
+import EdWorkshops from './pages/EdWorkshops';
 
 const PageWrapper = styled.div`
   display: flex;
@@ -62,6 +63,7 @@ function AnimatedRoutes() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/volunteer" element={<Volunteer />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/edWorkshops" element={<EdWorkshops />} />
           </Routes>
         </ContentWrapper>
       </CSSTransition>
