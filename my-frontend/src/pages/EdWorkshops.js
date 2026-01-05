@@ -47,6 +47,7 @@ const ContactText = styled.p`
   margin-top: 2em;
   color: #555;
   font-weight: bold;
+  text-align: center;
 `;
 
 function EdWorkshops() {
