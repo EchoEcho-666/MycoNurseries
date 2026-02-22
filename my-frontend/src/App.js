@@ -6,9 +6,10 @@ import styled from 'styled-components';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './ScrollToTop';
+import AnalyticsTracker from './components/AnalyticsTracker';
 import Home from './pages/HomePage';
-import OurPartners from './pages/OurPartners';  
-import Team from './pages/TeamPage';        
+import OurPartners from './pages/OurPartners';
+import Team from './pages/TeamPage';
 import GrowingProcess from './pages/GrowingProcessPage';
 import AboutMycoNurseries from './pages/AboutPage';
 import Contact from './pages/Contact';
@@ -17,6 +18,8 @@ import Shop from './pages/Shop';
 import Volunteer from './pages/Volunteer';
 import Blog from './pages/Blog';
 import EdWorkshops from './pages/EdWorkshops';
+import AnalyticsDashboard from './pages/AnalyticsDashboard';
+import AdminPanel from './pages/AdminPanel';
 
 const PageWrapper = styled.div`
   display: flex;
@@ -44,6 +47,18 @@ const ContentWrapper = styled.main`
 function AnimatedRoutes() {
   const location = useLocation();
 
+  // Check if we're on a full-screen admin/analytics page
+  const isFullScreenPage = location.pathname === '/analytics' || location.pathname === '/admin';
+
+  if (isFullScreenPage) {
+    return (
+      <Routes location={location}>
+        <Route path="/analytics" element={<AnalyticsDashboard />} />
+        <Route path="/admin" element={<AdminPanel />} />
+      </Routes>
+    );
+  }
+
   return (
     <SwitchTransition>
       <CSSTransition
@@ -54,8 +69,8 @@ function AnimatedRoutes() {
         <ContentWrapper>
           <Routes location={location}>
             <Route path="/" element={<Home />} />
-            <Route path="/shop" element={<Shop/>} />
-            <Route path="/about-myconurseries" element={<AboutMycoNurseries />} /> 
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/about-myconurseries" element={<AboutMycoNurseries />} />
             <Route path="/growing-process" element={<GrowingProcess />} />
             <Route path="/team" element={<Team />} />
             <Route path="/cta" element={<Cta />} />
@@ -64,6 +79,8 @@ function AnimatedRoutes() {
             <Route path="/volunteer" element={<Volunteer />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/edWorkshops" element={<EdWorkshops />} />
+            <Route path="/analytics" element={<AnalyticsDashboard />} />
+            <Route path="/admin" element={<AdminPanel />} />
           </Routes>
         </ContentWrapper>
       </CSSTransition>
@@ -76,19 +93,31 @@ function App() {
     <Router>
       <GlobalStyle />
       <ScrollToTop />
-      <PageWrapper>
-        <HeaderWrapper>
-          <Header />
-        </HeaderWrapper>
-        <AnimatedRoutes />
-        <FooterWrapper>
-          <Footer />
-        </FooterWrapper>
-      </PageWrapper>
+      <AnalyticsTracker />
+      <AppContent />
     </Router>
   );
 }
 
+function AppContent() {
+  const location = useLocation();
+  const isFullScreenPage = location.pathname === '/analytics' || location.pathname === '/admin';
+
+  if (isFullScreenPage) {
+    return <AnimatedRoutes />;
+  }
+
+  return (
+    <PageWrapper>
+      <HeaderWrapper>
+        <Header />
+      </HeaderWrapper>
+      <AnimatedRoutes />
+      <FooterWrapper>
+        <Footer />
+      </FooterWrapper>
+    </PageWrapper>
+  );
+}
+
 export default App;
-
-
