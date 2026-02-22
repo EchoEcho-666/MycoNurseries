@@ -108,10 +108,10 @@ router.get('/dashboard', (req, res) => {
             }
         });
 
-        // Time series — group by day
+        // Time series — group by day (use localDate from client to respect user's timezone)
         const dailyData = {};
         pageViews.forEach(e => {
-            const day = e.timestamp.split('T')[0];
+            const day = e.localDate || e.timestamp.split('T')[0];
             if (!dailyData[day]) {
                 dailyData[day] = { views: 0, sessions: new Set() };
             }

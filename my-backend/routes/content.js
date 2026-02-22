@@ -5,7 +5,7 @@ const path = require('path');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const CONTENT_FILE = path.join(DATA_DIR, 'content.json');
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'myco2026admin';
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'letmein';
 
 // Ensure data files exist
 function ensureDataFiles() {
