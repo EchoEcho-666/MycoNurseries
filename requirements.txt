@@ -1,0 +1,44 @@
+# ============================================
+# MycoNurseries - Project Requirements
+# ============================================
+# This is a Node.js project. Dependencies are
+# managed via package.json files and installed
+# automatically with `npm install`.
+#
+# This file is a human-readable reference of
+# all project dependencies.
+# ============================================
+
+# --- System Requirements ---
+Node.js >= 16.0.0
+npm >= 8.0.0
+
+# --- Frontend Dependencies (my-frontend/) ---
+react@^18.3.1                    # UI framework
+react-dom@^18.3.1                # DOM rendering
+react-router-dom@^6.28.0        # Client-side routing
+styled-components@^6.1.15       # CSS-in-JS styling
+react-i18next@^12.3.1            # Internationalization (EN/FR)
+i18next@^21.10.0                 # i18n core library
+react-icons@^5.5.0               # Icon library (FontAwesome, etc.)
+react-transition-group@^4.4.5   # Page transition animations
+react-scripts@5.0.1              # Create React App build toolchain
+web-vitals@^2.1.4                # Performance metrics
+
+# --- Frontend Dev Dependencies ---
+gh-pages@^6.3.0                  # GitHub Pages deployment
+typescript@^4.9.5                # TypeScript support (optional)
+
+# --- Backend Dependencies (my-backend/) ---
+express@^4.21.1                  # Web server framework
+cors@^2.8.5                      # Cross-origin resource sharing
+
+# --- Installation ---
+# Run these commands to install everything:
+#
+#   cd my-backend && npm install
+#   cd ../my-frontend && npm install
+#
+# Or use the setup script:
+#
+#   chmod +x setup.sh && ./setup.sh
