@@ -77,7 +77,7 @@ function AnimatedRoutes() {
             <Route path="/our-partners" element={<OurPartners />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/volunteer" element={<Volunteer />} />
-            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<Blog />} />
             <Route path="/edWorkshops" element={<EdWorkshops />} />
             <Route path="/analytics" element={<AnalyticsDashboard />} />
             <Route path="/admin" element={<AdminPanel />} />
