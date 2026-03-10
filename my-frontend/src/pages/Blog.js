@@ -25,33 +25,27 @@ const BlogTitle = styled.h2`
   }
 `;
 
-const EmbedContainer = styled.div`
-  text-align: left;
-  margin-left: -15px;
-`;
+const blogs = [
+  {
+    id: 1,
+    title: "First Blog Post",
+    content: "Blog post stuff"
+  },
+  {
+    id: 2,
+    title: "Second Blog Post",
+    content: "More blog post stuff for post 2"
+  }
+];
 
 function Blog() {
   const { t } = useTranslation();
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://js.supascribe.com/v1/loader/4Vsl6EmY8tWHirwBpYzYu4Qbo2X2.js';
-    script.async = true;
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
 
   return (
     <>
       <BlogWrapper>
         <BlogTitle>{t('components.blog.title', 'Blog')}</BlogTitle>
         <p>{t('components.blog.description', 'Welcome to our blog. Here you are our latest updates and articles.')}</p>
-        <EmbedContainer>
-          <div data-supascribe-embed-id="761613072423" data-supascribe-feed></div>
-        </EmbedContainer>
       </BlogWrapper>
     </>
   );
