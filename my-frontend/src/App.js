@@ -20,6 +20,8 @@ import Blog from './pages/Blog';
 import EdWorkshops from './pages/EdWorkshops';
 import AnalyticsDashboard from './pages/AnalyticsDashboard';
 import AdminPanel from './pages/AdminPanel';
+import BlogPage from './pages/BlogPage';
+ 
 
 const PageWrapper = styled.div`
   display: flex;
@@ -81,6 +83,7 @@ function AnimatedRoutes() {
             <Route path="/edWorkshops" element={<EdWorkshops />} />
             <Route path="/analytics" element={<AnalyticsDashboard />} />
             <Route path="/admin" element={<AdminPanel />} />
+            <Route path="/blog/:slug" element={<BlogPage />} />
           </Routes>
         </ContentWrapper>
       </CSSTransition>
