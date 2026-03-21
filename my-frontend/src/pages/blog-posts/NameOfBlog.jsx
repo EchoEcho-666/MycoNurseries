@@ -3,15 +3,13 @@ import { AuthorHeading, BlogWrapper, TitleHeading,
 
 
 const descr = `
-    A great description that is indeed extremely long and convoluted in order to test the maximum size 
-    of the string. Badger Badger Badger Badger Badger Badger Badger Badger MUSHROOM MUSHROOM Badger Badger
-    Badger Badger Badger Badger Badger Badger PANIC A SNAKE! OHH ITS A SNAKE!
+   The Humble Slime Mold Is Ready to Steal Your Jobs
 `;
 
-const slug = "FungiCityInfrastructure";
-const title = "Fungi City Infrastructure";
+const slug = "Urban Planners Watch Out!";
+const title = "Urban Planners Watch Out!";
 const img = "FungiCityInfrastructure.jpg";
-const date = "date";
+const date = "Mar 20, 2026";
 const author = "Fah Michaud"
 
 const caption1 = "Photo by Andrew Ridley on Unsplash"

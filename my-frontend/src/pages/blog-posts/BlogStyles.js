@@ -34,7 +34,8 @@ export const BodyRow = styled.div`
 `;
 
 export const Image = styled.img`
-  width: ${({ width }) => width || '500px'};
+  width: ${({ width }) => width || '100%'};
+  max-width: 100%;
   height: ${({ height }) => height || 'auto'};
   border-radius: 8px;
   margin: 0.5em 0;
@@ -54,7 +55,7 @@ export const ImageColumn = styled.div`
 `;
 
 export const ParagraphGroup = styled.div`
-  max-width: 85%;
+  max-width: 95%;
 `;
 
 export const Paragraph = styled.p`
@@ -63,10 +64,12 @@ export const Paragraph = styled.p`
 `;
 
 export const Reference = styled.p`
-  padding-left: 3em;
-  text-indent: -3em;
+  padding-left: 2em;
+  text-indent: -2em;
   text-align: left;
   margin-bottom: 1em;
+  overflow-wrap: break-word;
+  word-break: break-word;
 `;
 
 export const ReferenceHeading = styled.div`

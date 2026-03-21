@@ -11,9 +11,5 @@ export const posts = [
     {
         ...nameOfBlogMeta,
         component: NameOfBlog,
-    },
-    {
-        ...nameOfBlog2Meta,
-        component: NameOfBlog2,
     }
 ]

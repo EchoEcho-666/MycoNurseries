@@ -35,8 +35,9 @@ const Image = styled.img`
 
 const Content = styled.div`
   display: flex;
+  margin-top: 0.5rem;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 `;
 
 const Title = styled.h3`
