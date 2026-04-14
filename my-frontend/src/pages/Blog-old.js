@@ -1,7 +1,6 @@
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
-import { posts } from "./blog-posts/PostHandler";
-import BlogSnapshot from "../components/BlogSnapshot";
 
 // Reuse global styles from Cta.js for consistency
 const BlogWrapper = styled.div`
@@ -26,28 +25,33 @@ const BlogTitle = styled.h2`
   }
 `;
 
-const CardContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: flex-start;
+const EmbedContainer = styled.div`
+  text-align: left;
+  margin-left: -15px;
 `;
 
 function Blog() {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://js.supascribe.com/v1/loader/4Vsl6EmY8tWHirwBpYzYu4Qbo2X2.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
-
-
     <>
       <BlogWrapper>
         <BlogTitle>{t('components.blog.title', 'Blog')}</BlogTitle>
         <p>{t('components.blog.description', 'Welcome to our blog. Here you are our latest updates and articles.')}</p>
-        <br></br>
-        <CardContainer>
-          {posts.map((post) => (
-            <BlogSnapshot key={post.slug} post={post} />
-          ))}
-        </CardContainer>
+        <EmbedContainer>
+          <div data-supascribe-embed-id="761613072423" data-supascribe-feed></div>
+        </EmbedContainer>
       </BlogWrapper>
     </>
   );
