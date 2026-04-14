@@ -1,92 +1,77 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Container = styled.div`
+const Card = styled(Link)`
   display: flex;
-  align-items: left;
-  justify-content: left;
-  flex-wrap: wrap;
-  gap: 1.5em;
-  flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
-  margin: 0.5em 0;
-`;
+  gap: 1rem;
+  padding: 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  background: #deeac5;
+  transition: all 0.2s ease;
 
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  }
 
-const TitleRow = styled.div`
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  flex-wrap: wrap;
-  gap: 2em;
-  flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
-  margin: 0.5em 0;
-`;
-
-const DescriptionRow = styled.div`
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  flex-wrap: wrap;
-  gap: 2em;
-  flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
-  margin: 0.5em 0;
-`;
-
-const Heading = styled.h4``;
-
-const Image = styled.img`
-  width: ${({ width }) => width || '200px'};
-  height: ${({ height }) => height || 'auto'};
-  border-radius: 8px;
-  margin: 0em 0;
-`;
-
-const ImageColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  align-items: right;
-
-  img {
-    width: ${({ width }) => width || '250'};
-    height:  ${({ height }) => height || 'auto'};
-    border-radius: 8px;
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 
-const ParagraphDate = styled.p`
-  text-align: left;
-  margin-bottom: 0.25em;
-  width: 400px;
-  margin-top: 1em;
+const Image = styled.img`
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 180px;
+  }
 `;
 
-const ParagraphDescr = styled.p`
-  text-align: left;
-  margin-bottom: 0.25em;
-  width: 600px;
-  margin-top: 0em;
+const Content = styled.div`
+  display: flex;
+  margin-top: 0.5rem;
+  flex-direction: column;
+  justify-content: flex-start;
 `;
 
+const Title = styled.h3`
+  margin: 0;
+  font-size: 1.2rem;
+  color: #39683B;
+`;
+
+const Date = styled.p`
+  margin: 0.2rem 0 0.6rem;
+  font-size: 0.85rem;
+  color: #777;
+`;
+
+const Description = styled.p`
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+`;
 
 export default function BlogSnapshot({ post }) {
-    return (
-        <Link to ={`/blog/${post.slug}`} className = "blogPostLink">
-            <Container>
-                <TitleRow>
-                    <Heading className = "blogTitle">{post.title}</Heading> 
-                    <ParagraphDate className = "blogDate">{post.date}</ParagraphDate>
-                </TitleRow>
-                <ImageColumn>
-                    <Image src={process.env.PUBLIC_URL + '/assets/blogs/' + post.img} />
-                </ImageColumn> 
-                <DescriptionRow>
-                    <ParagraphDescr className = "blogDescription">{post.description}</ParagraphDescr>   
-                </DescriptionRow>
-                
-            </Container>
-        </Link>
-    )
+  return (
+    <Card to={`/blog/${post.slug}`}>
+      <Image
+        src={process.env.PUBLIC_URL + '/assets/blogs/' + post.img}
+        alt={post.title}
+      />
+
+      <Content>
+        <Title>{post.title}</Title>
+        <Date>{post.date}</Date>
+        <Description>{post.description}</Description>
+      </Content>
+    </Card>
+  );
 }
-
-

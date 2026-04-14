@@ -26,10 +26,12 @@ const BlogTitle = styled.h2`
   }
 `;
 
-// const CardContainer = styled.div`
-//   text-align: left;
-//   margin-left: -15px;
-// `;
+const CardContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: flex-start;
+`;
 
 function Blog() {
   const { t } = useTranslation();
@@ -41,11 +43,11 @@ function Blog() {
         <BlogTitle>{t('components.blog.title', 'Blog')}</BlogTitle>
         <p>{t('components.blog.description', 'Welcome to our blog. Here you are our latest updates and articles.')}</p>
         <br></br>
-        <div className = "cardArray">
+        <CardContainer>
           {posts.map((post) => (
             <BlogSnapshot key={post.slug} post={post} />
           ))}
-        </div>
+        </CardContainer>
       </BlogWrapper>
     </>
   );
