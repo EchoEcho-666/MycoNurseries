@@ -97,10 +97,6 @@ The site will open at **http://localhost:3000**
 | react-icons | ^5.5.0 | Icon library |
 | react-transition-group | ^4.4.5 | Page transition animations |
 | react-scripts | 5.0.1 | Create React App toolchain |
-| mdx-js/mdx | ^3.1.1 | MDX file compiler, MDX -> JS
-| mdx-js/react | ^1.6.33 | For using react components in MDX
-| remark-frontmatter | ^5.0.0 | Supplies metadata for markdown files
-| remark-mdx-frontmatter | ^5.2.0 | Enables remark-frontmatter to work with mdx files
 
 ### Backend (`my-backend/package.json`)
 

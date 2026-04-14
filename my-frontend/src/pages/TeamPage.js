@@ -109,7 +109,7 @@ function TeamPage() {
       <TeamHeading>{t('Co-Founders')}</TeamHeading>
       <TeamRow>
         <TeamCardComponent
-          image={process.env.PUBLIC_URL + '/assets/team-member/julia-picture.jpg'}
+          image={process.env.PUBLIC_URL + '/assets/team-member/julia-picture.jpeg'}
           alt={t('Julia Wright')}
           name={t('Julia Wright')}
           pronoun={t('(they/them)')}
@@ -123,14 +123,6 @@ function TeamPage() {
           pronoun=""
           position={t('Co-Founder')}
           description={t('Minh studies pharmacology and leads research into societal sustainability. Outside the lab, you can find them petting their cats, bopping to their latest music craze, or reading.')}
-        />
-        <TeamCardComponent
-          image={process.env.PUBLIC_URL + '/assets/team-member/nico-picture.jpg'}
-          alt={t('Nico Vilkoff')}
-          name={t('Nico Vilkoff')}
-          pronoun={t('(they/them)')}
-          position={t('Co-Founder')}
-          description={t('Nico studies cognitive science and explores fungal sustainable solutions to environmental challenges. When not mixing mushroom substrate, they’re drawing, solving puzzles, or geeking out over TV shows.')}
         />
       </TeamRow>
 
@@ -223,12 +215,12 @@ function TeamPage() {
           description="Maya is a bachelors student at McGill university with plans to major in environmental biology. In her free time, she loves to write, hike, and make mug cakes!"
         />
         <TeamCardComponent
-          image={process.env.PUBLIC_URL + '/assets/team-member/shimona-picture.png'}
-          alt="Shimona Singh"
-          name="Shimona Singh"
-          pronoun="(she/her)"
+          image={process.env.PUBLIC_URL + '/assets/team-member/kiran-picture.jpg'}
+          alt="Kiran Fellenz"
+          name="Kiran Fellenz"
+          pronoun="(they/them)"
           position="Events Lead"
-          description="Shimona is currently studying Computer Science at McGill University. You will mostly liking find her hiking at Mount Royal, traveling to different places, or crocheting. "
+          description="Kiran is a McGill student in Urban Studies and International Development. Outside of class, they can be found drawing, exploring Montreal, and reading in their favorite cafes. They're also known for their extensive collection of mushroom-themed clothing."
         />
       </TeamRow>
 
@@ -270,12 +262,12 @@ function TeamPage() {
           description=""
         />
         <TeamCardComponent
-          image={process.env.PUBLIC_URL + '/assets/team-member/anonymous.jpg'}
+          image={process.env.PUBLIC_URL + '/assets/team-member/fah-picture.png'}
           alt="Fah Michaud"
           name="Fah Michaud"
-          pronoun=""
+          pronoun="she/her"
           position="Blogwriter"
-          description=""
+          description="Fah really loves cats. She is currently pursuing an honours degree in Earth and Planetary Sciences at McGill, and prefers to spend her time reading, writing, making art, or yearning for the great outdoors."
         />
         <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/anonymous.jpg'}
@@ -292,6 +284,19 @@ function TeamPage() {
           pronoun=""
           position="Marketing & Sales Coordinator"
           description=""
+        />
+      </TeamRow>
+
+      {/* Past Directors */}
+      <TeamHeading>Past Directors</TeamHeading>
+      <TeamRow>
+        <TeamCardComponent
+          image={process.env.PUBLIC_URL + '/assets/team-member/nico-picture.jpg'}
+          alt={t('Nico Vilkoff')}
+          name={t('Nico Vilkoff')}
+          pronoun={t('(they/them)')}
+          position={t('Co-Founder')}
+          description={t('Nico studies cognitive science and explores fungal sustainable solutions to environmental challenges. When not mixing mushroom substrate, they’re drawing, solving puzzles, or geeking out over TV shows.')}
         />
       </TeamRow>
     </TeamContainer>
