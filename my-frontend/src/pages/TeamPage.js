@@ -212,7 +212,7 @@ function TeamPage() {
           name="Maya Farres"
           pronoun="(she/her)"
           position="Education Lead"
-          description="Maya is a bachelors student at McGill university with plans to major in environmental biology. In her free time, she loves to write, hike, and make mug cakes!"
+          description="Maya is a bachelors student at McGill university majoring in elementary education. In her free time, she loves to write, hike, and make mug cakes!"
         />
         <TeamCardComponent
           image={process.env.PUBLIC_URL + '/assets/team-member/kiran-picture.jpg'}
