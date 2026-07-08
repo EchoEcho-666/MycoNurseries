@@ -1,15 +1,21 @@
 
-import NameOfBlog, {
-    postMeta as nameOfBlogMeta
-} from "./NameOfBlog.jsx"
+import UrbanPlanners, {
+    postMeta as urbanPlannersMeta
+} from "./UrbanPlanners.jsx"
 
-import NameOfBlog2, {
-    postMeta as nameOfBlog2Meta
-} from "./NameOfBlog2.jsx"
+import MycologicalPath, {
+    postMeta as mycologicalPathMeta
+} from "./MycologicalPath.jsx"
 
 export const posts = [ 
     {
-        ...nameOfBlogMeta,
-        component: NameOfBlog,
+        ...mycologicalPathMeta,
+        component: MycologicalPath,
+
+    },
+    {
+        ...urbanPlannersMeta,
+        component: UrbanPlanners,
     }
+
 ]

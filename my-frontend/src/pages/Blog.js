@@ -41,7 +41,7 @@ function Blog() {
     <>
       <BlogWrapper>
         <BlogTitle>{t('components.blog.title', 'Blog')}</BlogTitle>
-        <p>{t('components.blog.description', 'Welcome to our blog. Here you are our latest updates and articles.')}</p>
+        <p>{t('components.blog.description', 'Welcome to our blog. Here are our latest updates and articles!')}</p>
         <br></br>
         <CardContainer>
           {posts.map((post) => (

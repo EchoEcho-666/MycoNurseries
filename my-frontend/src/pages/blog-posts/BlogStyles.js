@@ -41,6 +41,16 @@ export const Image = styled.img`
   margin: 0.5em 0;
 `;
 
+export const Ref = ({ n }) => <sup>{n}</sup>;
+
+export const Image60 = styled.img`
+  width: ${({ width }) => width || '60%'};
+  max-width: 60%;
+  height: ${({ height }) => height || 'auto'};
+  border-radius: 8px;
+  margin: 0.5em 0;
+`
+
 export const ImageColumn = styled.div`
   display: flex;
   flex-direction: column;
@@ -92,3 +102,4 @@ export const ImageCaption = styled.span`
   margin-top: 0.3em;
   font-style: italic;
 `;
+

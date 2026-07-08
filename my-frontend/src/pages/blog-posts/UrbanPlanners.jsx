@@ -3,13 +3,13 @@ import { AuthorHeading, BlogWrapper, TitleHeading,
 
 
 const descr = `
-   The Humble Slime Mold Is Ready to Steal Your Jobs
+   The Humble Slime Mold is Ready to Steal Your Jobs
 `;
 
 const slug = "Urban Planners Watch Out!";
 const title = "Urban Planners Watch Out!";
-const img = "FungiCityInfrastructure.jpg";
-const date = "Mar 20, 2026";
+const img = "UrbanPlanners/FungiCityInfrastructure.jpg";
+const date = "March 20, 2026";
 const author = "Fah Michaud"
 
 const caption1 = "Photo by Andrew Ridley on Unsplash"
@@ -19,15 +19,15 @@ const paragraph3 = "Urban planners beware! Just like how AI is coming for all th
 const paragraph4 = "How is this even possible, you may be asking. What even is a slime mold?"
 const paragraph5 = "Well, I’m glad you asked!"
 const paragraph6 = "The slime mold’s name is rather misleading in nature. Although it is made up of the two words ‘slime’ and ‘mold’, slime molds have little relation to the slime you made at home as a kid after watching a few dozen videos on the internet, nor do they have any relation to mold. Slime molds are not molds, and they are not fungi. They are, in fact, more closely-related to amoebas, and are classified as amoeboid protists.1 Some well-known amoeboid protists include foraminifera, which are one of the most important types of microfossils. "
-const img1 = "close_up_of_a_crab.jpg"
+const img1 = "UrbanPlanners/close_up_of_a_crab.jpg"
 const caption2 = "Photo by Thomas Ho on Unsplash"
-const img2 = "toy_figurines.jpg"
+const img2 = "UrbanPlanners/toy_figurines.jpg"
 const caption3 = "Photo by Lia Chuang on Unsplash"
-const img3 = "man_holding_magnifying_glass.jpg"
+const img3 = "UrbanPlanners/man_holding_magnifying_glass.jpg"
 const caption4 = "Photo by National Cancer Institute on Unsplash"
-const img4 = "printing_papers.jpg"
+const img4 = "UrbanPlanners/printing_papers.jpg"
 const caption5 = "Photo by Marvin Meyer on Unsplash"
-const img5 = "pink_mushroom.jpg"
+const img5 = "UrbanPlanners/pink_mushroom.jpg"
 const caption6 = "Photo by Timothy Dykes on Unsplash"
 
 /*
@@ -73,8 +73,8 @@ export default function Post(){
         <BlogWrapper>
             <TitleRow>
                 <TitleHeading>{"Urban Planners Watch Out!"}</TitleHeading> 
-                <SubHeading>{"The Humble Slime Mold Is Ready to Steal Your Jobs"}</SubHeading>
-                <AuthorHeading>{author}</AuthorHeading>
+                <SubHeading>{"The Humble Slime Mold is Ready to Steal Your Jobs"}</SubHeading>
+                <AuthorHeading>{author + "  ·  " + date}</AuthorHeading>
                 <Image src={process.env.PUBLIC_URL + '/assets/blogs/' + img} alt="Fungi City Infrastructure"/>
                 <ImageCaption>{caption1}</ImageCaption>
             </TitleRow>
