@@ -9,6 +9,10 @@ const HeaderWrapper = styled.header`
   padding: 1rem 0.2rem 0.2rem;
   text-align: center;
   position: relative;
+
+  @media (max-width: 700px) {
+    padding-top: 0.75rem;
+  }
 `;
 
 const HeaderContent = styled.div`
@@ -69,6 +73,7 @@ const NavLinks = styled.ul`
 
 const NavItem = styled.li`
   position: relative;
+  padding-bottom: 0.5rem;
 `;
 
 const StyledLink = styled(NavLink)`
@@ -81,7 +86,7 @@ const StyledLink = styled(NavLink)`
 const DropdownMenu = styled.ul`
   display: none;
   position: absolute;
-  top: 120%;
+  top: 100%;
   left: -7%;
   background-color: #39683B;
   list-style: none;
@@ -105,9 +110,6 @@ const DropdownItem = styled(NavLink)`
 `;
 
 const CornerLink = styled(NavLink)`
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
   color: #FFE7C9;
   font-size: 1rem;
   text-decoration: none;
@@ -121,9 +123,6 @@ const CornerLink = styled(NavLink)`
 `;
 
 const LanguageToggleButton = styled.button`
-  position: absolute;
-  top: 3rem;
-  right: 1rem;
   color: #FFE7C9;
   font-size: 1rem;
   background-color: #2E7D32;
@@ -137,6 +136,23 @@ const LanguageToggleButton = styled.button`
   }
 `;
 
+const TopActions = styled.div`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  
+  gap: 0.5rem;
+
+  @media (max-width: 700px) {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+`;
+
 function Header() {
   const { t, i18n } = useTranslation();
 
@@ -147,10 +163,12 @@ function Header() {
 
   return (
     <HeaderWrapper>
-      <LanguageToggleButton onClick={toggleLanguage}>
-        {i18n.language === 'en' ? 'FR' : 'EN'}
-      </LanguageToggleButton>
-      <CornerLink to="/volunteer">{t('components.header.signIn')}</CornerLink>
+      <TopActions>
+        <CornerLink to="/volunteer">{t('components.header.signIn')}</CornerLink>
+        <LanguageToggleButton onClick={toggleLanguage}>
+          {i18n.language === 'en' ? 'FR' : 'EN'}
+        </LanguageToggleButton>
+      </TopActions>
       <HeaderContent>
         <Logo src={process.env.PUBLIC_URL + '/assets/logo-cut-out.png'} alt={t('components.header.mycoNurseries')} />
         <TitleSection>
