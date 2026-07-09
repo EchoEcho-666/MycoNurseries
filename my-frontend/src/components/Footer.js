@@ -92,7 +92,7 @@ function Footer() {
 
   const handleCopyEmail = (e) => {
     e.preventDefault();
-    navigator.clipboard.writeText("myconurseries[at]gmail[dot]com");
+    navigator.clipboard.writeText("myconurseries@gmail.com");
     setContactMessage(t("components.footer.emailCopied"));
     setTimeout(() => setContactMessage(""), 1500);
   };
@@ -140,7 +140,7 @@ function Footer() {
                 title={t("components.footer.clickToCopy")}
               >
                 <FaEnvelope />
-                {" "}myconurseries[at]gmail[dot]com
+                {" "}myconurseries@gmail.com
               </ExternalLink>
             </li>
             <li>

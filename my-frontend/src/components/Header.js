@@ -55,7 +55,7 @@ const Divider = styled.hr`
 
 const Nav = styled.nav`
   margin-top: 0.5rem;
-  margin-right: 5em;
+  margin-right: 0em;
 `;
 
 const NavLinks = styled.ul`
