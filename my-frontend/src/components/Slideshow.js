@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const SlideshowContainer = styled.div`
   position: relative;
   max-width: 100%;
-  height: 650px;
+  height: clamp(260px, 55vw, 650px);
   margin: auto;
   overflow: hidden;
   background-color: #FFE7C9;
@@ -14,11 +14,15 @@ const SlideshowContainer = styled.div`
 
 const Slide = styled.div`
   display: ${props => (props.$active ? 'block' : 'none')};
+  width: 100%;
+  height: 100%;
+
   & img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center center;
+    display: block;
   }
 `;
 
