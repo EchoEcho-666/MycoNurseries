@@ -148,7 +148,7 @@ const TopActions = styled.div`
   @media (max-width: 700px) {
     position: static;
     flex-direction: row;
-    justify-content: center;
+    justify-content: right;
     margin-bottom: 1rem;
   }
 `;
